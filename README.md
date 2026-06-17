@@ -29,6 +29,7 @@ Pico 4 Ultra, Pimax Crystal Light, Pimax Crystal Super y Bigscreen Beyond 2.
 ├── assets/
 │   ├── css/styles.css     # Todos los estilos
 │   └── js/app.js          # Datos del quiz + lógica
+├── ads.txt                # Autorización de inventario para AdSense
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
@@ -86,20 +87,32 @@ Mejoras previstas para más adelante:
   por Cloudflare; se quitó por estar atado al deploy anterior. Si querés analítica,
   conviene sumar una nueva (Cloudflare Web Analytics, Plausible, GA4, etc.).
 
-## Google AdSense — cómo se agrega
+## Google AdSense
 
-AdSense no se puede dejar listo todavía porque depende de tu cuenta y de la
-aprobación del sitio. Pasos:
+Publisher ID: `ca-pub-9232748982913595`.
 
-1. Crear/usar una cuenta en Google AdSense y dar de alta el dominio `vr.ar`.
-2. Esperar la aprobación. AdSense favorece sitios con contenido sustancial; una
-   herramienta de una sola página puede tardar más o requerir más contenido (por
-   ejemplo, sumar artículos o ampliar el FAQ que ya está en el JSON-LD).
-3. AdSense exige una **política de privacidad** y, para tráfico de la UE/EEE, un
-   banner de consentimiento de cookies (CMP). Hay que agregarlos antes de pedir la
-   revisión.
-4. Una vez aprobada la cuenta, se obtiene el ID de editor (`ca-pub-XXXXXXXXXXXXXXXX`)
-   y se inserta el script de AdSense en `index.html` más las unidades de anuncio en
-   los lugares elegidos.
+Ya integrado en el repo:
 
-Cuando tengas el ID de editor, puedo dejar la integración hecha.
+- El **script loader de AdSense** y la meta `google-adsense-account` están en el
+  `<head>` de `index.html`. Esto habilita la verificación del sitio y los **Auto
+  Ads** (Google coloca los anuncios automáticamente si los activás en el panel).
+- El archivo **`ads.txt`** en la raíz autoriza a Google a vender el inventario.
+
+Falta (depende de vos / del panel de AdSense):
+
+1. **Aprobación del sitio.** AdSense favorece sitios con contenido; por eso sumamos
+   el FAQ visible. Conviene reforzarlo con guías (ver la sección de artículos abajo)
+   antes de pedir la revisión.
+2. **Política de privacidad** (obligatoria) y, para tráfico de la UE/EEE, un **banner
+   de consentimiento de cookies** (CMP certificado por Google). Sin esto AdSense no
+   aprueba ni publica.
+3. **Quitar el badge "vr.ar is for sale"**: un sitio que se anuncia en venta no suele
+   pasar la revisión.
+4. **Auto Ads vs. manual.** Para empezar, activá Auto Ads en el panel (ya funciona
+   con lo que está). Para colocar anuncios a mano en lugares concretos (recomendado
+   para no romper la experiencia de "herramienta rápida"), creá unidades de anuncio
+   en el panel y pasame los `data-ad-slot`; los dejo cableados en la página de
+   resultados y debajo del FAQ.
+
+> Nota: AdSense no muestra anuncios (ni genera ingresos) hasta que el sitio esté
+> aprobado.

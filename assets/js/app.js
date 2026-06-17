@@ -589,6 +589,49 @@ const UI_TEXT = {
 
 function tx() { return UI_TEXT[currentLang]; }
 
+// ─── FAQ CONTENT (mirrors the FAQPage JSON-LD; rendered in the hero) ──
+const FAQ_CONTENT = {
+  en: {
+    heading: 'Frequently Asked Questions',
+    items: [
+      { q: 'What is the best standalone VR headset in 2026?',
+        a: "The Meta Quest 3 is the most well-rounded standalone VR headset in 2026, featuring Snapdragon XR2 Gen 2, pancake lenses with 2064×2208 resolution per eye, and full color mixed reality passthrough. The Meta Quest 3S offers the same chip at a lower price with Fresnel lenses." },
+      { q: 'Do I need a PC or PlayStation for the Meta Quest 3?',
+        a: "No. The Meta Quest 3 and Quest 3S are fully standalone headsets — they run independently without a PC or console. The PlayStation VR2, however, requires a PS5 to function." },
+      { q: 'What is the best PCVR headset for the price in 2026?',
+        a: "The Pimax Crystal Light (~$699) is the community's top pick for PCVR value in 2025–2026, offering the best visual clarity per dollar with a 115° FOV — it requires an RTX 3070 or better. For users with no budget limit, the Pimax Crystal Super (~$2,000) offers 3,840×3,840 resolution per eye with ultrawide FOV and integrated eye tracking, but requires an RTX 4070 or better." },
+      { q: 'Which VR headset should I buy if I own a PS5?',
+        a: "The PlayStation VR2 is the ideal choice for PS5 owners. It features native eye tracking, haptic feedback in the headset, and adaptive triggers — but it requires a PS5 and cannot be used standalone or with a PC." }
+    ]
+  },
+  es: {
+    heading: 'Preguntas frecuentes',
+    items: [
+      { q: '¿Cuál es el mejor headset de VR standalone en 2026?',
+        a: "El Meta Quest 3 es el headset standalone más equilibrado de 2026: Snapdragon XR2 Gen 2, lentes pancake con 2064×2208 de resolución por ojo y passthrough a color para realidad mixta. El Meta Quest 3S ofrece el mismo procesador a menor precio, con lentes Fresnel." },
+      { q: '¿Necesito una PC o una PlayStation para el Meta Quest 3?',
+        a: "No. El Meta Quest 3 y el Quest 3S son headsets totalmente standalone: funcionan de forma independiente, sin PC ni consola. El PlayStation VR2, en cambio, requiere una PS5 para funcionar." },
+      { q: '¿Cuál es el mejor headset PCVR por su precio en 2026?',
+        a: "El Pimax Crystal Light (~$699) es la opción más recomendada por la comunidad PCVR en 2025–2026: la mejor claridad visual por dólar, con un FOV de 115° — requiere una RTX 3070 o superior. Para quienes no tienen límite de presupuesto, el Pimax Crystal Super (~$2.000) ofrece 3.840×3.840 por ojo, FOV ultrawide y eye tracking integrado, pero requiere una RTX 4070 o superior." },
+      { q: '¿Qué headset de VR me conviene si tengo una PS5?',
+        a: "El PlayStation VR2 es la opción ideal para quienes tienen una PS5. Tiene eye tracking nativo, feedback háptico en el headset y gatillos adaptativos — pero requiere una PS5 y no se puede usar standalone ni con PC." }
+    ]
+  }
+};
+
+function applyLangToFAQ() {
+  const f = FAQ_CONTENT[currentLang];
+  if (!f) return;
+  const heading = document.getElementById('faq-heading');
+  if (heading) heading.textContent = f.heading;
+  f.items.forEach((item, i) => {
+    const q = document.getElementById('faq-q' + (i + 1));
+    const a = document.getElementById('faq-a' + (i + 1));
+    if (q) q.textContent = item.q;
+    if (a) a.textContent = item.a;
+  });
+}
+
 function applyLangToIntro() {
   const t = tx();
   document.getElementById('txt-eyebrow').textContent = t.eyebrow;
@@ -603,6 +646,7 @@ function applyLangToIntro() {
   t.chips.forEach((c,i) => { if(chipEls[i]) chipEls[i].textContent = c; });
   const badge = document.getElementById('txt-domain-badge');
   if (badge) badge.textContent = t.domainBadge;
+  applyLangToFAQ();
 }
 
 function setLang(lang) {
