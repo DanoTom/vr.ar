@@ -153,8 +153,9 @@ Falta (depende de vos / del panel de AdSense):
    para no romper la experiencia de "herramienta rápida"), creá unidades de anuncio
    en el panel y pasame los `data-ad-slot`; los dejo cableados en la página de
    resultados y debajo del FAQ.
-4. **Email de contacto.** La política usa `contact@vr.ar` como marcador. Configurá
-   ese alias o reemplazalo por el correo que prefieras en `privacy.html`.
+4. **Email de contacto.** La política de privacidad usa `westartmind@gmail.com`
+   (solo en el enlace "escribinos por email" de la sección Contacto, no visible como
+   texto). Si más adelante querés un correo del dominio, se cambia en `privacy.html`.
 
 > Nota: AdSense no muestra anuncios (ni genera ingresos) hasta que el sitio esté
 > aprobado.
