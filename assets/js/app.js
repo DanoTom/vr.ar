@@ -636,6 +636,37 @@ function applyLangToFAQ() {
   });
 }
 
+// ─── FEATURED GUIDES on the home page (titles + per-language links) ───
+const HOME_GUIDES = [
+  { en_slug: 'quest-3-vs-quest-3s', es_slug: 'quest-3-vs-quest-3s',
+    en: 'Quest 3 vs Quest 3S: which one should you actually buy?',
+    es: 'Quest 3 vs Quest 3S: ¿cuál te conviene de verdad?' },
+  { en_slug: 'best-vr-for-ps5', es_slug: 'mejor-vr-para-ps5',
+    en: 'Best VR for PS5: the honest answer to a one-horse race',
+    es: 'Mejor VR para PS5: la verdad que casi nadie te dice' },
+  { en_slug: 'what-you-need-for-pcvr', es_slug: 'que-necesitas-para-pcvr',
+    en: 'What you actually need for PCVR',
+    es: 'Qué necesitás de verdad para PCVR' },
+  { en_slug: 'is-the-pimax-crystal-light-worth-it', es_slug: 'pimax-crystal-light-vale-la-pena',
+    en: 'Is the Pimax Crystal Light worth it?',
+    es: '¿Vale la pena la Pimax Crystal Light?' }
+];
+
+function applyLangToHomeGuides() {
+  const dir = currentLang === 'es' ? 'guias/' : 'guides/';
+  const title = document.getElementById('home-guides-title');
+  if (title) title.textContent = currentLang === 'es' ? 'Guías y comparativas' : 'Guides & Comparisons';
+  const all = document.getElementById('home-guides-all');
+  if (all) { all.textContent = currentLang === 'es' ? 'Ver todas →' : 'View all →'; all.href = dir; }
+  HOME_GUIDES.forEach((g, i) => {
+    const el = document.getElementById('hg-' + (i + 1));
+    if (el) {
+      el.textContent = currentLang === 'es' ? g.es : g.en;
+      el.href = dir + (currentLang === 'es' ? g.es_slug : g.en_slug) + '.html';
+    }
+  });
+}
+
 function applyLangToIntro() {
   const t = tx();
   document.getElementById('txt-eyebrow').textContent = t.eyebrow;
@@ -648,6 +679,8 @@ function applyLangToIntro() {
   document.getElementById('txt-note').textContent = t.note;
   const chipEls = document.getElementById('hero-chips').querySelectorAll('.chip');
   t.chips.forEach((c,i) => { if(chipEls[i]) chipEls[i].textContent = c; });
+  const ng = document.getElementById('nav-guides');
+  if (ng) { ng.textContent = t.footerGuides; ng.href = currentLang === 'es' ? 'guias/' : 'guides/'; }
   const fg = document.getElementById('footer-guides');
   if (fg) { fg.textContent = t.footerGuides; fg.href = currentLang === 'es' ? 'guias/' : 'guides/'; }
   const fp = document.getElementById('footer-privacy');
@@ -655,6 +688,7 @@ function applyLangToIntro() {
   const fd = document.getElementById('footer-disclosure');
   if (fd) fd.textContent = t.footerDisclosure;
   applyLangToFAQ();
+  applyLangToHomeGuides();
 }
 
 function setLang(lang) {

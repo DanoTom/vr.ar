@@ -236,12 +236,15 @@
   <!-- TOP BAR -->
   <nav class="topbar">
     <div class="topbar-logo" onclick="goHome()" title="Back to home" style="cursor:pointer">VR<span>.</span>AR</div>
-    <div class="lang-switch">
-      <span class="lang-label en" onclick="setLang(&#39;en&#39;)">EN</span>
-      <div class="toggle-track" onclick="toggleLang()" title="Switch language">
-        <div class="toggle-thumb"></div>
+    <div class="topbar-actions">
+      <a class="topbar-nav-link" href="guides/" id="nav-guides">Guides</a>
+      <div class="lang-switch">
+        <span class="lang-label en" onclick="setLang(&#39;en&#39;)">EN</span>
+        <div class="toggle-track" onclick="toggleLang()" title="Switch language">
+          <div class="toggle-thumb"></div>
+        </div>
+        <span class="lang-label es" onclick="setLang(&#39;es&#39;)">ES</span>
       </div>
-      <span class="lang-label es" onclick="setLang(&#39;es&#39;)">ES</span>
     </div>
   </nav>
 
@@ -293,6 +296,20 @@
       <button class="btn-start" onclick="startQuiz()" id="btn-start-cta">Start the Quiz →</button>
       <span class="hero-note" id="txt-note">Takes about 60 seconds</span>
     </div>
+
+    <!-- ── FEATURED GUIDES (discoverability + internal links) ─── -->
+    <section class="home-guides" id="home-guides" aria-label="Guides">
+      <div class="home-guides-head">
+        <h2 class="home-guides-title" id="home-guides-title">Guides &amp; Comparisons</h2>
+        <a class="home-guides-all" href="guides/" id="home-guides-all">View all →</a>
+      </div>
+      <div class="home-guides-grid">
+        <a class="home-guide-card" id="hg-1" href="guides/quest-3-vs-quest-3s.html">Quest 3 vs Quest 3S: which one should you actually buy?</a>
+        <a class="home-guide-card" id="hg-2" href="guides/best-vr-for-ps5.html">Best VR for PS5: the honest answer to a one-horse race</a>
+        <a class="home-guide-card" id="hg-3" href="guides/what-you-need-for-pcvr.html">What you actually need for PCVR</a>
+        <a class="home-guide-card" id="hg-4" href="guides/is-the-pimax-crystal-light-worth-it.html">Is the Pimax Crystal Light worth it?</a>
+      </div>
+    </section>
 
     <!-- ── FAQ (visible content for SEO + AdSense; mirrors the FAQPage JSON-LD) ─── -->
     <section class="faq-section" id="faq" aria-label="Frequently asked questions">
