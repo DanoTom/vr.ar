@@ -81,19 +81,26 @@ Sección de contenido para SEO y para reforzar la aprobación de AdSense. Es bil
 con **una URL por idioma** (mejor para SEO que el toggle JS de la herramienta):
 
 ```
-guides/                 # Hub en inglés
+guides/                              # Hub + artículos en inglés (slugs en inglés)
   index.html
-  meta-quest-3-vs-quest-3s.html
-guias/                  # Hub en español (mismo slug por artículo)
+  quest-3-vs-quest-3s.html
+  best-vr-for-ps5.html
+  what-you-need-for-pcvr.html
+  is-the-pimax-crystal-light-worth-it.html
+guias/                               # Hub + artículos en español (slugs en español)
   index.html
-  meta-quest-3-vs-quest-3s.html
-assets/css/guides.css   # Estilos de hubs y artículos
+  quest-3-vs-quest-3s.html
+  mejor-vr-para-ps5.html
+  que-necesitas-para-pcvr.html
+  pimax-crystal-light-vale-la-pena.html
+assets/css/guides.css                # Estilos de hubs y artículos
 ```
 
-Cada par de artículos está cruzado con etiquetas `hreflang` (`en`, `es`,
-`x-default`) y trae su `canonical`, datos estructurados `Article` + `BreadcrumbList`,
-el loader de AdSense, un CTA al quiz y el disclosure de afiliados. El artículo
-**Quest 3 vs Quest 3S** queda como plantilla de referencia (ya es 1 de las 4 guías).
+Las 4 guías iniciales ya están publicadas en ambos idiomas. Cada par está cruzado con
+etiquetas `hreflang` (`en`, `es`, `x-default`) y trae su `canonical`, datos
+estructurados `Article` + `BreadcrumbList`, el loader de AdSense, botones de afiliado,
+un CTA al quiz y el disclosure. Las páginas se generan con `/tmp/gen_guides.py` a
+partir de los `.md`, pero también se pueden editar a mano.
 
 **Para sumar un artículo nuevo:**
 

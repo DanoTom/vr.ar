@@ -23,22 +23,75 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://vr.ar/guides/meta-quest-3-vs-quest-3s.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/meta-quest-3-vs-quest-3s.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/meta-quest-3-vs-quest-3s.html"/>
+    <loc>https://vr.ar/guides/quest-3-vs-quest-3s.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/quest-3-vs-quest-3s.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/quest-3-vs-quest-3s.html"/>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vr.ar/guias/meta-quest-3-vs-quest-3s.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/meta-quest-3-vs-quest-3s.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/meta-quest-3-vs-quest-3s.html"/>
+    <loc>https://vr.ar/guias/quest-3-vs-quest-3s.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/quest-3-vs-quest-3s.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/quest-3-vs-quest-3s.html"/>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://vr.ar/guides/best-vr-for-ps5.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-vr-for-ps5.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejor-vr-para-ps5.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/mejor-vr-para-ps5.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-vr-for-ps5.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejor-vr-para-ps5.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vr.ar/guides/what-you-need-for-pcvr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/what-you-need-for-pcvr.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/que-necesitas-para-pcvr.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/que-necesitas-para-pcvr.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/what-you-need-for-pcvr.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/que-necesitas-para-pcvr.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vr.ar/guides/is-the-pimax-crystal-light-worth-it.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/is-the-pimax-crystal-light-worth-it.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/pimax-crystal-light-vale-la-pena.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/pimax-crystal-light-vale-la-pena.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/is-the-pimax-crystal-light-worth-it.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/pimax-crystal-light-vale-la-pena.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://vr.ar/privacy.html</loc>
     <lastmod>2026-06-17</lastmod>
