@@ -520,9 +520,10 @@ const UI_TEXT = {
     copyBtn: 'Copy link',
     footnote: (url) => `These are affiliate links — you pay the same, and help keep <a href="${url}">vr.ar</a> free. ❤️`,
     resultSub: (p, s, ps, ss) => `Match score: ${ps} pts  ·  Runner-up: ${s} (${ss} pts)`,
-    domainBadge: 'vr.ar is for sale',
     updatedBadge: '2026 Edition',
     affiliateNotice: '🔗 Affiliate link — you pay the same price.',
+    footerPrivacy: 'Privacy Policy',
+    footerDisclosure: 'As an Amazon Associate, vr.ar earns from qualifying purchases.',
     accTitle: 'Recommended Gear',
     accSub: '— audio & essentials for your headset',
     accCount: 'items',
@@ -564,9 +565,10 @@ const UI_TEXT = {
     copyBtn: 'Copiar link',
     footnote: (url) => `Links de afiliado — no pagás más, y ayudás a mantener <a href="${url}">vr.ar</a> gratis. ❤️`,
     resultSub: (p, s, ps, ss) => `Score: ${ps} pts  ·  Segunda opción: ${s} (${ss} pts)`,
-    domainBadge: 'vr.ar está en venta',
     updatedBadge: 'Edición 2026',
     affiliateNotice: '🔗 Link de afiliado — pagás el mismo precio.',
+    footerPrivacy: 'Política de privacidad',
+    footerDisclosure: 'Como Afiliado de Amazon, vr.ar gana con las compras que cumplen los requisitos.',
     accTitle: 'Accesorios recomendados',
     accSub: '— audio y esenciales para tu headset',
     accCount: 'ítems',
@@ -644,8 +646,10 @@ function applyLangToIntro() {
   document.getElementById('txt-note').textContent = t.note;
   const chipEls = document.getElementById('hero-chips').querySelectorAll('.chip');
   t.chips.forEach((c,i) => { if(chipEls[i]) chipEls[i].textContent = c; });
-  const badge = document.getElementById('txt-domain-badge');
-  if (badge) badge.textContent = t.domainBadge;
+  const fp = document.getElementById('footer-privacy');
+  if (fp) fp.textContent = t.footerPrivacy;
+  const fd = document.getElementById('footer-disclosure');
+  if (fd) fd.textContent = t.footerDisclosure;
   applyLangToFAQ();
 }
 

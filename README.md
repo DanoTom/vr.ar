@@ -26,6 +26,7 @@ Pico 4 Ultra, Pimax Crystal Light, Pimax Crystal Super y Bigscreen Beyond 2.
 ```
 .
 ├── index.html            # Markup + SEO (meta tags, Open Graph, Twitter, JSON-LD)
+├── privacy.html           # Política de privacidad (bilingüe) — requerida por AdSense
 ├── assets/
 │   ├── css/styles.css     # Todos los estilos
 │   └── js/app.js          # Datos del quiz + lógica
@@ -73,10 +74,6 @@ Mejoras previstas para más adelante:
 
 ## Notas para tener en cuenta
 
-- **Badge "vr.ar is for sale".** El hero incluye un botón que enlaza a Sedo indicando
-  que el dominio está en venta. Si vas a conservar el dominio y monetizarlo, lo más
-  probable es que quieras quitarlo o reemplazarlo (está en `index.html`, id
-  `domain-badge`, y su texto en `UI_TEXT.*.domainBadge`).
 - **`og-image.jpg`.** Las meta tags de Open Graph/Twitter apuntan a
   `https://vr.ar/og-image.jpg` (1200×630). Hay que subir esa imagen a la raíz para
   que las vistas previas al compartir se vean bien.
@@ -97,22 +94,25 @@ Ya integrado en el repo:
   `<head>` de `index.html`. Esto habilita la verificación del sitio y los **Auto
   Ads** (Google coloca los anuncios automáticamente si los activás en el panel).
 - El archivo **`ads.txt`** en la raíz autoriza a Google a vender el inventario.
+- **Política de privacidad** (`privacy.html`, bilingüe) con la información sobre
+  cookies de AdSense, opt-out y disclosure de afiliados, enlazada desde el footer.
+- Se quitó el badge **"vr.ar is for sale"** del hero.
 
 Falta (depende de vos / del panel de AdSense):
 
 1. **Aprobación del sitio.** AdSense favorece sitios con contenido; por eso sumamos
    el FAQ visible. Conviene reforzarlo con guías (ver la sección de artículos abajo)
    antes de pedir la revisión.
-2. **Política de privacidad** (obligatoria) y, para tráfico de la UE/EEE, un **banner
-   de consentimiento de cookies** (CMP certificado por Google). Sin esto AdSense no
-   aprueba ni publica.
-3. **Quitar el badge "vr.ar is for sale"**: un sitio que se anuncia en venta no suele
-   pasar la revisión.
-4. **Auto Ads vs. manual.** Para empezar, activá Auto Ads en el panel (ya funciona
+2. **Banner de consentimiento de cookies** (CMP certificado por Google) para tráfico
+   de la UE/EEE/Reino Unido. Se puede activar el CMP propio de Google desde el panel
+   de AdSense (Privacy & messaging → GDPR), sin tocar código.
+3. **Auto Ads vs. manual.** Para empezar, activá Auto Ads en el panel (ya funciona
    con lo que está). Para colocar anuncios a mano en lugares concretos (recomendado
    para no romper la experiencia de "herramienta rápida"), creá unidades de anuncio
    en el panel y pasame los `data-ad-slot`; los dejo cableados en la página de
    resultados y debajo del FAQ.
+4. **Email de contacto.** La política usa `contact@vr.ar` como marcador. Configurá
+   ese alias o reemplazalo por el correo que prefieras en `privacy.html`.
 
 > Nota: AdSense no muestra anuncios (ni genera ingresos) hasta que el sitio esté
 > aprobado.
