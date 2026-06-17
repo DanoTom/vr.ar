@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://vr.ar/</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guides/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guides/meta-quest-3-vs-quest-3s.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/meta-quest-3-vs-quest-3s.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/meta-quest-3-vs-quest-3s.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/meta-quest-3-vs-quest-3s.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/meta-quest-3-vs-quest-3s.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/meta-quest-3-vs-quest-3s.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/privacy.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

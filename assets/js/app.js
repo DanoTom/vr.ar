@@ -522,6 +522,7 @@ const UI_TEXT = {
     resultSub: (p, s, ps, ss) => `Match score: ${ps} pts  ·  Runner-up: ${s} (${ss} pts)`,
     updatedBadge: '2026 Edition',
     affiliateNotice: '🔗 Affiliate link — you pay the same price.',
+    footerGuides: 'Guides',
     footerPrivacy: 'Privacy Policy',
     footerDisclosure: 'As an Amazon Associate, vr.ar earns from qualifying purchases.',
     accTitle: 'Recommended Gear',
@@ -567,6 +568,7 @@ const UI_TEXT = {
     resultSub: (p, s, ps, ss) => `Score: ${ps} pts  ·  Segunda opción: ${s} (${ss} pts)`,
     updatedBadge: 'Edición 2026',
     affiliateNotice: '🔗 Link de afiliado — pagás el mismo precio.',
+    footerGuides: 'Guías',
     footerPrivacy: 'Política de privacidad',
     footerDisclosure: 'Como Afiliado de Amazon, vr.ar gana con las compras que cumplen los requisitos.',
     accTitle: 'Accesorios recomendados',
@@ -646,6 +648,8 @@ function applyLangToIntro() {
   document.getElementById('txt-note').textContent = t.note;
   const chipEls = document.getElementById('hero-chips').querySelectorAll('.chip');
   t.chips.forEach((c,i) => { if(chipEls[i]) chipEls[i].textContent = c; });
+  const fg = document.getElementById('footer-guides');
+  if (fg) { fg.textContent = t.footerGuides; fg.href = currentLang === 'es' ? 'guias/' : 'guides/'; }
   const fp = document.getElementById('footer-privacy');
   if (fp) fp.textContent = t.footerPrivacy;
   const fd = document.getElementById('footer-disclosure');

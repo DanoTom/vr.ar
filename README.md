@@ -27,8 +27,11 @@ Pico 4 Ultra, Pimax Crystal Light, Pimax Crystal Super y Bigscreen Beyond 2.
 .
 ├── index.html            # Markup + SEO (meta tags, Open Graph, Twitter, JSON-LD)
 ├── privacy.html           # Política de privacidad (bilingüe) — requerida por AdSense
+├── guides/                # Hub + artículos en inglés
+├── guias/                 # Hub + artículos en español
 ├── assets/
-│   ├── css/styles.css     # Todos los estilos
+│   ├── css/styles.css     # Estilos de la herramienta
+│   ├── css/guides.css     # Estilos de las guías/artículos
 │   └── js/app.js          # Datos del quiz + lógica
 ├── ads.txt                # Autorización de inventario para AdSense
 ├── robots.txt
@@ -71,6 +74,38 @@ Mejoras previstas para más adelante:
 - **Google Ads (AdSense).** Ver la sección siguiente.
 - **Otras funcionalidades.** Comparador lado a lado, filtros, más idiomas, analítica
   propia, etc.
+
+## Guías / artículos (sección de contenido)
+
+Sección de contenido para SEO y para reforzar la aprobación de AdSense. Es bilingüe,
+con **una URL por idioma** (mejor para SEO que el toggle JS de la herramienta):
+
+```
+guides/                 # Hub en inglés
+  index.html
+  meta-quest-3-vs-quest-3s.html
+guias/                  # Hub en español (mismo slug por artículo)
+  index.html
+  meta-quest-3-vs-quest-3s.html
+assets/css/guides.css   # Estilos de hubs y artículos
+```
+
+Cada par de artículos está cruzado con etiquetas `hreflang` (`en`, `es`,
+`x-default`) y trae su `canonical`, datos estructurados `Article` + `BreadcrumbList`,
+el loader de AdSense, un CTA al quiz y el disclosure de afiliados. El artículo
+**Quest 3 vs Quest 3S** queda como plantilla de referencia (ya es 1 de las 4 guías).
+
+**Para sumar un artículo nuevo:**
+
+1. Copiá `guides/meta-quest-3-vs-quest-3s.html` a `guides/<slug>.html` y
+   `guias/meta-quest-3-vs-quest-3s.html` a `guias/<slug>.html`.
+2. Cambiá el contenido, el `<title>`, la `description`, los `canonical`/`hreflang`
+   (las dos URLs del par) y el JSON-LD (`headline`, fechas, breadcrumb).
+3. Agregá una tarjeta `.guide-card` en `guides/index.html` y otra en `guias/index.html`.
+4. Sumá las dos URLs nuevas a `sitemap.xml` (con sus `xhtml:link` alternates).
+
+> Tip: la forma más rápida es pasarme el texto de cada guía (EN + ES) y genero los
+> dos HTML completos con todo el SEO ya cableado.
 
 ## Notas para tener en cuenta
 
