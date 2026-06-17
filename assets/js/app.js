@@ -59,10 +59,10 @@ const QUESTIONS_EN = [
   {
     text: "What's your budget for the headset?",
     opts: [
-      "Under $350 — e.g. Quest 3S (~$299)",
-      "$350–$550 — e.g. PSVR2 (~$399), Quest 3 (~$499)",
-      "$550–$999 — e.g. Pimax Crystal Light (~$699), Pico 4 Ultra (~$708)",
-      "Over $999 — e.g. Pimax Crystal Super (~$2,000)"
+      "Under $400 — e.g. Quest 3S (~$350)",
+      "$400–$650 — e.g. PSVR2 (~$400), Quest 3 (~$600)",
+      "$650–$1000 — e.g. Pimax Crystal Light (~$700+), Pico 4 Ultra (~$708)",
+      "Over $1000 — e.g. Pimax Crystal Super (~$2,000)"
     ],
     scores: [
       {quest3s:4,  quest3:-1, psvr2:-2, pimax:-5, pimaxsuper:-8, pico4ultra:-5, beyond2:-8},
@@ -158,10 +158,10 @@ const QUESTIONS_ES = [
   {
     text: "¿Cuál es tu presupuesto para el headset?",
     opts: [
-      "Menos de $350 — ej: Quest 3S (~$299)",
-      "$350–$550 — ej: PSVR2 (~$399), Quest 3 (~$499)",
-      "$550–$999 — ej: Pimax Crystal Light (~$699), Pico 4 Ultra (~$708)",
-      "Más de $999 — ej: Pimax Crystal Super (~$2.000)"
+      "Menos de $400 — ej: Quest 3S (~$350)",
+      "$400–$650 — ej: PSVR2 (~$400), Quest 3 (~$600)",
+      "$650–$1000 — ej: Pimax Crystal Light (~$700+), Pico 4 Ultra (~$708)",
+      "Más de $1000 — ej: Pimax Crystal Super (~$2.000)"
     ],
     scores: QUESTIONS_EN[1].scores
   },
@@ -219,7 +219,7 @@ const HEADSETS = {
   quest3s: {
     name: "Meta Quest 3S",
     nickname_en: '"The Smart Entry"', nickname_es: '"La entrada inteligente"',
-    price: "USD $299 (128GB) / $399 (256GB)",
+    price: "USD $349.99 (128GB) / $449.99 (256GB)",
     desc_en: "The Quest 3S shares the same Snapdragon XR2 Gen 2 chip and full app library as the Quest 3, at a significantly lower price. It's the perfect gateway to modern VR: fully standalone with color passthrough — no PC or console needed.",
     desc_es: "El Quest 3S comparte el mismo procesador Snapdragon XR2 Gen 2 y la biblioteca completa del Quest 3, a un precio significativamente menor. Es la puerta de entrada perfecta al VR moderno: standalone con passthrough color, sin PC ni consola.",
     link: "https://amzn.to/3ZOXTna",
@@ -228,7 +228,7 @@ const HEADSETS = {
   quest3: {
     name: "Meta Quest 3",
     nickname_en: '"The Best for Most People"', nickname_es: '"El mejor para la mayoría"',
-    price: "USD $499 (512GB)",
+    price: "USD $599.99 (512GB)",
     desc_en: "The Quest 3 is the most well-rounded standalone headset: sharp pancake lenses, quality color passthrough, and the best VR app ecosystem. No PC or console required — the top pick by specialized media in 2024–2025.",
     desc_es: "El Quest 3 es el headset standalone más equilibrado: lentes pancake de alta nitidez, passthrough color de calidad y el mejor ecosistema de apps VR. Sin PC ni consola — el más recomendado por medios especializados en 2024–2025.",
     link: "https://amzn.to/4qZTU2k",
@@ -237,7 +237,7 @@ const HEADSETS = {
   psvr2: {
     name: "PlayStation VR2",
     nickname_en: '"The PS5 Gamer"', nickname_es: '"El gamer de PS5"',
-    price: "USD $399",
+    price: "USD $399.99",
     desc_en: "The PSVR2 takes VR gaming to the next level for PS5 owners: native eye tracking, haptic feedback in the headset, and adaptive triggers for unmatched immersion. Note: requires PS5 — not standalone, not PC-compatible.",
     desc_es: "El PSVR2 lleva el gaming VR a otro nivel para dueños de PS5: eye tracking nativo, feedback háptico y gatillos adaptativos para una inmersión sin igual. Requiere PS5 — no es standalone ni compatible con PC.",
     link: "https://amzn.to/3MyNyIZ",
@@ -246,7 +246,7 @@ const HEADSETS = {
   pimax: {
     name: "Pimax Crystal Light",
     nickname_en: '"The PCVR Clarity King"', nickname_es: '"El rey de la claridad PCVR"',
-    price: "USD ~$699",
+    price: "USD $699 / $899 (Local Dimming)",
     desc_en: "The community's top pick for PCVR value in 2025–2026: best visual clarity per dollar on the market, with a massive 115° FOV and glass aspheric lenses with a large sweet spot. Requires a gaming PC with at least an RTX 3070 and a USB-C cable connection. Highly recommended for sim racing and high-fidelity shooters.",
     desc_es: "La opción más recomendada por la comunidad PCVR en 2025–2026: mejor claridad visual por dólar del mercado, con FOV de 115° y lentes asféricas de cristal con un gran sweet spot. Requiere PC gamer con al menos RTX 3070 y conexión por cable USB-C. Especialmente recomendado para sim racing y shooters de alto rendimiento.",
     link: "https://tidd.ly/3OBHHDk",
