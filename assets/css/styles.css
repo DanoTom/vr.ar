@@ -794,3 +794,16 @@ body:not(.lang-es) .lang-label.es{color:var(--text-dim)}
   .acc-note{grid-column:1}
   .acc-toggle-sub{display:none}
 }
+
+/* ─── PERF: skip rendering of below-the-fold blocks until scrolled into view ─── */
+.home-guides, .faq-section { content-visibility: auto; contain-intrinsic-size: auto 420px; }
+
+/* ─── A11Y/PERF: honor reduced-motion (no visual change for everyone else) ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
