@@ -8,7 +8,7 @@
   --violet: #7b6fff;
   --gold: #ffb800;
   --text: #e8f0ff;
-  --text-dim: rgba(200,215,255,0.5);
+  --text-dim: rgba(200,215,255,0.62);
   --glow-c: 0 0 28px rgba(0,212,255,0.28);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
