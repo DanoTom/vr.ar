@@ -730,10 +730,10 @@ body:not(.lang-es) .lang-label.es{color:var(--text-dim)}
   padding-top:22px;border-top:1px solid rgba(255,255,255,0.06);
   display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
   gap:8px;text-align:center;
-  font-size:0.72rem;color:rgba(200,215,255,0.32);line-height:1.6;
+  font-size:0.72rem;color:rgba(200,215,255,0.6);line-height:1.6;
   position:relative;z-index:1;
 }
-.site-footer a{color:rgba(0,212,255,0.5);text-decoration:none;transition:color 0.2s ease}
+.site-footer a{color:rgba(0,212,255,0.78);text-decoration:none;transition:color 0.2s ease}
 .site-footer a:hover{color:var(--cyan)}
 .site-footer-sep{opacity:0.4}
 

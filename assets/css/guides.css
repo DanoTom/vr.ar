@@ -42,6 +42,8 @@
 .guide ul{ padding-left:22px; }
 .guide strong{ color:#fff; font-weight:600; }
 .guide a{ color:var(--cyan); }
+/* buttons must keep dark text on their bright gradients (beat .guide a) */
+.guide a.guide-buy, .guide a.btn-quiz{ color:#000; }
 
 /* callout / verdict box */
 .guide-box{ border:1px solid var(--border); background:rgba(0,212,255,0.045); border-radius:14px; padding:18px 22px; margin:24px 0; }
@@ -59,7 +61,7 @@
 .btn-quiz{ display:inline-block; padding:15px 42px; background:linear-gradient(135deg,var(--cyan),var(--violet)); color:#000; font-family:'Orbitron',monospace; font-size:0.72rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; border-radius:13px; text-decoration:none; transition:transform 0.2s ease; box-shadow:0 4px 24px rgba(0,212,255,0.3); }
 .btn-quiz:hover{ transform:translateY(-2px); color:#000; }
 
-.guide-disclosure{ font-size:0.74rem; color:rgba(200,215,255,0.32); line-height:1.6; margin-top:28px; border-top:1px solid rgba(255,255,255,0.06); padding-top:18px; }
+.guide-disclosure{ font-size:0.74rem; color:rgba(200,215,255,0.6); line-height:1.6; margin-top:28px; border-top:1px solid rgba(255,255,255,0.06); padding-top:18px; }
 .guide-disclosure a{ color:rgba(0,212,255,0.55); }
 
 /* ad placeholder slot */
