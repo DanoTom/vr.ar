@@ -649,13 +649,16 @@ const HOME_GUIDES = [
     es: 'Qué necesitás de verdad para PCVR' },
   { en_slug: 'is-the-pimax-crystal-light-worth-it', es_slug: 'pimax-crystal-light-vale-la-pena',
     en: 'Is the Pimax Crystal Light worth it?',
-    es: '¿Vale la pena la Pimax Crystal Light?' }
+    es: '¿Vale la pena la Pimax Crystal Light?' },
+  { en_slug: 'best-vr-games-2026', es_slug: 'mejores-juegos-vr-2026',
+    en: '🎮 The Best VR Games (2026)',
+    es: '🎮 Los mejores juegos de VR (2026)' }
 ];
 
 function applyLangToHomeGuides() {
   const dir = currentLang === 'es' ? 'guias/' : 'guides/';
   const title = document.getElementById('home-guides-title');
-  if (title) title.textContent = currentLang === 'es' ? 'Guías y comparativas' : 'Guides & Comparisons';
+  if (title) title.textContent = currentLang === 'es' ? 'Guías y juegos' : 'Guides & Games';
   const all = document.getElementById('home-guides-all');
   if (all) { all.textContent = currentLang === 'es' ? 'Ver todas →' : 'View all →'; all.href = dir; }
   HOME_GUIDES.forEach((g, i) => {

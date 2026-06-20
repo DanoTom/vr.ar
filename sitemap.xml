@@ -93,6 +93,23 @@
   </url>
 
   <url>
+    <loc>https://vr.ar/guides/best-vr-games-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-vr-games-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejores-juegos-vr-2026.html"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/mejores-juegos-vr-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-vr-games-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejores-juegos-vr-2026.html"/>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://vr.ar/privacy.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>yearly</changefreq>
