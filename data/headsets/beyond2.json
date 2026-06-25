@@ -1,0 +1,34 @@
+{
+  "id": "beyond2",
+  "product_id": "bigscreen-beyond-2",
+  "name": "Bigscreen Beyond 2",
+  "brand": "Bigscreen",
+  "nickname": {
+    "en": "\"The Featherweight\"",
+    "es": "\"La pluma\""
+  },
+  "price": {
+    "label": "USD from $1,019",
+    "amount": "1019",
+    "currency": "USD",
+    "availability": "https://schema.org/InStock",
+    "valid_until": "2026-12-31"
+  },
+  "desc": {
+    "en": "The lightest premium PCVR headset ever made at just 107g — nearly 5× lighter than the Quest 3. Micro-OLED displays deliver 2560×2560 per eye with zero screen door effect. Next-gen pancake lenses with 116° FOV and edge-to-edge clarity. Requires SteamVR base stations, PC with RTX 3070+, and a 3D face scan for the custom-fit cushion. Tethered only.",
+    "es": "El headset PCVR premium más liviano del mercado con solo 107g — casi 5× más liviano que el Quest 3. Pantallas Micro-OLED con 2560×2560 por ojo sin efecto mosquitera. Lentes pancake de nueva generación con 116° FOV y claridad borde a borde. Requiere base stations de SteamVR, PC con RTX 3070+ y escaneo facial 3D para el cushion. Solo tethered."
+  },
+  "schema_description": "The world's lightest premium PCVR headset at 107g. Micro-OLED displays with 2560×2560 per eye, next-gen pancake lenses with 116° FOV and edge-to-edge clarity. Tethered PC VR via SteamVR. Requires base stations and controllers.",
+  "commerce": {
+    "url": "https://store.bigscreenvr.com/products/bigscreen-beyond-2",
+    "link_note": {
+      "en": "Available direct from Bigscreen",
+      "es": "Disponible directo de Bigscreen"
+    },
+    "btn_label": {
+      "en": "Visit Bigscreen Store →",
+      "es": "Ver en tienda Bigscreen →"
+    }
+  },
+  "image": "https://store.bigscreenvr.com//cdn//shop//files//Clear_with_Strap.webp?v=1743475007"
+}

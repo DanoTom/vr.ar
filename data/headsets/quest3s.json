@@ -1,0 +1,26 @@
+{
+  "id": "quest3s",
+  "product_id": "quest3s",
+  "name": "Meta Quest 3S",
+  "brand": "Meta",
+  "nickname": {
+    "en": "\"The Smart Entry\"",
+    "es": "\"La entrada inteligente\""
+  },
+  "price": {
+    "label": "USD $349.99 (128GB) / $449.99 (256GB)",
+    "amount": "349.99",
+    "currency": "USD",
+    "availability": "https://schema.org/InStock",
+    "valid_until": "2026-12-31"
+  },
+  "desc": {
+    "en": "The Quest 3S shares the same Snapdragon XR2 Gen 2 chip and full app library as the Quest 3, at a significantly lower price. It's the perfect gateway to modern VR: fully standalone with color passthrough — no PC or console needed.",
+    "es": "El Quest 3S comparte el mismo procesador Snapdragon XR2 Gen 2 y la biblioteca completa del Quest 3, a un precio significativamente menor. Es la puerta de entrada perfecta al VR moderno: standalone con passthrough color, sin PC ni consola."
+  },
+  "schema_description": "Standalone VR headset with Snapdragon XR2 Gen 2, full-color mixed reality passthrough, and access to the complete Meta Quest app library. No PC or console required.",
+  "commerce": {
+    "url": "https://amzn.to/3ZOXTna"
+  },
+  "image": "https://m.media-amazon.com/images/I/61-SGpdmgRL._SL1500_.jpg"
+}

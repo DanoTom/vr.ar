@@ -1,0 +1,34 @@
+{
+  "id": "pico4ultra",
+  "product_id": "pico4ultra",
+  "name": "Pico 4 Ultra",
+  "brand": "Pico",
+  "nickname": {
+    "en": "\"The Quest Alternative\"",
+    "es": "\"La alternativa al Quest\""
+  },
+  "price": {
+    "label": "USD ~$708",
+    "amount": "708",
+    "currency": "USD",
+    "availability": "https://schema.org/InStock",
+    "valid_until": "2026-12-31"
+  },
+  "desc": {
+    "en": "A powerful standalone headset with native eye tracking, Snapdragon XR2 Gen 2, and 2160×2160 per eye resolution with pancake lenses. Supports wireless PCVR streaming via Wi-Fi. The most compelling Quest 3 alternative for users in regions where Meta isn't dominant, or anyone who wants eye tracking at this price point.",
+    "es": "Un headset standalone potente con eye tracking nativo, Snapdragon XR2 Gen 2 y resolución de 2160×2160 por ojo con lentes pancake. Compatible con PCVR streaming inalámbrico vía Wi-Fi. La alternativa más sólida al Quest 3 para usuarios en regiones donde Meta no domina, o quienes buscan eye tracking a este precio."
+  },
+  "schema_description": "Standalone PCVR headset with Snapdragon XR2 Gen 2, native eye tracking, 2160×2160 per eye pancake lenses, and wireless PCVR streaming. A strong Meta Quest 3 alternative.",
+  "commerce": {
+    "url": "https://tidd.ly/4tXObfS",
+    "link_note": {
+      "en": "Best price via XR Shop (authorized reseller)",
+      "es": "Mejor precio en XR Shop (revendedor autorizado)"
+    },
+    "btn_label": {
+      "en": "View on XR Shop →",
+      "es": "Ver en XR Shop →"
+    }
+  },
+  "image": "https://xrshop.store/cdn/shop/files/PICO4UltraKVGForceNVIDIA.jpg?v=1764682594&width=1680"
+}

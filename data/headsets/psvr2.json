@@ -1,0 +1,26 @@
+{
+  "id": "psvr2",
+  "product_id": "psvr2",
+  "name": "PlayStation VR2",
+  "brand": "Sony",
+  "nickname": {
+    "en": "\"The PS5 Gamer\"",
+    "es": "\"El gamer de PS5\""
+  },
+  "price": {
+    "label": "USD $399.99",
+    "amount": "399.99",
+    "currency": "USD",
+    "availability": "https://schema.org/InStock",
+    "valid_until": "2026-12-31"
+  },
+  "desc": {
+    "en": "The PSVR2 takes VR gaming to the next level for PS5 owners: native eye tracking, haptic feedback in the headset, and adaptive triggers for unmatched immersion. Note: requires PS5 — not standalone, not PC-compatible.",
+    "es": "El PSVR2 lleva el gaming VR a otro nivel para dueños de PS5: eye tracking nativo, feedback háptico y gatillos adaptativos para una inmersión sin igual. Requiere PS5 — no es standalone ni compatible con PC."
+  },
+  "schema_description": "Premium VR headset for PS5 owners with native eye tracking, haptic feedback, and adaptive triggers. Requires PlayStation 5.",
+  "commerce": {
+    "url": "https://amzn.to/3MyNyIZ"
+  },
+  "image": "https://m.media-amazon.com/images/I/517CoPDzOpL._AC_SL1500_.jpg"
+}

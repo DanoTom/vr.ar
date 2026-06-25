@@ -215,6 +215,7 @@ const QUESTIONS_ES = [
   }
 ];
 
+// ─── AUTOGEN:HEADSETS — generated from data/headsets/*.json by build.py · do not edit by hand ───
 const HEADSETS = {
   quest3s: {
     name: "Meta Quest 3S",
@@ -296,6 +297,7 @@ const HEADSETS = {
     img: "https://store.bigscreenvr.com//cdn//shop//files//Clear_with_Strap.webp?v=1743475007"
   }
 };
+// ─── /AUTOGEN:HEADSETS ───
 
 const SVG_ICONS = {
   quest3s:`<svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><filter id="gs1"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g filter="url(#gs1)" fill="none" stroke="#00d4ff" stroke-width="2"><rect x="30" y="56" width="140" height="48" rx="24" fill="rgba(0,212,255,0.08)" stroke-width="1.5"/><ellipse cx="68" cy="80" rx="22" ry="22" fill="rgba(0,212,255,0.15)"/><ellipse cx="132" cy="80" rx="22" ry="22" fill="rgba(0,212,255,0.15)"/><line x1="90" y1="80" x2="110" y2="80" stroke-width="3"/><circle cx="68" cy="80" r="10" fill="rgba(0,212,255,0.3)"/><circle cx="132" cy="80" r="10" fill="rgba(0,212,255,0.3)"/></g></svg>`,

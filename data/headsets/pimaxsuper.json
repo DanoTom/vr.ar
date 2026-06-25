@@ -1,0 +1,34 @@
+{
+  "id": "pimaxsuper",
+  "product_id": "pimax-crystal-super",
+  "name": "Pimax Crystal Super",
+  "brand": "Pimax",
+  "nickname": {
+    "en": "\"The Uncompromising\"",
+    "es": "\"El sin concesiones\""
+  },
+  "price": {
+    "label": "USD ~$2,000",
+    "amount": "2000",
+    "currency": "USD",
+    "availability": "https://schema.org/InStock",
+    "valid_until": "2026-12-31"
+  },
+  "desc": {
+    "en": "The most advanced consumer PCVR headset available: 3,840×3,840 px per eye, ultrawide FOV, and integrated eye tracking. Built for users who refuse to compromise on visual fidelity. Requires a gaming PC with an RTX 4070 or better. Especially recommended for sim racing, flight simulators, and demanding PCVR experiences.",
+    "es": "El headset PCVR consumer más avanzado del mercado: 3.840×3.840 px por ojo, FOV ultrawide y eye tracking integrado. Para usuarios exigentes que no hacen concesiones en calidad visual. Requiere PC gamer con RTX 4070 o superior. Especialmente recomendado para sim racing, simuladores de vuelo y experiencias PCVR exigentes."
+  },
+  "schema_description": "The most advanced consumer PCVR headset: 3840×3840 per eye, ultrawide FOV, integrated eye tracking, and 6DOF tracking. For users who demand maximum visual fidelity. Requires RTX 4070 or better.",
+  "commerce": {
+    "url": "https://tidd.ly/4bcuiuc",
+    "link_note": {
+      "en": "Best price via XR Shop (authorized reseller)",
+      "es": "Mejor precio en XR Shop (revendedor autorizado)"
+    },
+    "btn_label": {
+      "en": "View on XR Shop →",
+      "es": "Ver en XR Shop →"
+    }
+  },
+  "image": "https://m.media-amazon.com/images/I/51xwSaEuz0L._AC_SL1500_.jpg"
+}

@@ -1,0 +1,32 @@
+{
+  "_comment": "Display orderings for build.py. Editorial, not facts. Add a new headset id to each list to place it.",
+  "headset_order": {
+    "finder": [
+      "quest3s",
+      "quest3",
+      "psvr2",
+      "pimax",
+      "pimaxsuper",
+      "pico4ultra",
+      "beyond2"
+    ],
+    "product_ld": [
+      "beyond2",
+      "quest3s",
+      "quest3",
+      "psvr2",
+      "pico4ultra",
+      "pimax",
+      "pimaxsuper"
+    ],
+    "itemlist": [
+      "quest3",
+      "quest3s",
+      "psvr2",
+      "pico4ultra",
+      "pimax",
+      "pimaxsuper",
+      "beyond2"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "quest3",
+  "product_id": "quest3",
+  "name": "Meta Quest 3",
+  "brand": "Meta",
+  "nickname": {
+    "en": "\"The Best for Most People\"",
+    "es": "\"El mejor para la mayoría\""
+  },
+  "price": {
+    "label": "USD $599.99 (512GB)",
+    "amount": "599.99",
+    "currency": "USD",
+    "availability": "https://schema.org/InStock",
+    "valid_until": "2026-12-31"
+  },
+  "desc": {
+    "en": "The Quest 3 is the most well-rounded standalone headset: sharp pancake lenses, quality color passthrough, and the best VR app ecosystem. No PC or console required — the top pick by specialized media in 2024–2025.",
+    "es": "El Quest 3 es el headset standalone más equilibrado: lentes pancake de alta nitidez, passthrough color de calidad y el mejor ecosistema de apps VR. Sin PC ni consola — el más recomendado por medios especializados en 2024–2025."
+  },
+  "schema_description": "The most well-rounded standalone VR headset of 2024–2025. Features Snapdragon XR2 Gen 2, pancake lenses with 2064×2208 resolution per eye, and full color mixed reality passthrough. No PC or console required.",
+  "commerce": {
+    "url": "https://amzn.to/4qZTU2k"
+  },
+  "image": "https://m.media-amazon.com/images/I/61nkctF66PL._SL1500_.jpg"
+}
