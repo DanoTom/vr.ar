@@ -525,6 +525,7 @@ const UI_TEXT = {
     updatedBadge: '2026 Edition',
     affiliateNotice: '🔗 Affiliate link — you pay the same price.',
     footerGuides: 'Guides',
+    footerAbout: 'About',
     footerPrivacy: 'Privacy Policy',
     footerDisclosure: 'As an Amazon Associate, vr.ar earns from qualifying purchases.',
     accTitle: 'Recommended Gear',
@@ -571,6 +572,7 @@ const UI_TEXT = {
     updatedBadge: 'Edición 2026',
     affiliateNotice: '🔗 Link de afiliado — pagás el mismo precio.',
     footerGuides: 'Guías',
+    footerAbout: 'Quiénes somos',
     footerPrivacy: 'Política de privacidad',
     footerDisclosure: 'Como Afiliado de Amazon, vr.ar gana con las compras que cumplen los requisitos.',
     accTitle: 'Accesorios recomendados',
@@ -688,6 +690,8 @@ function applyLangToIntro() {
   if (ng) { ng.textContent = t.footerGuides; ng.href = currentLang === 'es' ? 'guias/' : 'guides/'; }
   const fg = document.getElementById('footer-guides');
   if (fg) { fg.textContent = t.footerGuides; fg.href = currentLang === 'es' ? 'guias/' : 'guides/'; }
+  const fa = document.getElementById('footer-about');
+  if (fa) fa.textContent = t.footerAbout;
   const fp = document.getElementById('footer-privacy');
   if (fp) fp.textContent = t.footerPrivacy;
   const fd = document.getElementById('footer-disclosure');
