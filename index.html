@@ -469,6 +469,17 @@
 
 <script src="assets/js/app.js"></script>
 
-
+<script>
+/* Soft language default: if the visitor's browser is set to Spanish and they
+   haven't chosen a language yet, show the site in Spanish from the start.
+   Search engines crawl in English and keep seeing the English version, and
+   nothing is stored — this only sets the initial language for the visit. */
+(function () {
+  try {
+    var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    if (lang.indexOf('es') === 0 && typeof setLang === 'function') setLang('es');
+  } catch (e) {}
+})();
+</script>
 
 </body></html>
