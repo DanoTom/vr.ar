@@ -46,6 +46,20 @@
 /* buttons must keep dark text on their bright gradients (beat .guide a) */
 .guide a.guide-buy, .guide a.btn-quiz{ color:#000; }
 
+/* ─── Move 2: pillar overview + comparison table on the guide hubs ─── */
+.guide-pillar{ margin:6px 0 40px; }
+.guide-pillar h2{ font-family:'Unbounded',sans-serif; font-size:1.5rem; color:#fff; margin:14px 0 14px; line-height:1.25; }
+.guide-pillar h3{ color:var(--cyan); font-size:1.08rem; font-weight:600; margin:26px 0 8px; }
+.guide-pillar p{ font-size:0.97rem; line-height:1.8; color:rgba(200,215,255,0.78); margin-bottom:14px; }
+.guide-pillar a{ color:var(--cyan); }
+.pillar-table-wrap{ overflow-x:auto; margin:18px 0 10px; -webkit-overflow-scrolling:touch; }
+.pillar-table{ width:100%; border-collapse:collapse; font-size:0.9rem; min-width:540px; }
+.pillar-table th, .pillar-table td{ text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+.pillar-table th{ color:var(--cyan); font-weight:600; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; }
+.pillar-table td{ color:rgba(200,215,255,0.8); }
+.pillar-table tbody tr td:first-child{ color:#fff; font-weight:600; white-space:nowrap; }
+.pillar-table tbody tr:last-child td{ border-bottom:none; }
+
 /* callout / verdict box */
 .guide-box{ border:1px solid var(--border); background:rgba(0,212,255,0.045); border-radius:14px; padding:18px 22px; margin:24px 0; }
 .guide-box-label{ font-family:'Orbitron',monospace; font-size:0.56rem; letter-spacing:0.28em; text-transform:uppercase; color:var(--cyan); margin-bottom:8px; }
