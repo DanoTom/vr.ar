@@ -868,6 +868,22 @@ function nextQuestion() {
   }
 }
 
+// ─── Move 1: map each recommended headset to its most relevant guide ───
+const RESULT_GUIDES = {
+  questvs: { en: ['quest-3-vs-quest-3s', 'Quest 3 vs Quest 3S'],
+             es: ['quest-3-vs-quest-3s', 'Quest 3 vs Quest 3S'] },
+  ps5:     { en: ['best-vr-for-ps5', 'Best VR for PS5'],
+             es: ['mejor-vr-para-ps5', 'Mejor VR para PS5'] },
+  pimax:   { en: ['is-the-pimax-crystal-light-worth-it', 'Is the Pimax Crystal Light worth it?'],
+             es: ['pimax-crystal-light-vale-la-pena', '¿Vale la pena la Pimax Crystal Light?'] },
+  pcvr:    { en: ['what-you-need-for-pcvr', 'What you actually need for PCVR'],
+             es: ['que-necesitas-para-pcvr', 'Qué necesitás para PCVR'] }
+};
+const HEADSET_GUIDE = {
+  quest3: 'questvs', quest3s: 'questvs', psvr2: 'ps5',
+  pimax: 'pimax', pimaxsuper: 'pcvr', beyond2: 'pcvr', pico4ultra: null
+};
+
 function showResults() {
   document.getElementById('quiz').style.display = 'none';
 
@@ -945,6 +961,24 @@ function renderResults() {
   document.getElementById('txt-copy-btn').textContent = t.copyBtn;
   document.getElementById('footnote-text').innerHTML = t.footnote('https://vr.ar');
   updateShareLinks(primary.name);
+
+  // Move 1: contextual guide link — give the result a way forward into our guides
+  const guideCta = document.getElementById('res-guide-cta');
+  if (guideCta) {
+    const gdir = currentLang === 'es' ? 'guias/' : 'guides/';
+    const gid = HEADSET_GUIDE[lastSorted[0]];
+    const gtext = document.getElementById('res-guide-cta-text');
+    if (gid) {
+      const g = RESULT_GUIDES[gid][currentLang];
+      guideCta.href = gdir + g[0] + '.html';
+      gtext.textContent = (currentLang === 'es' ? 'Leé nuestra guía: ' : 'Read our guide: ') + g[1] + ' →';
+    } else {
+      guideCta.href = gdir;
+      gtext.textContent = currentLang === 'es' ? 'Mirá todas nuestras guías de VR →' : 'Explore all our VR guides →';
+    }
+    guideCta.style.display = '';
+  }
+
   renderAccessories(lastSorted[0]);
   renderOSCompatNotice(lastSorted[0]);
 }

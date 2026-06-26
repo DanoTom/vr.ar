@@ -798,6 +798,24 @@ body:not(.lang-es) .lang-label.es{color:var(--text-dim)}
 /* ─── PERF: skip rendering of below-the-fold blocks until scrolled into view ─── */
 .home-guides, .faq-section { content-visibility: auto; contain-intrinsic-size: auto 420px; }
 
+/* ─── Move 1: contextual guide link on the result screen ─── */
+.result-guide-cta{
+  display:flex; align-items:center; gap:10px;
+  margin:18px auto 0; max-width:760px; padding:14px 18px;
+  border:1px solid rgba(0,212,255,0.28); border-radius:14px;
+  background:rgba(0,212,255,0.06);
+  color:#dff6ff; text-decoration:none;
+  font-family:'Exo 2',sans-serif; font-size:0.98rem; line-height:1.3;
+  transition:background .2s, border-color .2s, transform .2s;
+}
+.result-guide-cta:hover{
+  background:rgba(0,212,255,0.12);
+  border-color:rgba(0,212,255,0.5);
+  transform:translateY(-1px);
+}
+.result-guide-cta-icon{font-size:1.15rem; flex:0 0 auto}
+.result-guide-cta-text{font-weight:500}
+
 /* ─── A11Y/PERF: honor reduced-motion (no visual change for everyone else) ─── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
