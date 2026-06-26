@@ -175,6 +175,7 @@ body:not(.lang-es) .lang-label.es{color:var(--text-dim)}
   font-weight:800;
   line-height:0.95;
   letter-spacing:-0.03em;
+  text-wrap:balance;
   margin-bottom:clamp(18px,3vw,30px);
   position:relative;z-index:1;
   opacity:0;animation:fadeUp 0.8s 0.2s ease forwards;
