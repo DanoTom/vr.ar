@@ -654,6 +654,9 @@ const HOME_GUIDES = [
   { en_slug: 'is-the-pimax-crystal-light-worth-it', es_slug: 'pimax-crystal-light-vale-la-pena',
     en: 'Is the Pimax Crystal Light worth it?',
     es: '¿Vale la pena la Pimax Crystal Light?' },
+  { en_slug: 'how-to-clean-quest-3-lenses', es_slug: 'como-limpiar-quest-3-lentes',
+    en: 'How to clean your Quest 3 lenses without ruining them',
+    es: 'Cómo limpiar las lentes de las Quest 3 sin arruinarlas' },
   { en_slug: 'best-vr-games-2026', es_slug: 'mejores-juegos-vr-2026',
     en: '🎮 The Best VR Games (2026)',
     es: '🎮 Los mejores juegos de VR (2026)' }

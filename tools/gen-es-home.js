@@ -30,6 +30,7 @@ const ES = {
   ogTitle:'VR Finder — ¿Qué visor de VR es ideal para vos?',
   ogDesc: 'Hacé nuestro test de 7 preguntas y encontrá tu visor de VR ideal. Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax Crystal Light y Super — Edición 2026.',
   twDesc: 'Test de 7 preguntas. Recomendación personalizada de visor VR. Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax Crystal Light y Super — Edición 2026.',
+  ogImage: 'https://vr.ar/og-image-es.jpg',
   url: 'https://vr.ar/es/', home: 'https://vr.ar/',
 };
 
@@ -77,6 +78,8 @@ function serve(root) {
     set('meta[name="twitter:url"]', 'content', ES.url);
     set('meta[name="twitter:title"]', 'content', ES.ogTitle);
     set('meta[name="twitter:description"]', 'content', ES.twDesc);
+    set('meta[property="og:image"]', 'content', ES.ogImage);
+    set('meta[name="twitter:image"]', 'content', ES.ogImage);
     // hreflang: ensure exactly the reciprocal set (index.html already ships these, so clear first)
     head.querySelectorAll('link[rel="alternate"][hreflang]').forEach(l => l.remove());
     [['en', ES.home], ['es', ES.url], ['x-default', ES.home]].forEach(([l, h]) => {
