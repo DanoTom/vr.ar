@@ -770,6 +770,7 @@ body:not(.lang-es) .lang-label.es{color:var(--text-dim)}
   border-color:var(--border-hover);transform:translateY(-2px);
   background:rgba(0,212,255,0.05);color:#fff;
 }
+.hg-games{grid-column:1 / -1;text-align:center}
 @media(max-width:560px){.home-guides-grid{grid-template-columns:1fr}}
 
 @media(max-width:600px) {
