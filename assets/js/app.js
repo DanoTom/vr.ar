@@ -657,6 +657,9 @@ const HOME_GUIDES = [
   { en_slug: 'how-to-clean-quest-3-lenses', es_slug: 'como-limpiar-quest-3-lentes',
     en: 'How to clean your Quest 3 lenses without ruining them',
     es: 'Cómo limpiar las lentes de las Quest 3 sin arruinarlas' },
+  { en_slug: 'how-to-connect-quest-3-to-pc', es_slug: 'como-conectar-quest-3-pc',
+    en: 'How to connect your Quest 3 to a PC (Link & Air Link)',
+    es: 'Cómo conectar las Quest 3 a la PC (Link y Air Link)' },
   { en_slug: 'best-vr-games-2026', es_slug: 'mejores-juegos-vr-2026',
     en: '🎮 The Best VR Games (2026)',
     es: '🎮 Los mejores juegos de VR (2026)' }
