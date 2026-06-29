@@ -156,6 +156,23 @@
   </url>
 
   <url>
+    <loc>https://vr.ar/guides/how-to-connect-quest-3-to-pc-wirelessly.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/how-to-connect-quest-3-to-pc-wirelessly.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/como-conectar-quest-3-pc-sin-cable.html"/>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/como-conectar-quest-3-pc-sin-cable.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/how-to-connect-quest-3-to-pc-wirelessly.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/como-conectar-quest-3-pc-sin-cable.html"/>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://vr.ar/about.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
