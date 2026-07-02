@@ -173,6 +173,23 @@
   </url>
 
   <url>
+    <loc>https://vr.ar/guides/vr-motion-sickness.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/vr-motion-sickness.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mareos-realidad-virtual.html"/>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/mareos-realidad-virtual.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/vr-motion-sickness.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mareos-realidad-virtual.html"/>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://vr.ar/about.html</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
