@@ -190,6 +190,23 @@
   </url>
 
   <url>
+    <loc>https://vr.ar/guides/quest-3-battery-life</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/quest-3-battery-life"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/bateria-quest-3-dura-poco"/>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/bateria-quest-3-dura-poco</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/quest-3-battery-life"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/bateria-quest-3-dura-poco"/>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://vr.ar/about</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
