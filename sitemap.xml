@@ -207,6 +207,23 @@
   </url>
 
   <url>
+    <loc>https://vr.ar/guides/using-vr-with-glasses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/using-vr-with-glasses"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/vr-con-anteojos"/>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/vr-con-anteojos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/using-vr-with-glasses"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/vr-con-anteojos"/>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://vr.ar/about</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>yearly</changefreq>
