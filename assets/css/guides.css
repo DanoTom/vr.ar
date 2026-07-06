@@ -82,7 +82,8 @@
 /* ad placeholder slot */
 /* In-article ad slot: collapsed while empty; the real ad unit sizes itself */
 .ad-slot{ margin:0; min-height:0; display:flex; align-items:center; justify-content:center; }
-.ad-slot:not(:empty){ margin:30px 0; }
+.ad-slot:not(:empty){ margin:30px 0; display:block; }
+.ad-slot .adsbygoogle{ display:block; width:100%; }
 
 /* hub listing */
 .guide-hub-head{ text-align:center; margin:34px 0 38px; }
