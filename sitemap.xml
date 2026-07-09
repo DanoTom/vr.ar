@@ -207,6 +207,23 @@
   </url>
 
   <url>
+    <loc>https://vr.ar/guides/best-quest-3-accessories</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-quest-3-accessories"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejores-accesorios-quest-3"/>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/mejores-accesorios-quest-3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-quest-3-accessories"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejores-accesorios-quest-3"/>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://vr.ar/guides/using-vr-with-glasses</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/using-vr-with-glasses"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/vr-con-anteojos"/>
