@@ -26,7 +26,7 @@ const ROOT = path.resolve(__dirname, '..');
 
 const ES = {
   title:  'VR Finder — Encontrá tu visor de realidad virtual ideal | vr.ar',
-  desc:   'Respondé 7 preguntas rápidas y obtené una recomendación personalizada de visor de VR. Comparamos Meta Quest 3, Quest 3S, PlayStation VR2, Pico 4 Ultra, Pimax Crystal Light y Super — Edición 2026.',
+  desc:   'Respondé 7 preguntas y encontrá tu visor de VR ideal — Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax y más. Gratis, en 60 segundos.',
   ogTitle:'VR Finder — ¿Qué visor de VR es ideal para vos?',
   ogDesc: 'Hacé nuestro test de 7 preguntas y encontrá tu visor de VR ideal. Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax Crystal Light y Super — Edición 2026.',
   twDesc: 'Test de 7 preguntas. Recomendación personalizada de visor VR. Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax Crystal Light y Super — Edición 2026.',
