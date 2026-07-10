@@ -645,21 +645,18 @@ const HOME_GUIDES = [
   { en_slug: 'quest-3-vs-quest-3s', es_slug: 'quest-3-vs-quest-3s',
     en: 'Quest 3 vs Quest 3S: which one should you actually buy?',
     es: 'Quest 3 vs Quest 3S: ¿cuál te conviene de verdad?' },
-  { en_slug: 'best-vr-for-ps5', es_slug: 'mejor-vr-para-ps5',
-    en: 'Best VR for PS5: the honest answer to a one-horse race',
-    es: 'Mejor VR para PS5: la verdad que casi nadie te dice' },
-  { en_slug: 'what-you-need-for-pcvr', es_slug: 'que-necesitas-para-pcvr',
-    en: 'What you actually need for PCVR',
-    es: 'Qué necesitás de verdad para PCVR' },
-  { en_slug: 'is-the-pimax-crystal-light-worth-it', es_slug: 'pimax-crystal-light-vale-la-pena',
-    en: 'Is the Pimax Crystal Light worth it?',
-    es: '¿Vale la pena la Pimax Crystal Light?' },
+  { en_slug: 'vr-motion-sickness', es_slug: 'mareos-realidad-virtual',
+    en: 'VR motion sickness: how to get your VR legs',
+    es: 'Mareos en VR: cómo sacarte las piernas virtuales' },
+  { en_slug: 'best-quest-3-accessories', es_slug: 'mejores-accesorios-quest-3',
+    en: 'The best Quest 3 accessories (actually worth buying)',
+    es: 'Los mejores accesorios para Quest 3 (los que valen la pena)' },
+  { en_slug: 'quest-3-battery-life', es_slug: 'bateria-quest-3-dura-poco',
+    en: 'Why your Quest 3 battery dies so fast',
+    es: 'Por qué la batería de las Quest 3 dura tan poco' },
   { en_slug: 'how-to-clean-quest-3-lenses', es_slug: 'como-limpiar-quest-3-lentes',
     en: 'How to clean your Quest 3 lenses without ruining them',
     es: 'Cómo limpiar las lentes de las Quest 3 sin arruinarlas' },
-  { en_slug: 'how-to-connect-quest-3-to-pc', es_slug: 'como-conectar-quest-3-pc',
-    en: 'How to connect your Quest 3 to a PC (Link & Air Link)',
-    es: 'Cómo conectar las Quest 3 a la PC (Link y Air Link)' },
   { en_slug: 'best-vr-games-2026', es_slug: 'mejores-juegos-vr-2026',
     en: '🎮 The Best VR Games (2026)',
     es: '🎮 Los mejores juegos de VR (2026)' }
@@ -887,11 +884,17 @@ const RESULT_GUIDES = {
   pimax:   { en: ['is-the-pimax-crystal-light-worth-it', 'Is the Pimax Crystal Light worth it?'],
              es: ['pimax-crystal-light-vale-la-pena', '¿Vale la pena la Pimax Crystal Light?'] },
   pcvr:    { en: ['what-you-need-for-pcvr', 'What you actually need for PCVR'],
-             es: ['que-necesitas-para-pcvr', 'Qué necesitás para PCVR'] }
+             es: ['que-necesitas-para-pcvr', 'Qué necesitás para PCVR'] },
+  accessories: { en: ['best-quest-3-accessories', 'The best Quest 3 accessories'],
+                 es: ['mejores-accesorios-quest-3', 'Los mejores accesorios para Quest 3'] }
 };
 const HEADSET_GUIDE = {
   quest3: 'questvs', quest3s: 'questvs', psvr2: 'ps5',
-  pimax: 'pimax', pimaxsuper: 'pcvr', beyond2: 'pcvr', pico4ultra: null
+  pimax: 'pimax', pimaxsuper: 'pcvr', beyond2: 'pcvr', pico4ultra: 'pcvr'
+};
+// second, complementary guide per result (the accessories guide for Quest owners-to-be)
+const HEADSET_GUIDE_2 = {
+  quest3: 'accessories', quest3s: 'accessories'
 };
 
 function showResults() {
@@ -987,6 +990,22 @@ function renderResults() {
       gtext.textContent = currentLang === 'es' ? 'Mirá todas nuestras guías de VR →' : 'Explore all our VR guides →';
     }
     guideCta.style.display = '';
+  }
+
+  // second, complementary guide link (e.g. accessories for Quest results)
+  const guideCta2 = document.getElementById('res-guide-cta-2');
+  if (guideCta2) {
+    const gdir2 = currentLang === 'es' ? 'guias/' : 'guides/';
+    const gid2 = HEADSET_GUIDE_2[lastSorted[0]];
+    const gtext2 = document.getElementById('res-guide-cta-2-text');
+    if (gid2) {
+      const g2 = RESULT_GUIDES[gid2][currentLang];
+      guideCta2.href = gdir2 + g2[0] + '.html';
+      gtext2.textContent = (currentLang === 'es' ? 'Y para equiparlo: ' : 'And to gear it up: ') + g2[1] + ' →';
+      guideCta2.style.display = '';
+    } else {
+      guideCta2.style.display = 'none';
+    }
   }
 
   renderAccessories(lastSorted[0]);
