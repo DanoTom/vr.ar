@@ -67,7 +67,7 @@ const QUESTIONS_EN = [
     scores: [
       {quest3s:4,  quest3:-1, psvr2:-2, pimax:-5, pimaxsuper:-8, pico4ultra:-5, beyond2:-8},
       {quest3s:1,  quest3:3,  psvr2:2,  pimax:-2, pimaxsuper:-5, pico4ultra:-2, beyond2:-5},
-      {quest3s:-1, quest3:0,  psvr2:0,  pimax:5,  pimaxsuper:-2, pico4ultra:5,  beyond2:-2},
+      {quest3s:-1, quest3:0,  psvr2:0,  pimax:5,  pimaxsuper:-6, pico4ultra:5,  beyond2:-6},
       {quest3s:-3, quest3:-1, psvr2:-1, pimax:0,  pimaxsuper:6,  pico4ultra:-3, beyond2:4}
     ]
   },
