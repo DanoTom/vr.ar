@@ -10,7 +10,90 @@
 
 ---
 
-## Temporada agosto–septiembre 2026 (evergreen / ala AR)
+## Prioridad agosto 2026 — respaldados por datos de búsqueda
+
+> **Origen:** investigación de palabras clave en Bing Webmaster Tools (julio 2026).
+> Los números son impresiones de Bing en 3 meses; **sirven para comparar términos entre
+> sí, no como volumen absoluto** (Bing es una porción chica del mercado; en Google el
+> volumen real es bastante mayor).
+>
+> **Hallazgo de vocabulario (aplicado ya a los metadatos de las 14 páginas ES):** el
+> público no busca "visor". Busca **"gafas de realidad virtual"** (818, España),
+> **"lentes de realidad virtual"** (795, Latinoamérica) y **"gafas vr"** (533). Seguimos
+> escribiendo "visor" en el cuerpo —es nuestra voz— pero **todo título y descripción
+> nueva debe capturar "lentes" o "gafas"** donde sea natural.
+
+### A. ¿Qué es la realidad virtual? — CONOCIMIENTO BASE
+
+- **Búsqueda:** "que es la realidad virtual" (677) + "tecnologías de realidad virtual"
+  (8,3K) + "virtual reality" (14,5K en inglés).
+- **Slugs:** `guias/que-es-la-realidad-virtual.html` ·
+  `guides/what-is-virtual-reality.html`
+- **Ángulo:** la puerta de entrada del sitio. Explicación desde cero para alguien que no
+  sabe nada: qué es, cómo funciona (pantallas + seguimiento de cabeza, por qué el cerebro
+  se lo cree), qué se siente realmente la primera vez, para qué se usa hoy más allá de
+  los juegos, qué hace falta para probarla y cuánto cuesta. Honestidad marca de la casa:
+  qué NO es (no es el metaverso, no te "metés" en internet, no reemplaza a la compu).
+- **Estructura:** qué es en una frase → cómo te engaña el cerebro → qué se siente la
+  primera vez → para qué se usa (juegos, fitness, cine, trabajo, salud) → qué necesitás y
+  cuánto sale → mitos → CTA quiz.
+- **Datos a chequear:** precios vigentes de entrada (Quest 3S), que los ejemplos de uso
+  sigan existiendo.
+- **Enlaces:** cornerstone VR/AR/MR (fuerte, ida y vuelta), mareos, vale la pena, quiz.
+  Sin afiliados o solo el de entrada. Disclosure corta.
+- **Título objetivo:** debe contener "qué es la realidad virtual"; la descripción suma
+  "lentes/gafas de realidad virtual".
+- **Prompt de imagen:** "Wide 3:2 editorial illustration: a person wearing a VR headset in
+  a simple room, with a soft translucent bubble of another world (mountains, space)
+  blooming around them, showing both realities at once; calm, explanatory, no logos, no
+  text."
+- **Publicar:** **primera quincena de agosto 2026** — es el artículo #1 del mes.
+
+### B. ¿Qué es la realidad aumentada? — CONOCIMIENTO BASE + puerta del ala AR
+
+- **Búsqueda:** "que es la realidad aumentada" (388) + "realidad aumentada" (2,4K) +
+  "realidad virtual y aumentada" (503, ya cubierta por el cornerstone).
+- **Slugs:** `guias/que-es-la-realidad-aumentada.html` ·
+  `guides/what-is-augmented-reality.html`
+- **Ángulo:** la AR que ya usás sin saberlo (filtros de Instagram, Pokémon GO, la app de
+  medir, las flechas de Google Maps) → cómo funciona → dónde se está usando en serio
+  (salud, educación, industria) → y la parte honesta: los anteojos AR de las publicidades
+  todavía no existen como producto de consumo.
+- **Estructura:** qué es en una frase → los ejemplos que ya usaste → cómo funciona →
+  dónde se usa en serio → qué podés probar hoy gratis con el celular → qué falta para los
+  anteojos → CTA cornerstone + quiz.
+- **Datos a chequear:** estado de Ray-Ban Display (precio, países), apps AR vivas antes de
+  nombrarlas.
+- **Enlaces:** cornerstone (fuerte), "qué es la realidad virtual" (hermana), y más
+  adelante los artículos de AR en medicina y educación. Sin afiliados.
+- **Prompt de imagen:** "Wide 3:2 illustration: a hand holding a phone over a city street,
+  the screen showing the same street with floating digital arrows, labels and a 3D object;
+  the world beyond the phone plain and real; no brand logos, no text."
+- **Publicar:** **segunda quincena de agosto 2026** — artículo #2 del mes, y con este
+  arranca de verdad el ala de AR.
+
+> **Nota de reprioritización (julio 2026):** estos dos desplazan a "AR en la medicina"
+> como arranque del ala AR. Motivo: tienen demanda de búsqueda demostrada, mientras que
+> medicina/educación eran una apuesta editorial. Medicina y educación siguen en pie, más
+> abajo, para septiembre–octubre.
+
+### C. Otros términos detectados, sin brief todavía
+
+- **"lentes/gafas de realidad virtual" como página propia** (≈2,1K sumando variantes,
+  intención de compra clara): por ahora lo atacamos con los metadatos del hub y de la
+  home ES. Si en octubre el hub no sube, evaluar una página dedicada tipo
+  "Qué lentes de realidad virtual comprar".
+- **"tecnologías de realidad virtual"** (8,3K): término amplio y algo académico; puede
+  ser una sección dentro de "¿Qué es la realidad virtual?" antes que artículo propio.
+- **"meta quest casting"** (5,1K, inglés): cómo transmitir lo que ves a la tele o al
+  celular. Candidato a guía práctica de Quest, sin urgencia.
+- Descartados por ahora: casi todo el racimo de "meta quest" (navegacional: gente
+  buscando la app o la tienda de Meta, no consejo de compra) y "vr ar" (mayormente
+  tráfico japonés).
+
+---
+
+## Temporada septiembre–octubre 2026 (evergreen / ala AR)
 
 ### 1. AR en la medicina y la salud: qué es real hoy
 
@@ -35,7 +118,7 @@
 - **Prompt de imagen:** "Wide 3:2 illustration, clean editorial style: a surgeon wearing a
   sleek AR headset sees translucent holographic anatomy floating over a patient in a
   modern operating room; cool blue/teal palette, no brand logos, no text."
-- **Publicar:** agosto 2026.
+- **Publicar:** septiembre 2026.
 
 ### 2. AR en la educación: aulas con capas digitales
 
@@ -76,7 +159,7 @@
 - **Prompt de imagen:** "Wide 3:2 editorial illustration: a person on their living-room
   couch holding a VR headset in their hands, looking at it thoughtfully, headset glowing
   slightly; cozy evening light, contemplative mood, no logos, no text."
-- **Publicar:** agosto–septiembre 2026 (evergreen, cuanto antes mejor).
+- **Publicar:** septiembre 2026 (evergreen, cuanto antes mejor una vez cerrado agosto).
 
 ### 4. Problemas comunes del Quest 3 y cómo resolverlos
 

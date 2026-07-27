@@ -25,9 +25,9 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 
 const ES = {
-  title:  'VR Finder — Encontrá tu visor de realidad virtual ideal | vr.ar',
-  desc:   'Respondé 7 preguntas y encontrá tu visor de VR ideal — Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax y más. Gratis, en 60 segundos.',
-  ogTitle:'VR Finder — ¿Qué visor de VR es ideal para vos?',
+  title:  'VR Finder — Qué lentes de realidad virtual comprar | vr.ar',
+  desc:   'Respondé 7 preguntas y encontrá tus lentes de realidad virtual ideales: Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax y más. Gratis, en 60 segundos.',
+  ogTitle:'VR Finder — ¿Qué gafas de realidad virtual te convienen?',
   ogDesc: 'Hacé nuestro test de 7 preguntas y encontrá tu visor de VR ideal. Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax Crystal Light y Super — Edición 2026.',
   twDesc: 'Test de 7 preguntas. Recomendación personalizada de visor VR. Meta Quest 3, Quest 3S, PSVR2, Pico 4 Ultra, Pimax Crystal Light y Super — Edición 2026.',
   ogImage: 'https://vr.ar/og-image-es.jpg',
