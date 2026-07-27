@@ -164,6 +164,23 @@ Requiere dos secretos en GitHub (Settings > Secrets and variables > Actions):
 Para ver si un deploy salió: pestaña **Actions** del repositorio → flujo "Deploy".
 El log incluye la lista de proyectos de Pages, útil si alguna vez cambia el nombre.
 
+**Regla nueva:** si publicamos algo y no aparece en el sitio, la respuesta está en
+**Actions**. Antes los fallos eran silenciosos (el sitio dejaba de actualizarse sin
+aviso); ahora fallan con cruz roja y mail de GitHub.
+
+**GitHub Pages está apagado a propósito** (julio 2026). Estuvo activo desde el 17 de
+junio publicando una copia del sitio en `danotom.github.io` construida desde la rama de
+trabajo — 58 ejecuciones. Nunca llegó a indexarse (los canonical absolutos apuntan
+siempre a `https://vr.ar/...`, que es justamente para esto), pero se desactivó por ser
+una copia pública innecesaria. **No reactivarlo:** el sitio vive solo en Cloudflare.
+
+**Pendiente de observación:** en Cloudflare se desactivaron los despliegues automáticos,
+pero el proyecto de Pages puede seguir teniendo el repositorio conectado. Eso ya no
+afecta a vr.ar (publicamos por Wrangler), pero si el *otro* proyecto de Daniel vuelve a
+desconectarse, el paso siguiente es desconectar del todo el repositorio desde el proyecto
+de Pages de vr.ar, para que su cuenta de Cloudflare salga por completo de la instalación
+compartida de la app de GitHub.
+
 ### Si el deploy no sale (histórico: pasó dos veces antes de la migración)
 
 Síntoma: se pushea a `main` y el sitio vivo no cambia después de ~10 minutos.
