@@ -1,0 +1,78 @@
+name: IndexNow
+
+# Tells Bing (and Yandex, Seznam, Naver) the moment a page is published or
+# updated, instead of waiting for them to crawl the site on their own.
+# Google does NOT use IndexNow — it keeps using Search Console/sitemap.
+#
+# Runs automatically on every push to main that touches an .html file.
+# Can also be run by hand from the Actions tab ("Run workflow") to resubmit
+# every URL in the sitemap — useful after a big change.
+#
+# The API key lives in a public file at the site root; that is how the
+# protocol proves we own the domain. It is not a secret.
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.html']
+  workflow_dispatch:
+    inputs:
+      submit_all:
+        description: 'Resubmit every URL in sitemap.xml'
+        type: boolean
+        default: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Build URL list and notify IndexNow
+        env:
+          KEY: ebd9abbb47134ce7b23c729fb6d8a030
+        run: |
+          set -euo pipefail
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Every canonical URL we publish, straight from the sitemap.
+            grep -oE '<loc>[^<]+</loc>' sitemap.xml | sed 's|</\?loc>||g' | sort -u > urls.txt
+          else
+            # Only the pages that actually changed in this push.
+            git diff --name-only --diff-filter=AM "${{ github.event.before }}" "${{ github.sha }}" \
+              | grep -E '\.html$' \
+              | sed -e 's|^index\.html$|/|' \
+                    -e 's|/index\.html$|/|' \
+                    -e 's|\.html$||' \
+              | sed -e 's|^|https://vr.ar/|' -e 's|https://vr.ar//|https://vr.ar/|' \
+              | sort -u > urls.txt
+          fi
+
+          # 404.html is intentionally not indexable; never announce it.
+          sed -i '/vr\.ar\/404$/d' urls.txt
+
+          count=$(wc -l < urls.txt)
+          echo "URLs a enviar: $count"
+          cat urls.txt
+          if [ "$count" -eq 0 ]; then echo "Nada que enviar."; exit 0; fi
+
+          jq -Rn \
+            --arg key "$KEY" \
+            --arg loc "https://vr.ar/$KEY.txt" \
+            '{host:"vr.ar", key:$key, keyLocation:$loc,
+              urlList:[inputs]}' < urls.txt > payload.json
+
+          code=$(curl -sS -o response.txt -w '%{http_code}' \
+            -X POST 'https://api.indexnow.org/IndexNow' \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            --data @payload.json)
+
+          echo "Respuesta de IndexNow: HTTP $code"
+          cat response.txt || true
+          # 200 y 202 son éxito. 429 = demasiados envíos, no es un fallo real.
+          case "$code" in
+            200|202|429) exit 0 ;;
+            *) echo "IndexNow devolvió $code"; exit 1 ;;
+          esac
