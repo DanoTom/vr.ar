@@ -145,7 +145,26 @@ git checkout <rama-de-trabajo>
 - **Permiso vigente:** Daniel autorizó publicar directo a `main` el trabajo verificado.
 - Cloudflare Pages despliega solo al recibir el push a `main`.
 
-### Si el deploy no sale (ya pasó dos veces)
+### Cómo se publica realmente (desde julio 2026)
+
+El deploy lo hace **GitHub Actions con Wrangler**, no la integración Git de Cloudflare:
+`.github/workflows/deploy.yml` se dispara con cada push a `main`, arma una carpeta
+`_site` con el sitio (todo el repositorio **menos** `.github/`, `docs/`, `tools/`,
+`data/`, `build.py`, `README.md`) y la sube al proyecto de Pages `vr-ar`.
+
+Motivo: las dos cuentas de Cloudflare de Daniel compartían una sola instalación de la
+app de GitHub y se pisaban, dejando el sitio sin publicar sin aviso. Con este camino
+**los deploys salen aunque esa app esté desconectada**, y el otro proyecto de Daniel
+queda intacto.
+
+Requiere dos secretos en GitHub (Settings > Secrets and variables > Actions):
+`CLOUDFLARE_API_TOKEN` (permiso "Cloudflare Pages: Edit", sin vencimiento) y
+`CLOUDFLARE_ACCOUNT_ID`. Si algún día hay que rotarlos, se reemplazan ahí y listo.
+
+Para ver si un deploy salió: pestaña **Actions** del repositorio → flujo "Deploy".
+El log incluye la lista de proyectos de Pages, útil si alguna vez cambia el nombre.
+
+### Si el deploy no sale (histórico: pasó dos veces antes de la migración)
 
 Síntoma: se pushea a `main` y el sitio vivo no cambia después de ~10 minutos.
 

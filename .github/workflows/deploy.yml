@@ -1,0 +1,58 @@
+name: Deploy
+
+# Publica vr.ar en Cloudflare Pages sin depender de la integración Git de
+# Cloudflare (la app de GitHub que se desconecta cuando dos cuentas de
+# Cloudflare comparten el mismo GitHub). Con esto los deploys salen aunque
+# esa app esté caída o desconectada.
+#
+# Necesita dos secretos del repositorio (Settings > Secrets and variables > Actions):
+#   CLOUDFLARE_API_TOKEN   token con permiso "Cloudflare Pages: Edit"
+#   CLOUDFLARE_ACCOUNT_ID  ID de la cuenta de Cloudflare donde vive vr.ar
+#
+# Ver docs/OPERACIONES.md §4 para el procedimiento completo.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Nunca dos deploys en paralelo: el segundo espera al primero.
+concurrency:
+  group: cloudflare-pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar carpeta de publicación
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          # Copiamos TODO el repositorio y después borramos lo interno.
+          # Lista negra a propósito: si mañana agregamos un archivo nuevo al
+          # sitio, se publica solo sin tener que tocar este flujo.
+          tar --exclude='./.git' --exclude='./_site' -cf - . | tar -xf - -C _site
+          rm -rf _site/.github _site/docs _site/tools _site/data \
+                 _site/build.py _site/README.md _site/.gitignore
+          echo "Archivos a publicar: $(find _site -type f | wc -l)"
+          echo "Páginas HTML: $(find _site -name '*.html' | wc -l)"
+          # Comprobación mínima: si falta la home, algo salió muy mal.
+          test -f _site/index.html
+
+      - name: Proyectos de Pages disponibles (diagnóstico)
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project list
+
+      - name: Publicar en Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site --project-name=vr-ar --branch=main
