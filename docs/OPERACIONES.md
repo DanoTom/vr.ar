@@ -192,6 +192,14 @@ Los textos ES del script (título, descripción, etc.) viven dentro de `gen-es-h
   Checks estándar: hero cargado (`naturalWidth > 0`), sin scroll horizontal a 390px de
   ancho, JSON-LD `JSON.parse` ok, hreflang recíproco entre el par, todos los `href`
   relativos existen en disco, `pageerror` vacío (ignorando los de adsbygoogle).
+
+  **Cómo medir bien el scroll horizontal** (julio 2026 — esto ya dio un falso positivo):
+  **no** comparar `scrollWidth` contra `clientWidth`. La home tiene elementos decorativos
+  (`.hero-ring`, `.bg-orb`) que se extienden a propósito más allá del viewport y son
+  recortados por el `body{overflow-x:hidden}` del CSS; `scrollWidth` los sigue contando
+  igual y reporta un desborde que el usuario nunca ve. La comprobación correcta es
+  intentar desplazar y ver si se movió:
+  `window.scrollTo(600,0)` y después verificar que `window.scrollX === 0`.
 - **E2E del quiz:** selectores reales — `#btn-start-cta` para arrancar, `.opt[data-idx="0"]`
   para elegir, `#btn-next` para avanzar (no auto-avanza), `#results` al final.
 - **Red del entorno:** `vr.ar` y `*.pages.dev` están **bloqueados** (403). No se puede ver
