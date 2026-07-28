@@ -236,6 +236,15 @@ Los textos ES del script (título, descripción, etc.) viven dentro de `gen-es-h
   igual y reporta un desborde que el usuario nunca ve. La comprobación correcta es
   intentar desplazar y ver si se movió:
   `window.scrollTo(600,0)` y después verificar que `window.scrollX === 0`.
+
+  Y **esperar a que la página cargue del todo antes de medir**: con
+  `waitUntil:'domcontentloaded'` el hero todavía puede estar a su tamaño natural
+  (1536px) porque el CSS no se aplicó, y el chequeo da desbordes fantasma distintos en
+  cada corrida. Usar `waitUntil:'load'` más unos 300 ms de margen.
+
+  Dato del entorno: conviene **abortar todos los pedidos externos** (fuentes de Google,
+  AdSense) con `context.route()`; acá la red los bloquea y cada uno cuelga el navegador
+  hasta agotar el tiempo. Sin eso, verificar 30 páginas no termina nunca.
 - **E2E del quiz:** selectores reales — `#btn-start-cta` para arrancar, `.opt[data-idx="0"]`
   para elegir, `#btn-next` para avanzar (no auto-avanza), `#results` al final.
 - **Red del entorno:** `vr.ar` y `*.pages.dev` están **bloqueados** (403). No se puede ver
