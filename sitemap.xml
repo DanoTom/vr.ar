@@ -224,6 +224,23 @@
   </url>
 
   <url>
+    <loc>https://vr.ar/guides/what-is-virtual-reality</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/what-is-virtual-reality"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/que-es-la-realidad-virtual"/>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/que-es-la-realidad-virtual</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/what-is-virtual-reality"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/que-es-la-realidad-virtual"/>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://vr.ar/guides/vr-vs-ar-vs-mr-explained</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/vr-vs-ar-vs-mr-explained"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/realidad-virtual-vs-aumentada"/>
