@@ -43,6 +43,25 @@ transparencia.
 - **Dominio:** `vr.ar` con "clean URLs" de Cloudflare: sirve las páginas sin `.html` y
   redirige (308) `pagina.html` → `pagina`.
 
+### Fuentes propias (julio 2026)
+
+Las tipografías (Orbitron, Unbounded, Exo 2) **se sirven desde vr.ar**, no desde Google
+Fonts: `assets/fonts/*.woff2` (15 archivos, subsets `latin` y `latin-ext`) declarados en
+`assets/css/fonts.css`, que va enlazado **antes** de `styles.css` en las 35 páginas. Cada
+página además hace `preload` de `exo2-400-latin.woff2`, que es la fuente del texto.
+
+Motivo: cargarlas desde `fonts.googleapis.com` obligaba al visitante a resolver y
+negociar dos dominios externos antes de ver texto — en un celular con 4G lento eso son
+segundos. Medido en local con CPU ×4: FCP y LCP pasaron de 700 ms a **436 ms**.
+
+Reglas:
+- **No volver a enlazar Google Fonts.** Si hace falta un peso nuevo, se descarga el
+  `.woff2` y se agrega una `@font-face` a `fonts.css`.
+- Solo se descargan los subsets `latin` en la práctica (el español entra entero ahí);
+  los `latin-ext` quedan por seguridad y casi nunca se piden.
+- La home (y solo la home) **no lleva el script de AdSense**, porque no tiene avisos.
+  Conserva el `<meta name="google-adsense-account">`, que es lo que usa la verificación.
+
 ### Convención de URLs (importante, ya nos costó un problema de indexación)
 
 - Todas las señales **absolutas** van **sin `.html`**: `<link rel="canonical">`, los tres
