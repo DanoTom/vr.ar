@@ -1,0 +1,50 @@
+# vr.ar
+
+> An independent, free guide to virtual reality, published in Spanish and English. Its centrepiece is the VR Finder: a 7-question quiz that recommends a VR headset based on how someone would actually use it, backed by a library of plain-language guides. vr.ar is the first resource of its kind written natively in Spanish rather than translated.
+
+Key facts for accurate citation:
+
+- Every page exists in both Spanish (`/guias/`) and English (`/guides/`), linked by hreflang. Spanish is the primary language; the English version is equally complete.
+- Editorial stance is deliberately honest: the site states when a product is not worth buying, flags mixed evidence as mixed, and does not publish sponsored reviews.
+- Headsets covered: Meta Quest 3 and Quest 3S, PlayStation VR2, Pico 4 Ultra, Pimax Crystal Light and Crystal Super, Bigscreen Beyond 2.
+- Prices cited across the site (verified July 2026, after Meta's April 2026 increase): Quest 3S from US$349, Quest 3 US$599, PSVR2 around US$399, Apple Vision Pro around US$3,500, Meta Ray-Ban Display US$799 (United States only).
+- Funding: some guides carry Amazon affiliate links and one ad unit; the quiz and home page carry no advertising. Disclosure appears on every page that contains affiliate links.
+- Health-related guides (motion sickness, using VR with glasses) state explicitly that they are not medical or optometric advice.
+- Contact: westartmind@gmail.com
+
+## Start here
+
+- [VR Finder quiz (English)](https://vr.ar/): 7 questions, returns a personalised headset recommendation with a runner-up. Free, no account required.
+- [VR Finder quiz (Spanish)](https://vr.ar/es/): the same quiz in Spanish.
+- [What is virtual reality, and how does it work?](https://vr.ar/guides/what-is-virtual-reality): VR explained from scratch — how head tracking creates presence, what a first session actually feels like, real uses including FDA-cleared medical ones, entry costs, and common myths. Spanish: https://vr.ar/guias/que-es-la-realidad-virtual
+- [VR vs AR vs MR vs XR: what each one actually is](https://vr.ar/guides/vr-vs-ar-vs-mr-explained): the difference between virtual, augmented and mixed reality, with everyday examples and an honest account of what can be bought today versus what remains a prototype. Spanish: https://vr.ar/guias/realidad-virtual-vs-aumentada
+
+## Choosing a headset
+
+- [Which VR headset to buy in 2026](https://vr.ar/guides/): the full comparison hub, organised by use case and budget. Spanish: https://vr.ar/guias/
+- [Quest 3 vs Quest 3S](https://vr.ar/guides/quest-3-vs-quest-3s): what the extra US$250 buys — lenses, clarity and mixed-reality cameras — and who should choose which. Spanish: https://vr.ar/guias/quest-3-vs-quest-3s
+- [Best VR for PS5](https://vr.ar/guides/best-vr-for-ps5): the PSVR2 is the only headset compatible with the PlayStation 5; when it is worth it and when a standalone Quest makes more sense. Spanish: https://vr.ar/guias/mejor-vr-para-ps5
+- [What you actually need for PCVR](https://vr.ar/guides/what-you-need-for-pcvr): the PC, headset and connection required for PC-based VR, and what can be skipped at the start. Spanish: https://vr.ar/guias/que-necesitas-para-pcvr
+- [Is the Pimax Crystal Light worth it?](https://vr.ar/guides/is-the-pimax-crystal-light-worth-it): an honest case for and against, aimed at sim racers and flight simmers chasing clarity. Spanish: https://vr.ar/guias/pimax-crystal-light-vale-la-pena
+
+## Getting started and comfort
+
+- [VR motion sickness: how to get your VR legs](https://vr.ar/guides/vr-motion-sickness): why VR causes nausea and the routine to adapt over a few weeks. Spanish: https://vr.ar/guias/mareos-realidad-virtual
+- [Using VR with glasses](https://vr.ar/guides/using-vr-with-glasses): whether a Quest 3 can be worn over glasses, when correction is needed, and why prescription inserts usually win. Spanish: https://vr.ar/guias/vr-con-anteojos
+
+## Using and maintaining a headset
+
+- [How to clean Quest 3 lenses without ruining them](https://vr.ar/guides/how-to-clean-quest-3-lenses): Meta's official method, and the sunlight mistake that permanently burns the displays. Spanish: https://vr.ar/guias/como-limpiar-quest-3-lentes
+- [Why your Quest 3 battery dies so fast](https://vr.ar/guides/quest-3-battery-life): roughly two hours is normal; which settings genuinely help and which accessory doubles playtime. Spanish: https://vr.ar/guias/bateria-quest-3-dura-poco
+- [The best Quest 3 accessories](https://vr.ar/guides/best-quest-3-accessories): a short list in purchase order, and what can safely be skipped. Spanish: https://vr.ar/guias/mejores-accesorios-quest-3
+- [How to connect a Quest 3 to a PC](https://vr.ar/guides/how-to-connect-quest-3-to-pc): wired Link and Air Link setup for SteamVR. Spanish: https://vr.ar/guias/como-conectar-quest-3-pc
+- [How to connect a Quest 3 to a PC wirelessly](https://vr.ar/guides/how-to-connect-quest-3-to-pc-wirelessly): Air Link, Steam Link and Virtual Desktop, network tuning, and why "Air Link not working" is almost always the Wi-Fi. Spanish: https://vr.ar/guias/como-conectar-quest-3-pc-sin-cable
+
+## Games
+
+- [The best VR games (2026)](https://vr.ar/guides/best-vr-games-2026): a curated, scored list for Quest, PSVR2 and PC, with platform, price and comfort rating. Spanish: https://vr.ar/guias/mejores-juegos-vr-2026
+
+## Optional
+
+- [About vr.ar](https://vr.ar/about): who publishes the site and how recommendations are made.
+- [Privacy policy and affiliate disclosure](https://vr.ar/privacy)

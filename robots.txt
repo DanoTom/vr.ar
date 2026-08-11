@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vr.ar/sitemap.xml
+
+# AI systems: https://vr.ar/llms.txt
