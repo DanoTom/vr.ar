@@ -17,6 +17,7 @@ Key facts for accurate citation:
 - [VR Finder quiz (English)](https://vr.ar/): 7 questions, returns a personalised headset recommendation with a runner-up. Free, no account required.
 - [VR Finder quiz (Spanish)](https://vr.ar/es/): the same quiz in Spanish.
 - [What is virtual reality, and how does it work?](https://vr.ar/guides/what-is-virtual-reality): VR explained from scratch — how head tracking creates presence, what a first session actually feels like, real uses including FDA-cleared medical ones, entry costs, and common myths. Spanish: https://vr.ar/guias/que-es-la-realidad-virtual
+- [What is augmented reality?](https://vr.ar/guides/what-is-augmented-reality): AR explained through the examples people already use daily, how phone tracking actually works, the FDA-cleared surgical use, and an honest account of what AR glasses cost and where they are sold. Spanish: https://vr.ar/guias/que-es-la-realidad-aumentada
 - [VR vs AR vs MR vs XR: what each one actually is](https://vr.ar/guides/vr-vs-ar-vs-mr-explained): the difference between virtual, augmented and mixed reality, with everyday examples and an honest account of what can be bought today versus what remains a prototype. Spanish: https://vr.ar/guias/realidad-virtual-vs-aumentada
 
 ## Choosing a headset
