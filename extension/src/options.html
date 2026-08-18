@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VR.AR — Preferencias</title>
+<link rel="stylesheet" href="options.css">
+</head>
+<body>
+<main>
+  <div class="logo">VR<span>.AR</span></div>
+  <h1>Preferencias</h1>
+
+  <label class="row">
+    <input type="checkbox" id="enabled">
+    <span><strong>Mostrar la tarjeta automáticamente</strong><em>Si lo desactivás, la extensión no aparece en ninguna página.</em></span>
+  </label>
+
+  <section>
+    <h2>Sitios silenciados</h2>
+    <p class="hint">Sitios donde elegiste "No mostrar acá".</p>
+    <ul id="muted"></ul>
+    <p class="empty" id="emptyMuted">Ninguno por ahora.</p>
+  </section>
+
+  <p class="foot"><a href="https://vr.ar/extension-privacidad" target="_blank" rel="noopener noreferrer">Política de privacidad</a> · <a href="https://vr.ar/" target="_blank" rel="noopener noreferrer">vr.ar</a></p>
+</main>
+<script src="options.js"></script>
+</body>
+</html>

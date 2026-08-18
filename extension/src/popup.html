@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VR.AR — ¿Funciona en mi visor?</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+  <span class="logo">VR<span>.AR</span></span>
+  <span class="tag" id="siteBadge">—</span>
+</header>
+
+<main>
+  <label class="label" for="headset">Tu visor</label>
+  <select id="headset" aria-describedby="headsetType"></select>
+  <p class="type" id="headsetType"></p>
+
+  <section class="now" id="now" aria-live="polite">
+    <span class="dot" id="dot"></span>
+    <div>
+      <strong id="verdict">Buscando…</strong>
+      <span id="detail"></span>
+    </div>
+  </section>
+
+  <section class="grant" id="grant" hidden>
+    <strong>Que funcione en toda la web</strong>
+    <p>Hoy funciona en Steam y PlayStation. Activalo y también te avisa en blogs, notas y reseñas que mencionen un juego de VR.</p>
+    <button id="grantBtn" type="button">Activar en todos los sitios</button>
+  </section>
+
+  <section class="granted" id="granted" hidden>
+    <span class="check" aria-hidden="true">✓</span>
+    <div>
+      <strong>Activo en toda la web</strong>
+      <button id="revokeBtn" type="button" class="linkbtn">Desactivar</button>
+    </div>
+  </section>
+
+  <label class="toggle">
+    <input type="checkbox" id="enabled">
+    <span>Mostrar la tarjeta automáticamente</span>
+  </label>
+</main>
+
+<footer>
+  <a href="https://vr.ar/" target="_blank" rel="noopener noreferrer">vr.ar</a>
+  <span class="count" id="catalogCount"></span>
+</footer>
+
+<script src="../src/data.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

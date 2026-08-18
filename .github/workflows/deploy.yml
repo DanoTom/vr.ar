@@ -35,7 +35,7 @@ jobs:
           # Lista negra a propósito: si mañana agregamos un archivo nuevo al
           # sitio, se publica solo sin tener que tocar este flujo.
           tar --exclude='./.git' --exclude='./_site' -cf - . | tar -xf - -C _site
-          rm -rf _site/.github _site/docs _site/tools _site/data \
+          rm -rf _site/.github _site/docs _site/tools _site/data _site/extension \
                  _site/build.py _site/README.md _site/.gitignore
           echo "Archivos a publicar: $(find _site -type f | wc -l)"
           echo "Páginas HTML: $(find _site -name '*.html' | wc -l)"
