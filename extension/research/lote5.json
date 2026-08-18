@@ -1,0 +1,13 @@
+[{"title":"Assetto Corsa","on":["steam"],"off":["quest","psvr2","pico"],"nota":"VR nativo solo en PC vía SteamVR; sin standalone ni PSVR2"},
+{"title":"The Elder Scrolls V: Skyrim VR","on":["steam"],"off":["quest","psvr2","pico"],"nota":"PSVR1 y Steam PC VR; PSVR2 no es retrocompatible y no hubo port nativo"},
+{"title":"Keep Talking and Nobody Explodes","on":["quest","steam"],"off":["psvr2"],"nota":"página propia en Meta Horizon Store y VR en Steam; el FAQ descarta PSVR2"},
+{"title":"Derail Valley","on":["steam"],"off":["quest","psvr2","pico"],"nota":"PC VR en Steam; el desarrollador descartó versión nativa para Quest"},
+{"title":"UnderDogs","on":["quest","steam","psvr2","pico"],"off":[],"nota":"Quest y Steam ene 2024, PICO sept 2024, PSVR2 marzo 2025"},
+{"title":"The Thrill of the Fight 2","on":["quest"],"off":["steam","psvr2","pico"],"nota":"exclusivo de Meta Quest; lo de Steam es una app espectadora, no el juego"},
+{"title":"Blade & Sorcery","on":["steam"],"off":["quest","psvr2","pico"],"nota":"este título es la versión PC VR; la de Quest y PICO es 'Nomad', otro producto"},
+{"title":"Arizona Sunshine 2","on":["quest","steam","psvr2","pico"],"off":[],"nota":"lanzamiento simultáneo dic 2023 en las cuatro, con crossplay"},
+{"title":"MADiSON VR","on":["quest","steam","psvr2"],"off":[],"nota":"PC VR y PSVR2 mayo 2024, después Quest 2 y familia Quest 3; PICO sin confirmar"},
+{"title":"Red Matter 2","on":["quest","steam","psvr2","pico"],"off":[],"nota":"Quest y Steam ago 2022, PICO dic 2022, PSVR2 mayo 2023"},
+{"title":"The 7th Guest VR","on":["quest","steam","psvr2"],"off":[],"nota":"oct 2023 simultáneo en Quest, PSVR2 y Steam; PICO sin confirmar"},
+{"title":"Ghostbusters: Rise of the Ghost Lord","on":["quest","psvr2"],"off":["steam","pico"],"nota":"oct 2023 solo en Quest y PSVR2; nunca salió en PC VR"},
+{"title":"C-Smash VRS New Dimension","on":["psvr2"],"off":["steam"],"nota":"versión de PlayStation; en Quest y PICO está el juego base con otro nombre"}]

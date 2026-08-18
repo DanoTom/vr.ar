@@ -1,0 +1,13 @@
+[{"title":"F1® 25","on":["steam"],"off":["quest","psvr2","pico"],"nota":"modo VR en PC por Steam; EA confirmó que no hay soporte PSVR2"},
+{"title":"PAYDAY 2 VR","on":["steam"],"off":["quest","psvr2","pico"],"nota":"el modo VR es DLC gratuito solo de la versión de Steam"},
+{"title":"IL-2 Sturmovik: Battle of Stalingrad","on":["steam"],"off":["quest","psvr2","pico"],"nota":"VR por OpenVR/SteamVR; sim exclusivo de PC"},
+{"title":"Microsoft Flight Simulator (2020) 40th Anniversary Edition","on":["steam"],"off":["quest","psvr2","pico"],"nota":"soporte VR en Steam; solo PC y Xbox"},
+{"title":"CarX Drift Racing Online","on":["steam"],"off":["quest","psvr2","pico"],"nota":"modo VR vía SteamVR desde dic 2022; sin build standalone"},
+{"title":"DiRT Rally 2.0","on":["steam"],"off":["quest","psvr2","pico"],"nota":"VR exclusivo de PC desde 2019; Codemasters descartó PSVR"},
+{"title":"Project Wingman","on":["steam","psvr2"],"off":["quest","pico"],"nota":"PC VR completo en Steam; en PS5 con PSVR2 limitado a las misiones nuevas"},
+{"title":"BONEWORKS","on":["steam"],"off":["quest","psvr2","pico"],"nota":"solo PC VR; la versión nativa de Quest es BONELAB, otro juego"},
+{"title":"The Room VR: A Dark Matter","on":["quest","steam","psvr2","pico"],"off":[],"nota":"confirmado en las cuatro tiendas"},
+{"title":"Five Nights at Freddy's: Secret of the Mimic","on":["steam","psvr2"],"off":["quest"],"nota":"PSVR2 abr 2026 y PC VR may 2026; la de Quest sigue pendiente"},
+{"title":"Arizona Sunshine® VR 2","on":["quest","steam","psvr2","pico"],"off":[],"nota":"lanzamiento simultáneo en las cuatro, con crossplay"},
+{"title":"Breachers","on":["quest","steam","psvr2","pico"],"off":[],"nota":"en las cuatro tiendas, con juego cruzado"},
+{"title":"Legendary Tales","on":["quest","steam","psvr2"],"off":[],"nota":"Steam y PSVR2 feb 2024, después nativo en Quest 3/3S; PICO sin determinar"}]

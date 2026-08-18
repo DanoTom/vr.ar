@@ -81,6 +81,18 @@ Política completa: https://vr.ar/extension-privacidad
 
 ## Historial
 
+### v2.1.0
+- Catálogo verificado plataforma por plataforma para los 91 juegos: **94% de los
+  datos confirmados** (antes se inferían), y las respuestas definitivas pasaron
+  del 74% al **99%** de las combinaciones juego × visor.
+- Se corrigieron datos que estaban mal: Red Matter 2 figuraba como incompatible
+  con Quest cuando sí está en la tienda de Meta, y Beat Saber figuraba en PICO
+  cuando no está. Aparecieron además 66 "no funciona" verificados, que antes no
+  existían.
+- Los títulos cortos (GORN, Moss) ya se detectan en fichas de tienda; el largo
+  mínimo se aplica solo al escaneo suelto de páginas cualquiera.
+- La investigación queda guardada en `research/` con su fuente y su fecha.
+
 ### v2.0.0
 - Funciona en cualquier página, no solo en tiendas, con permiso opcional.
 - Interfaz nueva en Shadow DOM: píldora que se expande, selector de visor,

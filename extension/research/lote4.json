@@ -1,0 +1,13 @@
+[{"title":"Star Wars: Tales from the Galaxy's Edge - Enhanced Edition","on":["quest","psvr2"],"off":["steam","pico"],"nota":"solo Quest 2/3/Pro y PSVR2; nunca salió en PC VR"},
+{"title":"Resident Evil 4","on":["quest","psvr2"],"off":["steam","pico"],"nota":"port VR en Quest (2021) y modo VR del remake en PSVR2; en Steam solo mods"},
+{"title":"Phasmophobia","on":["steam","psvr2"],"off":["quest","pico"],"nota":"VR nativo en Steam y PSVR2 desde oct 2024; sin versión standalone"},
+{"title":"VRChat","on":["quest","steam","pico"],"off":["psvr2"],"nota":"Quest, Steam y PICO; el FAQ oficial aclara que no está en PSVR2"},
+{"title":"War Thunder","on":["steam"],"off":["quest","psvr2","pico"],"nota":"modo VR vía SteamVR/OpenXR en PC; la versión de consola no tiene VR"},
+{"title":"Tabletop Simulator","on":["steam"],"off":["quest","psvr2","pico"],"nota":"VR oficial solo en la versión PC de Steam"},
+{"title":"HITMAN World of Assassination","on":["steam","psvr2"],"off":["quest","pico"],"nota":"modo VR en Steam y PSVR2; en Quest existe otro título distinto"},
+{"title":"The Forest","on":["steam"],"off":["quest","psvr2","pico"],"nota":"VR nativo en Steam desde 2018; en Quest solo vía Link"},
+{"title":"VTOL VR","on":["steam"],"off":["quest","psvr2","pico"],"nota":"el desarrollador confirmó que sigue siendo solo PC VR"},
+{"title":"Escape Simulator","on":["quest","steam"],"off":["psvr2","pico"],"nota":"VR en Steam (2024) y standalone en Quest 2/3 desde oct 2024"},
+{"title":"X-Plane 12","on":["steam"],"off":["quest","psvr2","pico"],"nota":"VR vía OpenXR/SteamVR en PC; sin versión de consola ni standalone"},
+{"title":"DCS World Steam Edition","on":["steam"],"off":["quest","psvr2","pico"],"nota":"soporte VR declarado en Steam; exclusivo de PC"},
+{"title":"Automobilista 2","on":["steam"],"off":["quest","psvr2","pico"],"nota":"SteamVR/Oculus PC; exclusivo de PC"}]

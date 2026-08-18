@@ -1,0 +1,13 @@
+[{"title":"BONELAB","on":["quest","steam"],"off":["psvr2"],"nota":"Meta Quest Store y Steam; sin versión PSVR2"},
+{"title":"Into the Radius VR","on":["quest","steam","psvr2","pico"],"off":[],"nota":"Steam 2020, Quest 2021, PSVR2 sept 2024 y ficha propia en PICO Store"},
+{"title":"Into the Radius 2","on":["quest","steam"],"off":["psvr2"],"nota":"Steam y Quest 3/3S; CM Games descartó PSVR2"},
+{"title":"Demeo","on":["quest","steam","psvr2","pico"],"off":[],"nota":"Resolution Games confirma las cuatro con crossplay"},
+{"title":"Vertigo 2","on":["steam","psvr2"],"off":["quest"],"nota":"Steam 2023 y PSVR2 2024; el desarrollador descartó Quest"},
+{"title":"Fallout 4 VR","on":["steam"],"off":["quest","psvr2","pico"],"nota":"exclusivo de PC VR en Steam"},
+{"title":"Elite Dangerous","on":["steam"],"off":["quest","psvr2"],"nota":"VR solo en PC; las versiones de consola nunca tuvieron VR"},
+{"title":"Subnautica","on":["steam"],"off":["quest","psvr2","pico"],"nota":"modo VR exclusivo de PC"},
+{"title":"Ragnarock","on":["quest","steam","psvr2","pico"],"off":[],"nota":"el FAQ oficial lista SteamVR, Quest, PICO y PSVR2"},
+{"title":"The Light Brigade","on":["quest","steam","psvr2"],"off":[],"nota":"lanzamiento simultáneo feb 2023; PICO sin confirmar"},
+{"title":"The Dark Pictures: Switchback VR","on":["psvr2"],"off":["quest","steam","pico"],"nota":"exclusivo de PlayStation VR2"},
+{"title":"Crossfire: Sierra Squad","on":["steam","psvr2"],"off":[],"nota":"PSVR2 y Steam ago 2023; Quest y PICO sin confirmar"},
+{"title":"Synapse","on":["psvr2"],"off":["quest","steam","pico"],"nota":"exclusivo de PSVR2"}]

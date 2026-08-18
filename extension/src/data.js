@@ -104,10 +104,12 @@ const CATALOG = [
       "620980"
     ],
     "on": [
-      "pico",
-      "psvr2",
       "quest",
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "pico"
     ]
   },
   {
@@ -118,6 +120,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -127,11 +134,12 @@ const CATALOG = [
       "885000"
     ],
     "on": [
-      "pico",
-      "psvr2",
       "quest",
-      "steam"
-    ]
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "pavlov",
@@ -143,8 +151,12 @@ const CATALOG = [
       "555160"
     ],
     "on": [
-      "psvr2",
-      "steam"
+      "quest",
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "pico"
     ]
   },
   {
@@ -157,8 +169,12 @@ const CATALOG = [
       "1850050"
     ],
     "on": [
-      "psvr2",
-      "steam"
+      "quest",
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "pico"
     ]
   },
   {
@@ -172,8 +188,12 @@ const CATALOG = [
       "1707990"
     ],
     "on": [
-      "psvr2",
-      "steam"
+      "quest",
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "pico"
     ]
   },
   {
@@ -183,9 +203,11 @@ const CATALOG = [
       "2669410"
     ],
     "on": [
-      "psvr2",
-      "steam"
-    ]
+      "quest",
+      "steam",
+      "psvr2"
+    ],
+    "off": []
   },
   {
     "slug": "moss",
@@ -197,9 +219,12 @@ const CATALOG = [
       "846470"
     ],
     "on": [
+      "quest",
+      "steam",
       "psvr2",
-      "steam"
-    ]
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "moss-book-ii",
@@ -212,9 +237,12 @@ const CATALOG = [
       "2059670"
     ],
     "on": [
+      "quest",
+      "steam",
       "psvr2",
-      "steam"
-    ]
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "kayak-vr-mirage",
@@ -223,8 +251,11 @@ const CATALOG = [
       "1683340"
     ],
     "on": [
-      "psvr2",
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "quest"
     ]
   },
   {
@@ -234,7 +265,12 @@ const CATALOG = [
       "1533390"
     ],
     "on": [
-      "steam"
+      "quest",
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "pico"
     ]
   },
   {
@@ -247,8 +283,11 @@ const CATALOG = [
       "275850"
     ],
     "on": [
-      "psvr2",
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "quest"
     ]
   },
   {
@@ -261,7 +300,12 @@ const CATALOG = [
       "2537590"
     ],
     "on": [
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "quest",
+      "pico"
     ]
   },
   {
@@ -275,6 +319,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -284,11 +333,12 @@ const CATALOG = [
       "1079800"
     ],
     "on": [
-      "pico",
-      "psvr2",
       "quest",
-      "steam"
-    ]
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "walking-dead-saints-sinners",
@@ -300,9 +350,12 @@ const CATALOG = [
       "916840"
     ],
     "on": [
+      "quest",
+      "steam",
       "psvr2",
-      "steam"
-    ]
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "vacation-simulator",
@@ -311,9 +364,12 @@ const CATALOG = [
       "726830"
     ],
     "on": [
+      "quest",
+      "steam",
       "psvr2",
-      "steam"
-    ]
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "walkabout-mini-golf",
@@ -325,11 +381,12 @@ const CATALOG = [
       "1408230"
     ],
     "on": [
-      "pico",
-      "psvr2",
       "quest",
-      "steam"
-    ]
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "job-simulator",
@@ -338,9 +395,12 @@ const CATALOG = [
       "448280"
     ],
     "on": [
+      "quest",
+      "steam",
       "psvr2",
-      "steam"
-    ]
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "zombie-army-vr",
@@ -349,7 +409,12 @@ const CATALOG = [
       "2058030"
     ],
     "on": [
-      "steam"
+      "quest",
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "pico"
     ]
   },
   {
@@ -357,6 +422,11 @@ const CATALOG = [
     "title": "Gran Turismo 7",
     "on": [
       "psvr2"
+    ],
+    "off": [
+      "quest",
+      "steam",
+      "pico"
     ]
   },
   {
@@ -364,6 +434,11 @@ const CATALOG = [
     "title": "Horizon Call of the Mountain",
     "on": [
       "psvr2"
+    ],
+    "off": [
+      "quest",
+      "steam",
+      "pico"
     ]
   },
   {
@@ -374,6 +449,11 @@ const CATALOG = [
     ],
     "on": [
       "psvr2"
+    ],
+    "off": [
+      "steam",
+      "quest",
+      "pico"
     ]
   },
   {
@@ -384,6 +464,11 @@ const CATALOG = [
     ],
     "on": [
       "psvr2"
+    ],
+    "off": [
+      "steam",
+      "quest",
+      "pico"
     ]
   },
   {
@@ -393,7 +478,12 @@ const CATALOG = [
       "617830"
     ],
     "on": [
-      "steam"
+      "quest",
+      "steam",
+      "pico"
+    ],
+    "off": [
+      "psvr2"
     ]
   },
   {
@@ -406,7 +496,12 @@ const CATALOG = [
       "629730"
     ],
     "on": [
-      "steam"
+      "steam",
+      "quest",
+      "pico"
+    ],
+    "off": [
+      "psvr2"
     ]
   },
   {
@@ -416,7 +511,11 @@ const CATALOG = [
       "1592190"
     ],
     "on": [
+      "quest",
       "steam"
+    ],
+    "off": [
+      "psvr2"
     ]
   },
   {
@@ -429,8 +528,12 @@ const CATALOG = [
       "1012790"
     ],
     "on": [
-      "steam"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "into-the-radius-2",
@@ -439,7 +542,11 @@ const CATALOG = [
       "2307350"
     ],
     "on": [
+      "quest",
       "steam"
+    ],
+    "off": [
+      "psvr2"
     ]
   },
   {
@@ -449,8 +556,12 @@ const CATALOG = [
       "1484280"
     ],
     "on": [
-      "steam"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "vertigo-2",
@@ -459,7 +570,11 @@ const CATALOG = [
       "843390"
     ],
     "on": [
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "quest"
     ]
   },
   {
@@ -470,6 +585,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -480,6 +600,10 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2"
     ]
   },
   {
@@ -490,6 +614,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -499,8 +628,12 @@ const CATALOG = [
       "1345820"
     ],
     "on": [
-      "steam"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "the-light-brigade",
@@ -509,8 +642,11 @@ const CATALOG = [
       "1579880"
     ],
     "on": [
-      "steam"
-    ]
+      "quest",
+      "steam",
+      "psvr2"
+    ],
+    "off": []
   },
   {
     "slug": "the-dark-pictures-switchback-vr",
@@ -520,20 +656,32 @@ const CATALOG = [
     ],
     "on": [
       "psvr2"
+    ],
+    "off": [
+      "quest",
+      "steam",
+      "pico"
     ]
   },
   {
     "slug": "crossfire-sierra-squad",
     "title": "Crossfire: Sierra Squad",
     "on": [
+      "steam",
       "psvr2"
-    ]
+    ],
+    "off": []
   },
   {
     "slug": "synapse",
     "title": "Synapse",
     "on": [
       "psvr2"
+    ],
+    "off": [
+      "quest",
+      "steam",
+      "pico"
     ]
   },
   {
@@ -544,7 +692,12 @@ const CATALOG = [
       "tales from the galaxys edge"
     ],
     "on": [
+      "quest",
       "psvr2"
+    ],
+    "off": [
+      "steam",
+      "pico"
     ]
   },
   {
@@ -554,7 +707,12 @@ const CATALOG = [
       "resident evil 4 remake"
     ],
     "on": [
+      "quest",
       "psvr2"
+    ],
+    "off": [
+      "steam",
+      "pico"
     ]
   },
   {
@@ -564,8 +722,12 @@ const CATALOG = [
       "739630"
     ],
     "on": [
-      "psvr2",
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "quest",
+      "pico"
     ]
   },
   {
@@ -575,7 +737,12 @@ const CATALOG = [
       "438100"
     ],
     "on": [
-      "steam"
+      "quest",
+      "steam",
+      "pico"
+    ],
+    "off": [
+      "psvr2"
     ]
   },
   {
@@ -586,6 +753,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -596,6 +768,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -605,8 +782,12 @@ const CATALOG = [
       "1659040"
     ],
     "on": [
-      "psvr2",
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "quest",
+      "pico"
     ]
   },
   {
@@ -617,6 +798,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -627,6 +813,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -636,7 +827,12 @@ const CATALOG = [
       "1435790"
     ],
     "on": [
+      "quest",
       "steam"
+    ],
+    "off": [
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -647,6 +843,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -660,6 +861,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -670,6 +876,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -680,6 +891,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -693,6 +909,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -702,7 +923,11 @@ const CATALOG = [
       "341800"
     ],
     "on": [
+      "quest",
       "steam"
+    ],
+    "off": [
+      "psvr2"
     ]
   },
   {
@@ -713,20 +938,34 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
     "slug": "underdogs",
     "title": "UnderDogs",
     "on": [
-      "steam"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "the-thrill-of-the-fight-2",
     "title": "The Thrill of the Fight 2",
     "on": [
-      "steam"
+      "quest"
+    ],
+    "off": [
+      "steam",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -740,41 +979,65 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
     "slug": "arizona-sunshine-2",
     "title": "Arizona Sunshine 2",
     "on": [
-      "psvr2"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "madison-vr",
     "title": "MADiSON VR",
     "on": [
+      "quest",
+      "steam",
       "psvr2"
-    ]
+    ],
+    "off": []
   },
   {
     "slug": "red-matter-2",
     "title": "Red Matter 2",
     "on": [
-      "psvr2"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "the-7th-guest-vr",
     "title": "The 7th Guest VR",
     "on": [
+      "quest",
+      "steam",
       "psvr2"
-    ]
+    ],
+    "off": []
   },
   {
     "slug": "ghostbusters-rise-of-the-ghost-lord",
     "title": "Ghostbusters: Rise of the Ghost Lord",
     "on": [
+      "quest",
       "psvr2"
+    ],
+    "off": [
+      "steam",
+      "pico"
     ]
   },
   {
@@ -785,6 +1048,9 @@ const CATALOG = [
     ],
     "on": [
       "psvr2"
+    ],
+    "off": [
+      "steam"
     ]
   },
   {
@@ -795,28 +1061,45 @@ const CATALOG = [
       "fnaf help wanted 2"
     ],
     "on": [
-      "psvr2"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "hubris",
     "title": "Hubris",
     "on": [
-      "psvr2"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "among-us-3d",
     "title": "Among Us 3D",
     "on": [
-      "quest"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "the-thrill-of-the-fight",
     "title": "The Thrill of the Fight",
     "on": [
-      "quest"
+      "quest",
+      "steam"
+    ],
+    "off": [
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -824,56 +1107,86 @@ const CATALOG = [
     "title": "GOLF+",
     "on": [
       "quest"
+    ],
+    "off": [
+      "psvr2"
     ]
   },
   {
     "slug": "eleven-table-tennis",
     "title": "Eleven Table Tennis",
     "on": [
-      "quest"
-    ]
+      "quest",
+      "steam",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "population-one",
     "title": "Population: One",
     "on": [
       "quest"
+    ],
+    "off": [
+      "steam",
+      "psvr2",
+      "pico"
     ]
   },
   {
     "slug": "i-am-cat",
     "title": "I Am Cat",
     "on": [
-      "quest"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "gorn",
     "title": "GORN",
     "on": [
-      "quest"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "ghosts-of-tabor",
     "title": "Ghosts of Tabor",
     "on": [
-      "quest"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "real-vr-fishing",
     "title": "Real VR Fishing",
     "on": [
-      "quest"
-    ]
+      "quest",
+      "steam",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "green-hell-vr",
     "title": "Green Hell VR",
     "on": [
-      "quest"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "le-mans-ultimate",
@@ -883,6 +1196,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -893,6 +1211,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -906,6 +1229,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -920,6 +1248,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -934,6 +1267,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -944,6 +1282,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -957,6 +1300,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -966,7 +1314,12 @@ const CATALOG = [
       "895870"
     ],
     "on": [
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "quest",
+      "pico"
     ]
   },
   {
@@ -977,6 +1330,11 @@ const CATALOG = [
     ],
     "on": [
       "steam"
+    ],
+    "off": [
+      "quest",
+      "psvr2",
+      "pico"
     ]
   },
   {
@@ -986,8 +1344,12 @@ const CATALOG = [
       "the room vr"
     ],
     "on": [
-      "steam"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "fnaf-secret-of-the-mimic",
@@ -997,7 +1359,11 @@ const CATALOG = [
       "fnaf secret of the mimic"
     ],
     "on": [
-      "steam"
+      "steam",
+      "psvr2"
+    ],
+    "off": [
+      "quest"
     ]
   },
   {
@@ -1007,22 +1373,33 @@ const CATALOG = [
       "arizona sunshine 2"
     ],
     "on": [
-      "psvr2"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "breachers-psvr2",
     "title": "Breachers",
     "on": [
-      "psvr2"
-    ]
+      "quest",
+      "steam",
+      "psvr2",
+      "pico"
+    ],
+    "off": []
   },
   {
     "slug": "legendary-tales",
     "title": "Legendary Tales",
     "on": [
+      "quest",
+      "steam",
       "psvr2"
-    ]
+    ],
+    "off": []
   }
 ];
 

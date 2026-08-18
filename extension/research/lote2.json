@@ -1,0 +1,13 @@
+[{"title":"Assetto Corsa Competizione","on":["steam"],"off":["quest","psvr2","pico"],"nota":"soporte VR nativo en Steam; sin PSVR2 ni versión standalone"},
+{"title":"Pistol Whip","on":["quest","steam","psvr2","pico"],"off":[],"nota":"páginas oficiales en Meta Quest, Steam y PICO; título de lanzamiento de PSVR2"},
+{"title":"The Walking Dead: Saints & Sinners","on":["quest","steam","psvr2","pico"],"off":[],"nota":"Steam y Quest desde 2020, PICO 4 en 2023, PSVR2 vía Tourist Edition"},
+{"title":"Vacation Simulator","on":["quest","steam","psvr2","pico"],"off":[],"nota":"lanzamiento de PSVR2 2023; Steam y Quest desde 2019; PICO desde julio 2023"},
+{"title":"Walkabout Mini Golf VR","on":["quest","steam","psvr2","pico"],"off":[],"nota":"Quest, SteamVR, PSVR2 (mayo 2023) y PICO, con crossplay"},
+{"title":"Job Simulator","on":["quest","steam","psvr2","pico"],"off":[],"nota":"lanzamiento de PSVR2; Steam, Quest y PICO desde julio 2023"},
+{"title":"Zombie Army VR","on":["quest","steam","psvr2"],"off":["pico"],"nota":"mayo 2024 en PSVR2, Quest y Steam; sin ficha en PICO"},
+{"title":"Gran Turismo 7","on":["psvr2"],"off":["quest","steam","pico"],"nota":"modo VR solo con PSVR2 en PS5; exclusivo de PlayStation"},
+{"title":"Horizon Call of the Mountain","on":["psvr2"],"off":["quest","steam","pico"],"nota":"exclusivo de PlayStation VR2"},
+{"title":"Resident Evil Village","on":["psvr2"],"off":["steam","quest","pico"],"nota":"modo VR oficial exclusivo de PSVR2; en PC solo por mods no oficiales"},
+{"title":"Resident Evil 4 Modo VR","on":["psvr2"],"off":["steam","quest","pico"],"nota":"modo VR del remake exclusivo de PS5/PSVR2; el 'Resident Evil 4 VR' de Quest es otro producto"},
+{"title":"SUPERHOT VR","on":["quest","steam","pico"],"off":["psvr2"],"nota":"Steam, Quest y PICO; la versión de PlayStation es de PSVR1, sin versión nativa PSVR2"},
+{"title":"Blade and Sorcery","on":["steam","quest","pico"],"off":["psvr2"],"nota":"PC VR en Steam y 'Nomad' en Quest y PICO; sin lanzamiento en PSVR2"}]

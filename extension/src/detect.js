@@ -11,7 +11,7 @@
 // "War Thunder", y una página que dice "VR" no es Pavlov VR.
 
 (() => {
-  const MIN_PHRASE = 5;        // frases más cortas dan falsos positivos
+  const MIN_PHRASE = 5;        // mínimo solo para el escaneo suelto (ver scanText)
   const MAX_SCAN = 240000;     // tope de texto a escanear, por rendimiento
   const MAX_RESULTS = 6;
 
@@ -30,7 +30,7 @@
     index = (globalThis.VRAR_CATALOG || []).map((game) => {
       const phrases = [game.title, ...(game.aliases || [])]
         .map(normalize)
-        .filter((phrase) => phrase.length >= MIN_PHRASE);
+        .filter(Boolean);
       // Las más largas primero: son las más específicas.
       phrases.sort((a, b) => b.length - a.length);
       return { game, phrases: [...new Set(phrases)] };
@@ -50,6 +50,11 @@
     const hits = [];
     for (const { game, phrases } of getIndex()) {
       for (const phrase of phrases) {
+        // El largo mínimo se exige SOLO acá, en el escaneo suelto de una página
+        // cualquiera: un título corto como "Moss" aparecería en cualquier texto.
+        // En una ficha de tienda el título es exacto y no hay riesgo, por eso
+        // byExactTitle sí usa todas las frases.
+        if (phrase.length < MIN_PHRASE) continue;
         const at = findPhrase(padded, phrase);
         if (at >= 0) {
           hits.push({ game, confidence, at, matched: phrase });

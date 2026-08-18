@@ -1,15 +1,25 @@
 {
   "manifest_version": 3,
   "name": "VR.AR — ¿Funciona en mi visor?",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Mientras navegás, te dice si un juego de VR funciona en tu visor. Detecta títulos en Steam, PlayStation y —si lo activás— en cualquier blog o nota.",
-  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "action": {
     "default_title": "VR.AR — ¿Funciona en mi visor?",
     "default_popup": "src/popup.html"
   },
-  "permissions": ["storage", "scripting"],
-  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
   "content_scripts": [
     {
       "matches": [
@@ -17,10 +27,17 @@
         "https://store.playstation.com/*",
         "https://www.playstation.com/*"
       ],
-      "js": ["src/data.js", "src/detect.js", "src/ui.js", "src/content.js"],
+      "js": [
+        "src/data.js",
+        "src/detect.js",
+        "src/ui.js",
+        "src/content.js"
+      ],
       "run_at": "document_idle"
     }
   ],
   "options_page": "src/options.html",
-  "background": { "service_worker": "src/background.js" }
+  "background": {
+    "service_worker": "src/background.js"
+  }
 }

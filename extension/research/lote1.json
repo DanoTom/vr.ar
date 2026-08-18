@@ -1,0 +1,13 @@
+[{"title":"Beat Saber","on":["quest","steam","psvr2"],"off":["pico"],"nota":"Quest, Steam y PSVR2; al ser título de Meta no está en PICO"},
+{"title":"Half-Life: Alyx","on":["steam"],"off":["quest","psvr2","pico"],"nota":"exclusivo de SteamVR; en otros visores solo vía PC"},
+{"title":"Synth Riders","on":["quest","steam","psvr2","pico"],"off":[],"nota":"confirmado en las cuatro tiendas"},
+{"title":"Pavlov","on":["quest","steam","psvr2"],"off":["pico"],"nota":"Steam, PSVR2 y Quest como 'Pavlov Shack'; sin versión en PICO"},
+{"title":"Alien: Rogue Incursion VR","on":["quest","steam","psvr2"],"off":["pico"],"nota":"PSVR2 y SteamVR dic 2024, Quest 3 feb 2025; sin PICO"},
+{"title":"Skydance's BEHEMOTH","on":["quest","steam","psvr2"],"off":["pico"],"nota":"dic 2024 en Quest 2/3, PSVR2 y SteamVR; sin ficha en PICO"},
+{"title":"Metro Awakening","on":["quest","steam","psvr2"],"off":[],"nota":"nov 2024 en Quest, Steam VR y PSVR2; PICO sin determinar"},
+{"title":"Moss","on":["quest","steam","psvr2","pico"],"off":[],"nota":"Polyarc lo lista en las cuatro plataformas"},
+{"title":"Moss: Book II","on":["quest","steam","psvr2","pico"],"off":[],"nota":"PSVR2, Steam, Quest y PICO"},
+{"title":"Kayak VR: Mirage","on":["steam","psvr2"],"off":["quest"],"nota":"Steam 2022 y PSVR2 2023; sin standalone en Quest; PICO sin determinar"},
+{"title":"Gorilla Tag","on":["quest","steam","psvr2"],"off":["pico"],"nota":"Quest, Steam y PSVR2 nov 2024; en PICO solo por streaming de PC"},
+{"title":"No Man's Sky","on":["steam","psvr2"],"off":["quest"],"nota":"modo VR en PC VR y PSVR2; sin standalone en Quest; PICO sin determinar"},
+{"title":"Microsoft Flight Simulator 2024","on":["steam","psvr2"],"off":["quest","pico"],"nota":"VR en PC desde 2024 y PSVR2 desde abril 2026; sin standalone"}]
