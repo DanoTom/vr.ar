@@ -1426,8 +1426,8 @@ function resolve(game, headsetId) {
 
   if (headset.pcvr && on.includes('steam')) {
     const detail = headset.id === 'psvr2'
-      ? 'Vía PC VR, con el adaptador oficial de PS VR2'
-      : 'Vía PC VR: necesitás una PC que lo mueva';
+      ? 'Requiere una PC y el adaptador oficial de PS VR2'
+      : 'Requiere una PC capaz de mover VR';
     return { status: 'pc', label: 'Sí, pero con PC', detail };
   }
 
@@ -1439,14 +1439,14 @@ function resolve(game, headsetId) {
   if (headset.pcvr) needed.push('steam');
   const allChecked = needed.every((platform) => off.includes(platform));
   if (!allChecked) {
-    return { status: 'unknown', label: 'Sin datos para este visor', detail: 'Todavía no verificamos este juego para tu visor.' };
+    return { status: 'unknown', label: 'Sin datos para este visor', detail: 'Todavía no verificamos este juego con este modelo.' };
   }
 
   const where = on.map((platform) => PLATFORM_LABEL[platform]).filter(Boolean);
   return {
     status: 'no',
     label: 'No funciona en tu visor',
-    detail: where.length ? `Solo está en ${where.join(' y ')}` : 'No está en ninguna plataforma compatible con tu visor'
+    detail: where.length ? `Solo está disponible en ${where.join(' y ')}` : 'No está en ninguna plataforma compatible con tu visor'
   };
 }
 

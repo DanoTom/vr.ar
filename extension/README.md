@@ -81,6 +81,20 @@ Política completa: https://vr.ar/extension-privacidad
 
 ## Historial
 
+### v2.1.1
+- **Español neutro.** Los textos de la interfaz ya no usan voseo ni giros
+  rioplatenses: la extensión la usa cualquier hispanohablante, así que "necesitás
+  una PC que lo mueva" pasó a "Requiere una PC capaz de mover VR". El sitio
+  vr.ar mantiene su voz rioplatense; la herramienta no.
+- **Bug corregido:** al desactivar el acceso a todos los sitios, el bloque
+  "Activo en toda la web" seguía visible. La causa era de CSS: nuestra regla
+  `.granted { display: flex }` le ganaba al `display:none` que el navegador
+  aplica con el atributo `hidden`. Se agregó `[hidden] { display: none !important }`.
+- "Vigilando esta página" pasó a "Buscando juegos en esta página": la palabra
+  anterior sonaba a vigilancia y describía mal lo que hace.
+- El popup ahora explica de entrada para qué sirve la extensión. Antes había que
+  deducirlo de los controles.
+
 ### v2.1.0
 - Catálogo verificado plataforma por plataforma para los 91 juegos: **94% de los
   datos confirmados** (antes se inferían), y las respuestas definitivas pasaron

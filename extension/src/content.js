@@ -2,7 +2,7 @@
 //
 // Reglas de convivencia (lo más importante de este archivo):
 //   · Si no detectamos nada, no aparece nada. Nunca molestamos de gusto.
-//   · Un cierre vale para esa página; "No mostrar acá" se recuerda por sitio.
+//   · Un cierre vale para esa página; "Ocultar en este sitio" se recuerda por dominio.
 //   · No corremos en vr.ar ni dentro de iframes.
 
 (() => {

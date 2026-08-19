@@ -245,7 +245,7 @@ a.link:hover { text-decoration: underline; }
         </div>
         <div class="game">${esc(game.title)}</div>
         <div class="label">Tu visor</div>
-        <select aria-label="Elegí tu visor">
+        <select aria-label="Seleccionar visor">
           ${headsets.map((h) => `<option value="${esc(h.id)}"${h.id === this.opts.headsetId ? ' selected' : ''}>${esc(h.name)}</option>`).join('')}
         </select>
         <div class="verdict ${result.status}">
@@ -253,9 +253,9 @@ a.link:hover { text-decoration: underline; }
           <div><strong>${esc(result.label)}</strong>${result.detail ? `<span>${esc(result.detail)}</span>` : ''}</div>
         </div>
         ${platforms.length ? `<div class="where">Disponible en: <b>${esc(platforms.join(' · '))}</b></div>` : ''}
-        ${approx ? `<div class="caveat">Coincidencia aproximada. Si estás mirando otra edición u otro juego parecido, el dato puede no corresponder.</div>` : ''}
+        ${approx ? `<div class="caveat">Coincidencia aproximada. Si se trata de otra edición o de un juego parecido, el dato puede no corresponder.</div>` : ''}
         ${mentioned && !approx ? `<div class="where">Detectado porque esta página menciona el juego.</div>` : ''}
-        ${others.length ? `<div class="others"><div class="others-label">También mencionados acá</div>${
+        ${others.length ? `<div class="others"><div class="others-label">También en esta página</div>${
           others.map((hit) => {
             const r = globalThis.VRAR_resolve?.(hit.game, this.opts.headsetId) || { status: 'unknown' };
             const index = this.opts.hits.indexOf(hit);
@@ -263,7 +263,7 @@ a.link:hover { text-decoration: underline; }
           }).join('')}</div>` : ''}
         <div class="foot">
           <a class="link" href="https://vr.ar/guias/mejores-juegos-vr-2026" target="_blank" rel="noopener noreferrer">Ver más en VR.AR ↗</a>
-          <button class="mute" type="button">No mostrar acá</button>
+          <button class="mute" type="button">Ocultar en este sitio</button>
         </div>`;
 
       card.querySelector('.x').addEventListener('click', () => this.opts.onClose?.());

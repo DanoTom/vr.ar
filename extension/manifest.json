@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "VR.AR — ¿Funciona en mi visor?",
-  "version": "2.1.0",
-  "description": "Mientras navegás, te dice si un juego de VR funciona en tu visor. Detecta títulos en Steam, PlayStation y —si lo activás— en cualquier blog o nota.",
+  "version": "2.1.1",
+  "description": "Indica si un juego de VR funciona en tu visor, en Steam, PlayStation y cualquier otra página que lo mencione.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

@@ -25,14 +25,14 @@ async function paintCurrentPage() {
   const granted = await chrome.permissions.contains(ALL_SITES);
   el('dot').className = 'dot';
   if (isStore) {
-    el('verdict').textContent = 'Tienda reconocida';
-    el('detail').textContent = 'Abrí la ficha de un juego y la tarjeta aparece sola.';
+    el('verdict').textContent = 'Tienda compatible';
+    el('detail').textContent = 'Al abrir la ficha de un juego, la tarjeta aparece sola.';
   } else if (granted) {
-    el('verdict').textContent = 'Vigilando esta página';
-    el('detail').textContent = 'Si menciona un juego del catálogo, aparece abajo a la derecha.';
+    el('verdict').textContent = 'Buscando juegos en esta página';
+    el('detail').textContent = 'Si menciona un juego del catálogo, la tarjeta aparece abajo a la derecha.';
   } else {
-    el('verdict').textContent = 'Fuera de las tiendas';
-    el('detail').textContent = 'Activá el acceso a todos los sitios para que funcione acá.';
+    el('verdict').textContent = 'No disponible en esta página';
+    el('detail').textContent = 'Solo funciona en Steam y PlayStation. Se puede activar abajo para el resto de la web.';
   }
 }
 

@@ -28,7 +28,7 @@ VR.AR — ¿Funciona en mi visor?
 
 **Descripción breve** (máx. 132)
 ```
-Te dice si un juego de VR funciona en tu visor, mientras navegás por Steam, PlayStation o cualquier blog.
+Indica si un juego de VR funciona en tu visor, en Steam, PlayStation y cualquier blog o nota.
 ```
 
 **Categoría:** Herramientas
@@ -42,24 +42,24 @@ Te dice si un juego de VR funciona en tu visor, mientras navegás por Steam, Pla
 Estás leyendo una nota sobre un juego de realidad virtual, o mirando su página en
 Steam, y aparece la duda de siempre: ¿esto funciona en el visor que tengo?
 
-VR.AR te contesta sin que tengas que buscar nada. Elegís tu visor una vez y, cuando
-una página menciona un juego que tenemos en el catálogo, aparece una tarjeta chica
-abajo a la derecha con la respuesta.
+VR.AR te contesta sin que tengas que buscar nada. Se elige el visor una sola vez y,
+cuando una página menciona un juego del catálogo, aparece una tarjeta pequeña abajo
+a la derecha con la respuesta.
 
 CÓMO FUNCIONA
 
-• En Steam y PlayStation Store funciona apenas la instalás.
-• En cualquier otra página —blogs, notas, reseñas, foros— funciona si activás el
-  acceso desde el botón de la extensión. Vos decidís.
+• En Steam y PlayStation Store funciona apenas se instala.
+• En cualquier otra página —blogs, notas, reseñas, foros— funciona si se activa el
+  acceso desde el botón de la extensión. La decisión es del usuario.
 • Si no detecta ningún juego, no aparece nada. No molesta.
 
 QUÉ TE DICE
 
 • Si funciona nativo en tu visor, y en qué tienda está.
-• Si funciona pero necesitás una PC (PC VR), incluida la vía del adaptador de PS VR2.
+• Si funciona pero requiere una PC (PC VR), incluida la vía del adaptador de PS VR2.
 • Si no funciona, y en qué plataformas sí está.
-• Si todavía no verificamos ese juego para tu visor, te lo dice en vez de inventar
-  una respuesta.
+• Si todavía no verificamos ese juego con tu modelo, lo dice en vez de inventar una
+  respuesta.
 
 VISORES SOPORTADOS
 
@@ -75,8 +75,8 @@ con "War Thunder".
 
 PRIVACIDAD
 
-Todo pasa en tu navegador. No hay cuentas, ni analítica, ni historial, ni envío de
-datos a ningún servidor. Solo se guarda, en tu propia máquina, qué visor elegiste.
+Todo ocurre en tu navegador. No hay cuentas, ni analítica, ni historial, ni envío de
+datos a ningún servidor. Solo se guarda, en tu propio equipo, el visor elegido.
 
 Hecha por VR.AR (https://vr.ar), un sitio independiente y gratuito sobre realidad
 virtual en español.
@@ -109,8 +109,8 @@ en ningún sitio adicional.
 ```
 Detectar menciones de juegos de VR en páginas que no son tiendas —blogs, notas,
 reseñas, foros— para poder mostrar la compatibilidad ahí. Son opcionales: la
-extensión se instala sin ellos y solo se piden si el usuario aprieta "Activar en
-todos los sitios". El contenido de la página se analiza localmente y nunca se
+extensión se instala sin ellos y solo se piden si el usuario pulsa "Activar en todos
+los sitios". El contenido de la página se analiza localmente y nunca se
 transmite.
 ```
 
