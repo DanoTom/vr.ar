@@ -130,8 +130,33 @@ Mínimo una, hasta cinco, de 1280×800. Las que preparamos muestran, en este ord
 3. La tarjeta sobre una ficha de Steam.
 4. El popup con el selector de visor y el botón de activación.
 
-Además hay un mosaico promocional de 440×280 (`promo-440x280.png`), opcional pero
-recomendado: es lo que se ve en las listas de la tienda.
+Además hay dos imágenes promocionales, ambas **opcionales**:
+
+- `promo-440x280.png` — mosaico pequeño, se ve en las listas de la tienda.
+- `marquesina-1400x560.png` — solo se usa si Google decide destacar la extensión
+  en la portada. No hace falta para publicar.
+
+Las medidas se validan exactas: si el archivo mide el doble (pasa al capturar en
+pantalla retina), la tienda lo rechaza.
+
+---
+
+## Si el botón "Enviar a revisión" está deshabilitado
+
+Casi nunca es por las imágenes promocionales, que son opcionales. Por orden de
+frecuencia:
+
+1. **Pestaña "Prácticas de privacidad" incompleta.** Es la causa número uno. Hay
+   que completar el propósito único, **una justificación por cada permiso**
+   (`storage`, `scripting` y los de host), y tildar las declaraciones de uso de
+   datos. Los textos están más arriba en este documento.
+2. **Correo del editor sin verificar**, en la pestaña Cuenta.
+3. **Falta elegir visibilidad y países** en Distribución.
+4. **Falta alguna captura**: se necesita al menos una de 1280×800.
+5. El ícono de 128×128, que en nuestro caso ya viene en el manifest.
+
+El panel marca en rojo las pestañas incompletas, pero a veces hay que entrar a
+cada una para ver qué campo falta.
 
 ---
 
