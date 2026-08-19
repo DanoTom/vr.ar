@@ -8,7 +8,7 @@
 ## Qué es
 
 Una extensión que, mientras el usuario navega, detecta juegos de realidad virtual
-y le dice si funcionan en **su** visor. En Steam y PlayStation Store anda desde que
+y le dice si funcionan en **su** visor. En Steam y PlayStation Store funciona desde que
 se instala; en cualquier otra página (blogs, notas, reseñas) el usuario la habilita
 con un botón.
 
@@ -28,7 +28,7 @@ VR.AR — ¿Funciona en mi visor?
 
 **Descripción breve** (máx. 132)
 ```
-Indica si un juego de VR funciona en tu visor, en Steam, PlayStation y cualquier blog o nota.
+Indica si un juego de VR funciona en tu visor: en Steam, PlayStation y cualquier blog o nota. Gratis y sin cuenta.
 ```
 
 **Categoría:** Herramientas
@@ -37,7 +37,7 @@ Indica si un juego de VR funciona en tu visor, en Steam, PlayStation y cualquier
 
 **Descripción detallada**
 ```
-¿Ese juego de VR anda en tu visor?
+¿Ese juego de VR funciona en tu visor?
 
 Estás leyendo una nota sobre un juego de realidad virtual, o mirando su página en
 Steam, y aparece la duda de siempre: ¿esto funciona en el visor que tengo?
@@ -68,10 +68,10 @@ Valve Index y HTC Vive.
 
 HONESTIDAD
 
-El catálogo se arma verificando plataforma por plataforma. Cuando no tenemos el
-dato, la extensión lo dice: preferimos no contestar antes que contestar mal. Y la
-coincidencia de títulos es estricta, así que "War Thunder Mobile" no se confunde
-con "War Thunder".
+El catálogo tiene 91 juegos, verificados plataforma por plataforma. No están todos
+los que existen, y por eso importa lo siguiente: cuando no tenemos el dato, la
+extensión lo dice en vez de inventar una respuesta. La coincidencia de títulos
+también es estricta, así que "War Thunder Mobile" no se confunde con "War Thunder".
 
 PRIVACIDAD
 
@@ -89,7 +89,7 @@ virtual en español.
 **Propósito único (single purpose)**
 ```
 Mostrar información de compatibilidad entre juegos de realidad virtual y el visor
-que el usuario tiene, sobre las páginas que menciona esos juegos.
+que el usuario tiene, sobre las páginas que mencionan esos juegos.
 ```
 
 **Permiso `storage`**
@@ -126,9 +126,12 @@ propósito único, no usarlos para evaluar solvencia).
 Mínimo una, hasta cinco, de 1280×800. Las que preparamos muestran, en este orden:
 
 1. La tarjeta abierta sobre una nota de blog (el caso que mejor explica la idea).
-2. La píldora chica sin abrir, para que se vea que no invade.
+2. La píldora pequeña sin abrir, para que se vea que no invade.
 3. La tarjeta sobre una ficha de Steam.
 4. El popup con el selector de visor y el botón de activación.
+
+Además hay un mosaico promocional de 440×280 (`promo-440x280.png`), opcional pero
+recomendado: es lo que se ve en las listas de la tienda.
 
 ---
 
@@ -140,6 +143,15 @@ Mínimo una, hasta cinco, de 1280×800. Las que preparamos muestran, en este ord
    errores, y probar una tienda y un blog.
 4. Empaquetar en zip **el contenido** de `extension/`, no la carpeta que lo contiene.
 5. Subir al panel de desarrollador. La revisión suele tardar de un día a dos semanas.
+
+## Criterio de idioma
+
+La extensión usa **español neutro**, sin voseo ni giros rioplatenses. Es una
+decisión deliberada y distinta a la del sitio: en vr.ar el voseo es identidad
+editorial, pero la extensión es una herramienta que aparece sobre páginas ajenas,
+en un momento de duda práctica, y la usa cualquier hispanohablante. Al escribir
+textos nuevos, evitar las formas conjugadas de segunda persona ("necesitás",
+"activá", "elegí"); el posesivo "tu" sí es universal y se puede usar.
 
 ## Cosas aprendidas
 
