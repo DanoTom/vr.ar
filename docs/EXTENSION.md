@@ -166,8 +166,27 @@ cada una para ver qué campo falta.
 2. Anotar el cambio en `extension/README.md`.
 3. Verificar: cargar descomprimida en `chrome://extensions`, revisar que no haya
    errores, y probar una tienda y un blog.
-4. Empaquetar en zip **el contenido** de `extension/`, no la carpeta que lo contiene.
-5. Subir al panel de desarrollador. La revisión suele tardar de un día a dos semanas.
+4. Si cambió la cantidad de juegos, **actualizar el número en la descripción
+   detallada** (dice "El catálogo tiene 91 juegos").
+5. Empaquetar en zip **el contenido** de `extension/`, no la carpeta que lo contiene.
+6. Subir al panel de desarrollador y completar **todas las pestañas**: Ficha de
+   Store, Prácticas de privacidad y Distribución. El botón de enviar solo se
+   habilita cuando las tres están completas y guardadas, y el panel no siempre
+   deja claro cuál falta. Guardar el borrador antes de cambiar de pestaña.
+7. Enviar a revisión. Suele tardar de un día a dos semanas.
+
+## Qué esperar después de enviar
+
+- **Si aprueban:** llega un mail y la extensión aparece en la tienda en unas horas.
+  Ahí recién tiene sentido anunciarla (página en vr.ar, Product Hunt, comunidades).
+- **Si rechazan:** el mail dice el motivo con un código de política. Casi siempre
+  se arregla con un texto, no con código. Los motivos habituales para una
+  extensión como esta serían una justificación de permisos poco clara o una
+  descripción que prometa más de lo que hace. Se corrige y se reenvía; la segunda
+  revisión suele ser más rápida.
+- **Las actualizaciones posteriores** se revisan bastante más rápido que el primer
+  envío, que es la razón por la que convino publicar temprano en vez de esperar a
+  tener el catálogo perfecto.
 
 ## Criterio de idioma
 
