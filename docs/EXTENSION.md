@@ -5,6 +5,14 @@
 > para no volver a redactarlo cada vez.
 > Última actualización: agosto de 2026.
 
+## Publicada
+
+- **En la tienda:** https://chromewebstore.google.com/detail/kkochebcipappcffahiekngadijacfge
+- **ID:** `kkochebcipappcffahiekngadijacfge`
+- **Primera versión pública:** 2.1.1, aprobada el 19 de agosto de 2026 (enviada el
+  día anterior: la revisión tardó menos de 24 horas).
+- **Página en el sitio:** https://vr.ar/extension
+
 ## Qué es
 
 Una extensión que, mientras el usuario navega, detecta juegos de realidad virtual
@@ -174,6 +182,14 @@ cada una para ver qué campo falta.
    habilita cuando las tres están completas y guardadas, y el panel no siempre
    deja claro cuál falta. Guardar el borrador antes de cambiar de pestaña.
 7. Enviar a revisión. Suele tardar de un día a dos semanas.
+
+## Publicada
+
+- **En la tienda:** https://chromewebstore.google.com/detail/kkochebcipappcffahiekngadijacfge
+- **ID:** `kkochebcipappcffahiekngadijacfge`
+- **Primera versión pública:** 2.1.1, aprobada el 19 de agosto de 2026 (enviada el
+  día anterior: la revisión tardó menos de 24 horas).
+- **Página en el sitio:** https://vr.ar/extension
 
 ## Qué esperar después de enviar
 
