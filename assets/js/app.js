@@ -223,7 +223,11 @@ const HEADSETS = {
     price: "USD $349.99 (128GB) / $449.99 (256GB)",
     desc_en: "The Quest 3S shares the same Snapdragon XR2 Gen 2 chip and full app library as the Quest 3, at a significantly lower price. It's the perfect gateway to modern VR: fully standalone with color passthrough — no PC or console needed.",
     desc_es: "El Quest 3S comparte el mismo procesador Snapdragon XR2 Gen 2 y la biblioteca completa del Quest 3, a un precio significativamente menor. Es la puerta de entrada perfecta al VR moderno: standalone con passthrough color, sin PC ni consola.",
-    link: "https://amzn.to/3ZOXTna",
+    link: "https://www.meta.com/quest/quest-3s/",
+    linkNote_en: "Official Meta Store price",
+    linkNote_es: "Precio oficial de Meta",
+    btnLabel_en: "View on Meta Store →",
+    btnLabel_es: "Ver en Meta Store →",
     img: "https://m.media-amazon.com/images/I/61-SGpdmgRL._SL1500_.jpg"
   },
   quest3: {
@@ -232,7 +236,11 @@ const HEADSETS = {
     price: "USD $599.99 (512GB)",
     desc_en: "The Quest 3 is the most well-rounded standalone headset: sharp pancake lenses, quality color passthrough, and the best VR app ecosystem. No PC or console required — the top pick by specialized media in 2024–2025.",
     desc_es: "El Quest 3 es el headset standalone más equilibrado: lentes pancake de alta nitidez, passthrough color de calidad y el mejor ecosistema de apps VR. Sin PC ni consola — el más recomendado por medios especializados en 2024–2025.",
-    link: "https://amzn.to/4qZTU2k",
+    link: "https://www.meta.com/quest/quest-3/",
+    linkNote_en: "Official Meta Store price",
+    linkNote_es: "Precio oficial de Meta",
+    btnLabel_en: "View on Meta Store →",
+    btnLabel_es: "Ver en Meta Store →",
     img: "https://m.media-amazon.com/images/I/61nkctF66PL._SL1500_.jpg"
   },
   psvr2: {
@@ -241,7 +249,11 @@ const HEADSETS = {
     price: "USD $399.99",
     desc_en: "The PSVR2 takes VR gaming to the next level for PS5 owners: native eye tracking, haptic feedback in the headset, and adaptive triggers for unmatched immersion. Note: requires PS5 — not standalone, not PC-compatible.",
     desc_es: "El PSVR2 lleva el gaming VR a otro nivel para dueños de PS5: eye tracking nativo, feedback háptico y gatillos adaptativos para una inmersión sin igual. Requiere PS5 — no es standalone ni compatible con PC.",
-    link: "https://amzn.to/3MyNyIZ",
+    link: "https://www.playstation.com/en-us/ps-vr2/",
+    linkNote_en: "Official PlayStation site",
+    linkNote_es: "Sitio oficial de PlayStation",
+    btnLabel_en: "View on PlayStation →",
+    btnLabel_es: "Ver en PlayStation →",
     img: "https://m.media-amazon.com/images/I/517CoPDzOpL._AC_SL1500_.jpg"
   },
   pimax: {
@@ -312,54 +324,54 @@ const SVG_ICONS = {
 const ACCESSORIES = {
   quest3: {
     audio: [
-      { name: 'Soundcore VR P10', link: 'https://amzn.to/4qQLBpk',
+      { name: 'Soundcore VR P10', link: 'https://www.amazon.com/s?k=Soundcore+VR+P10',
         desc_en: 'Official co-branded wireless earbuds for Quest — ultra-low latency, totally cable-free.',
         desc_es: 'Auriculares inalámbricos co-branded oficiales para Quest, ultra baja latencia, sin cables.' },
-      { name: 'AMVR Earbuds (Quest 3)', link: 'https://amzn.to/3ZQ2c1y',
+      { name: 'AMVR Earbuds (Quest 3)', link: 'https://www.amazon.com/s?k=AMVR+earbuds+Quest+3',
         desc_en: 'Designed for Quest 3\'s port — the cleanest and most affordable wired solution.',
         desc_es: 'Diseñados para el puerto del Quest 3, la solución con cable más limpia y económica.' }
     ],
     gear: [
-      { name: 'BoboVR S3 Pro', link: 'https://amzn.to/3ZQbjPH',
+      { name: 'BoboVR S3 Pro', link: 'https://www.amazon.com/s?k=BoboVR+S3+Pro',
         desc_en: 'Reddit\'s #1 pick: improved head strap that counterbalances weight and doubles battery life.',
         desc_es: 'El accesorio #1 en Reddit: correa que contrabalancea el peso y duplica la batería.' },
-      { name: 'BoboVR G3 Controller Grips', link: 'https://amzn.to/3ZQbkTL',
+      { name: 'BoboVR G3 Controller Grips', link: 'https://www.amazon.com/s?k=BoboVR+G3+controller+grips',
         desc_en: 'Essential for physical games, shooters and fitness — better grip, controller protection.',
         desc_es: 'Imprescindible para juegos físicos, shooters y fitness, mejora el agarre y protege los controllers.' }
     ]
   },
   quest3s: {
     audio: [
-      { name: 'AMVR Earbuds (Quest 3/3S)', link: 'https://amzn.to/3ZQ2c1y',
+      { name: 'AMVR Earbuds (Quest 3/3S)', link: 'https://www.amazon.com/s?k=AMVR+earbuds+Quest+3',
         desc_en: 'Same port as Quest 3 — clean, affordable wired solution designed for this headset.',
         desc_es: 'Mismo puerto que Quest 3, solución con cable limpia y económica para este headset.' },
-      { name: 'Koss Porta Pro', link: 'https://amzn.to/4rp4TTM',
+      { name: 'Koss Porta Pro', link: 'https://www.amazon.com/s?k=Koss+Porta+Pro',
         desc_en: 'Ultra-light open-back with excellent sound for the price — iconic in the VR community.',
         desc_es: 'Ultralivianos y open-back, sonido excelente para el precio, muy populares en la comunidad VR.' }
     ],
     gear: [
-      { name: 'BoboVR S3 Pro', link: 'https://amzn.to/3ZQbjPH',
+      { name: 'BoboVR S3 Pro', link: 'https://www.amazon.com/s?k=BoboVR+S3+Pro',
         desc_en: 'Native battery lasts ~2h — this strap extends it considerably and improves balance.',
         desc_es: 'La batería nativa dura ~2hs; este strap la extiende considerablemente y mejora el balance.' },
-      { name: 'AMVR Facial Interface', link: 'https://amzn.to/4tJyk4t',
+      { name: 'AMVR Facial Interface', link: 'https://www.amazon.com/s?k=AMVR+silicone+facial+interface+Quest+3',
         desc_en: 'The default foam can irritate skin — this version is more comfortable and blocks light better.',
         desc_es: 'La interfaz facial por defecto puede irritar la piel; más cómoda y bloquea mejor la luz.' }
     ]
   },
   psvr2: {
     audio: [
-      { name: 'Sony Pulse Explore', link: 'https://amzn.to/4tV0ycS',
+      { name: 'Sony Pulse Explore', link: 'https://www.amazon.com/s?k=Sony+Pulse+Explore',
         desc_en: 'Native PS5 integration, system EQ, simultaneous phone connection, zero perceptible latency.',
         desc_es: 'Integración nativa con PS5, ecualizador del sistema, conexión simultánea con el teléfono, sin latencia.' },
-      { name: 'SteelSeries Arctis Nova 1P', link: 'https://amzn.to/4avKPJx',
+      { name: 'SteelSeries Arctis Nova 1P', link: 'https://www.amazon.com/s?k=SteelSeries+Arctis+Nova+1P',
         desc_en: '3.5mm jack directly into PSVR2, lightweight with retractable mic — helps stabilize the headset.',
         desc_es: 'Conexión directa por jack 3.5mm al PSVR2, liviano con micrófono retráctil, ayuda a estabilizar el headset.' }
     ],
     gear: [
-      { name: 'Globular Cluster CMP2', link: 'https://amzn.to/4kPI49q',
+      { name: 'Globular Cluster CMP2', link: 'https://www.amazon.com/s?k=Globular+Cluster+CMP2+PSVR2',
         desc_en: 'Reddit\'s top comfort mod for PSVR2 — redistributes weight and improves balance considerably.',
         desc_es: 'El mod de comodidad más recomendado para PSVR2 en Reddit, redistribuye el peso y mejora el balance.' },
-      { name: 'Collective Minds Charging Stand', link: 'https://amzn.to/3ZQbpa1',
+      { name: 'Collective Minds Charging Stand', link: 'https://www.amazon.com/s?k=Collective+Minds+PSVR2+charging+stand',
         desc_en: 'Charges the headset and both controllers simultaneously — also works as a display stand.',
         desc_es: 'Carga el headset y ambos controllers simultáneamente, también funciona como display stand.' }
     ]
@@ -368,18 +380,18 @@ const ACCESSORIES = {
     note_en: 'Requires a gaming PC with at least an NVIDIA RTX 3070. Not standalone — USB-C cable connection to your PC required.',
     note_es: 'Requiere PC gamer con al menos NVIDIA RTX 3070. No es standalone — necesita conexión por cable USB-C a tu PC.',
     audio: [
-      { name: 'Pimax DMAS', link: 'https://amzn.to/4s8psUu',
+      { name: 'Pimax DMAS', link: 'https://www.amazon.com/s?k=Pimax+DMAS',
         desc_en: 'Official Pimax spatial audio speakers — premium open-ear solution designed specifically for Pimax headsets.',
         desc_es: 'Parlantes de audio espacial oficiales de Pimax — solución open-ear premium diseñada específicamente para headsets Pimax.' },
-      { name: 'Moondrop Chu', link: 'https://amzn.to/4s6KOBD',
+      { name: 'Moondrop Chu', link: 'https://www.amazon.com/s?k=Moondrop+Chu',
         desc_en: 'High-quality IEMs with cable, excellent for long PCVR sessions — great value for audiophile-level sound.',
         desc_es: 'IEMs con cable de excelente calidad, ideales para sesiones largas de PCVR — relación precio/calidad imbatible.' }
     ],
     gear: [
-      { name: 'Sony Pulse Explore', link: 'https://amzn.to/3ZTDzRC',
+      { name: 'Sony Pulse Explore', link: 'https://www.amazon.com/s?k=Sony+Pulse+Explore',
         desc_en: 'Premium wireless earbuds with low-latency audio — also compatible via 3.5mm jack for PC-connected use.',
         desc_es: 'Auriculares inalámbricos premium con audio de baja latencia — compatibles vía jack 3.5mm para uso con PC.' },
-      { name: 'Long USB-C Cable (3m)', link: 'https://amzn.to/46TVjjw',
+      { name: 'Long USB-C Cable (3m)', link: 'https://www.amazon.com/s?k=USB+3+Link+cable+3m+Quest',
         desc_en: 'A quality 3m USB-C cable is essential for comfortable PCVR movement — don\'t skip this.',
         desc_es: 'Un cable USB-C de calidad de 3m es esencial para moverse cómodamente en PCVR — no lo omitas.' }
     ]
@@ -388,7 +400,7 @@ const ACCESSORIES = {
     note_en: 'Requires an NVIDIA RTX 4070 or better to run at full resolution. Not standalone — USB-C cable to PC required. Accessories are available on the official Pimax website.',
     note_es: 'Requiere NVIDIA RTX 4070 o superior para correr a resolución completa. No es standalone — conexión USB-C a PC requerida. Los accesorios están disponibles en el sitio oficial de Pimax.',
     audio: [
-      { name: 'Pimax DMAS', link: 'https://amzn.to/4s8psUu',
+      { name: 'Pimax DMAS', link: 'https://www.amazon.com/s?k=Pimax+DMAS',
         desc_en: 'Official Pimax spatial audio speakers — the premium open-ear solution designed specifically for Pimax headsets.',
         desc_es: 'Parlantes de audio espacial oficiales de Pimax — la solución open-ear premium diseñada específicamente para headsets Pimax.' }
     ],
@@ -402,7 +414,7 @@ const ACCESSORIES = {
   },
   pico4ultra: {
     audio: [
-      { name: 'BOBOVR P4 B100 Battery System', link: 'https://amzn.to/4bc9vH5',
+      { name: 'BOBOVR P4 B100 Battery System', link: 'https://www.amazon.com/s?k=BOBOVR+P4+B100+battery+Pico+4',
         desc_en: 'High-capacity battery strap engineered for extended playtime and seamless convenience — the top comfort upgrade for Pico 4 Ultra.',
         desc_es: 'Correa con batería de alta capacidad para mayor tiempo de juego y comodidad — el upgrade más recomendado para el Pico 4 Ultra.' }
     ],
@@ -445,7 +457,7 @@ function renderAccessories(headsetKey) {
     <div class="acc-item">
       <div class="acc-item-name">${item.name}</div>
       <div class="acc-item-desc">${currentLang === 'en' ? item.desc_en : item.desc_es}</div>
-      <a class="acc-item-link" href="${item.link}" target="_blank" rel="noopener noreferrer sponsored">
+      <a class="acc-item-link" href="${item.link}" target="_blank" rel="noopener noreferrer${/tidd\.ly/.test(item.link) ? ' sponsored' : ''}">
         <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         ${(currentLang === 'en' ? item.linkLabel_en : item.linkLabel_es) || t.amazonBtn}
       </a>
@@ -514,20 +526,21 @@ const UI_TEXT = {
     badge: '✦ Your Match Is...',
     rankLabel: '✦ Primary Recommendation',
     secondLabel: '✦ Second Most Compatible',
-    amazonBtn: 'View on Amazon',
-    amazonBtnSm: 'View on Amazon →',
+    amazonBtn: 'Find on Amazon',
+    amazonBtnSm: 'Find on Amazon →',
     restartBtn: '↺ Retake the Quiz',
     homeBtn: 'Home',
     shareLabel: 'Share your result',
     copyBtn: 'Copy link',
-    footnote: (url) => `These are affiliate links — you pay the same, and help keep <a href="${url}">vr.ar</a> free. ❤️`,
+    footnote: (url) => `Some links are affiliate links — you pay the same, and they help keep <a href="${url}">vr.ar</a> free. Links to Amazon are plain searches and earn us nothing. ❤️`,
     resultSub: (p, s, ps, ss) => `Match score: ${ps} pts  ·  Runner-up: ${s} (${ss} pts)`,
     updatedBadge: '2026 Edition',
     affiliateNotice: '🔗 Affiliate link — you pay the same price.',
+    storeNotice: '🔗 Manufacturer\u2019s official store. We earn nothing from this link.',
     footerGuides: 'Guides',
     footerAbout: 'About',
     footerPrivacy: 'Privacy Policy',
-    footerDisclosure: 'As an Amazon Associate, vr.ar earns from qualifying purchases.',
+    footerDisclosure: 'Some links on vr.ar are affiliate links; we may earn a commission at no extra cost to you.',
     accTitle: 'Recommended Gear',
     accSub: '— audio & essentials for your headset',
     accCount: 'items',
@@ -561,20 +574,21 @@ const UI_TEXT = {
     badge: '✦ Tu Match es...',
     rankLabel: '✦ Recomendación principal',
     secondLabel: '✦ Segunda opción más compatible',
-    amazonBtn: 'Ver en Amazon',
-    amazonBtnSm: 'Ver en Amazon →',
+    amazonBtn: 'Buscar en Amazon',
+    amazonBtnSm: 'Buscar en Amazon →',
     restartBtn: '↺ Repetir el test',
     homeBtn: 'Inicio',
     shareLabel: 'Compartir resultado',
     copyBtn: 'Copiar link',
-    footnote: (url) => `Links de afiliado — no pagás más, y ayudás a mantener <a href="${url}">vr.ar</a> gratis. ❤️`,
+    footnote: (url) => `Algunos links son de afiliado — no pagás más, y ayudan a mantener <a href="${url}">vr.ar</a> gratis. Los links a Amazon son búsquedas comunes y no nos dejan nada. ❤️`,
     resultSub: (p, s, ps, ss) => `Score: ${ps} pts  ·  Segunda opción: ${s} (${ss} pts)`,
     updatedBadge: 'Edición 2026',
     affiliateNotice: '🔗 Link de afiliado — pagás el mismo precio.',
+    storeNotice: '🔗 Tienda oficial del fabricante. No ganamos nada con este link.',
     footerGuides: 'Guías',
     footerAbout: 'Quiénes somos',
     footerPrivacy: 'Política de privacidad',
-    footerDisclosure: 'Como Afiliado de Amazon, vr.ar gana con las compras que cumplen los requisitos.',
+    footerDisclosure: 'Algunos links de vr.ar son de afiliado: podemos recibir una comisión sin costo extra para vos.',
     accTitle: 'Accesorios recomendados',
     accSub: '— audio y esenciales para tu headset',
     accCount: 'ítems',
@@ -950,7 +964,8 @@ function renderResults() {
   const primaryBtnLabel = (currentLang === 'en' ? primary.btnLabel_en : primary.btnLabel_es) || t.amazonBtn;
   document.getElementById('res-amazon-btn-text').textContent = primaryBtnLabel;
   const affNotice = document.getElementById('res-affiliate-notice');
-  if (affNotice) affNotice.textContent = t.affiliateNotice;
+  // Solo los links de XR Shop son de afiliado; los de Meta y PlayStation no.
+  if (affNotice) affNotice.textContent = /tidd\.ly/.test(primary.link) ? t.affiliateNotice : t.storeNotice;
   // Show "direct from manufacturer" note for Pimax headsets
   const linkNoteEl = document.getElementById('res-link-note');
   const linkNote = currentLang === 'en' ? primary.linkNote_en : primary.linkNote_es;

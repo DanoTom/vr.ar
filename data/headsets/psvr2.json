@@ -20,7 +20,15 @@
   },
   "schema_description": "Premium VR headset for PS5 owners with native eye tracking, haptic feedback, and adaptive triggers. Requires PlayStation 5.",
   "commerce": {
-    "url": "https://amzn.to/3MyNyIZ"
+    "url": "https://www.playstation.com/en-us/ps-vr2/",
+    "link_note": {
+      "en": "Official PlayStation site",
+      "es": "Sitio oficial de PlayStation"
+    },
+    "btn_label": {
+      "en": "View on PlayStation →",
+      "es": "Ver en PlayStation →"
+    }
   },
   "image": "https://m.media-amazon.com/images/I/517CoPDzOpL._AC_SL1500_.jpg"
 }

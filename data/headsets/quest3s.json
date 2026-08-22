@@ -20,7 +20,15 @@
   },
   "schema_description": "Standalone VR headset with Snapdragon XR2 Gen 2, full-color mixed reality passthrough, and access to the complete Meta Quest app library. No PC or console required.",
   "commerce": {
-    "url": "https://amzn.to/3ZOXTna"
+    "url": "https://www.meta.com/quest/quest-3s/",
+    "link_note": {
+      "en": "Official Meta Store price",
+      "es": "Precio oficial de Meta"
+    },
+    "btn_label": {
+      "en": "View on Meta Store →",
+      "es": "Ver en Meta Store →"
+    }
   },
   "image": "https://m.media-amazon.com/images/I/61-SGpdmgRL._SL1500_.jpg"
 }
