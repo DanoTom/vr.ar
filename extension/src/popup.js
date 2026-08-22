@@ -1,6 +1,7 @@
 const ALL_SITES = { origins: ['http://*/*', 'https://*/*'] };
 
 const el = (id) => document.getElementById(id);
+const t = (key, subs) => globalThis.VRAR_t(key, subs);
 
 async function paintPermission() {
   const granted = await chrome.permissions.contains(ALL_SITES);
@@ -18,33 +19,34 @@ async function paintCurrentPage() {
 
   const headset = VRAR_HEADSETS.find((h) => h.id === el('headset').value) || VRAR_HEADSETS[0];
   el('headsetType').textContent = headset.pcvr
-    ? (headset.native.length ? 'Standalone y PC VR' : 'Solo PC VR')
-    : 'Compatibilidad manual';
+    ? (headset.native.length ? t('typeStandalonePc') : t('typePcOnly'))
+    : t('typeManual');
 
   // El popup no puede leer la página sin permisos; damos una guía honesta.
   const granted = await chrome.permissions.contains(ALL_SITES);
   el('dot').className = 'dot';
   if (isStore) {
-    el('verdict').textContent = 'Tienda compatible';
-    el('detail').textContent = 'Al abrir la ficha de un juego, la tarjeta aparece sola.';
+    el('verdict').textContent = t('storeSupported');
+    el('detail').textContent = t('storeSupportedInfo');
   } else if (granted) {
-    el('verdict').textContent = 'Buscando juegos en esta página';
-    el('detail').textContent = 'Si menciona un juego del catálogo, la tarjeta aparece abajo a la derecha.';
+    el('verdict').textContent = t('scanningPage');
+    el('detail').textContent = t('scanningPageInfo');
   } else {
-    el('verdict').textContent = 'No disponible en esta página';
-    el('detail').textContent = 'Solo funciona en Steam y PlayStation. Se puede activar abajo para el resto de la web.';
+    el('verdict').textContent = t('notAvailable');
+    el('detail').textContent = t('notAvailableInfo');
   }
 }
 
 async function init() {
+  globalThis.VRAR_applyI18n();
   const select = el('headset');
   for (const headset of VRAR_HEADSETS) {
     const option = document.createElement('option');
     option.value = headset.id;
-    option.textContent = headset.name;
+    option.textContent = globalThis.VRAR_headsetName?.(headset) || headset.name;
     select.appendChild(option);
   }
-  el('catalogCount').textContent = `${VRAR_CATALOG.length} juegos`;
+  el('catalogCount').textContent = t('catalogCount', [String(VRAR_CATALOG.length)]);
 
   const saved = await chrome.storage.local.get({ selectedHeadset: 'quest-3', enabled: true });
   select.value = saved.selectedHeadset;

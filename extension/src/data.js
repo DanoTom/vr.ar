@@ -89,6 +89,20 @@ const HEADSETS = [
   }
 ];
 
+// Si no hay chrome.i18n disponible, estos son los textos originales.
+const VERDICT_FALLBACK_ES = {
+  verdictYes: 'Funciona en tu visor',
+  verdictPc: 'Sí, pero con PC',
+  verdictPcInfo: 'Requiere una PC capaz de mover VR',
+  verdictPcInfoPsvr2: 'Requiere una PC y el adaptador oficial de PS VR2',
+  verdictUnknown: 'Sin datos para este visor',
+  verdictUnknownInfo: 'Todavía no verificamos este juego con este modelo.',
+  verdictNo: 'No funciona en tu visor',
+  verdictNoInfo: 'Solo está disponible en $1',
+  verdictNoInfoNone: 'No está en ninguna plataforma compatible con tu visor',
+  listJoin: ' y '
+};
+
 const PLATFORM_LABEL = {
   quest: 'Meta Horizon Store',
   steam: 'SteamVR / PC VR',
@@ -1415,6 +1429,11 @@ const CATALOG = [
 //
 // 'yes' nativo · 'pc' hace falta una PC · 'no' verificado que no · null sin datos
 function resolve(game, headsetId) {
+  // Los textos del veredicto salen de _locales; en un contexto sin chrome.i18n
+  // (por ejemplo los tests de Node) caen al español, que es el idioma original.
+  const t = globalThis.VRAR_t || ((key, subs) =>
+    (subs || []).reduce((text, value, i) => text.replace('$' + (i + 1), value),
+                        VERDICT_FALLBACK_ES[key] || key));
   if (!game) return null;
   const headset = HEADSETS.find((h) => h.id === headsetId);
   if (!headset) return null;
@@ -1422,13 +1441,13 @@ function resolve(game, headsetId) {
   const off = game.off || [];
 
   const native = (headset.native || []).find((platform) => on.includes(platform));
-  if (native) return { status: 'yes', label: 'Funciona en tu visor', detail: PLATFORM_LABEL[native] };
+  if (native) return { status: 'yes', label: t('verdictYes'), detail: PLATFORM_LABEL[native] };
 
   if (headset.pcvr && on.includes('steam')) {
     const detail = headset.id === 'psvr2'
-      ? 'Requiere una PC y el adaptador oficial de PS VR2'
-      : 'Requiere una PC capaz de mover VR';
-    return { status: 'pc', label: 'Sí, pero con PC', detail };
+      ? t('verdictPcInfoPsvr2')
+      : t('verdictPcInfo');
+    return { status: 'pc', label: t('verdictPc'), detail };
   }
 
   if (headset.id === 'other') return null;
@@ -1439,15 +1458,24 @@ function resolve(game, headsetId) {
   if (headset.pcvr) needed.push('steam');
   const allChecked = needed.every((platform) => off.includes(platform));
   if (!allChecked) {
-    return { status: 'unknown', label: 'Sin datos para este visor', detail: 'Todavía no verificamos este juego con este modelo.' };
+    return { status: 'unknown', label: t('verdictUnknown'), detail: t('verdictUnknownInfo') };
   }
 
   const where = on.map((platform) => PLATFORM_LABEL[platform]).filter(Boolean);
   return {
     status: 'no',
-    label: 'No funciona en tu visor',
-    detail: where.length ? `Solo está disponible en ${where.join(' y ')}` : 'No está en ninguna plataforma compatible con tu visor'
+    label: t('verdictNo'),
+    detail: where.length
+      ? t('verdictNoInfo', [where.join(t('listJoin'))])
+      : t('verdictNoInfoNone')
   };
+}
+
+// El único nombre de visor que es texto y no marca registrada.
+function headsetName(headset) {
+  if (!headset) return '';
+  if (headset.id !== 'other') return headset.name;
+  return globalThis.VRAR_t ? globalThis.VRAR_t('headsetOther') : headset.name;
 }
 
 function platformsOf(game) {
@@ -1459,5 +1487,6 @@ if (typeof globalThis !== 'undefined') {
   globalThis.VRAR_CATALOG = CATALOG;
   globalThis.VRAR_resolve = resolve;
   globalThis.VRAR_platformsOf = platformsOf;
+  globalThis.VRAR_headsetName = headsetName;
   globalThis.VRAR_PLATFORM_LABEL = PLATFORM_LABEL;
 }

@@ -1,0 +1,155 @@
+{
+  "extName": {
+    "message": "VR.AR — ¿Funciona en mi visor?"
+  },
+  "extDesc": {
+    "message": "Indica si un juego de VR funciona en tu visor, en Steam, PlayStation y cualquier otra página que lo mencione."
+  },
+  "popupWhat": {
+    "message": "Indica si un juego de realidad virtual funciona en tu visor, en Steam, PlayStation y cualquier otra página que lo mencione."
+  },
+  "yourHeadset": {
+    "message": "Tu visor"
+  },
+  "searching": {
+    "message": "Buscando…"
+  },
+  "autoShow": {
+    "message": "Mostrar la tarjeta automáticamente"
+  },
+  "catalogCount": {
+    "message": "$1 juegos"
+  },
+  "typeStandalonePc": {
+    "message": "Standalone y PC VR"
+  },
+  "typePcOnly": {
+    "message": "Solo PC VR"
+  },
+  "typeManual": {
+    "message": "Compatibilidad manual"
+  },
+  "storeSupported": {
+    "message": "Tienda compatible"
+  },
+  "storeSupportedInfo": {
+    "message": "Al abrir la ficha de un juego, la tarjeta aparece sola."
+  },
+  "scanningPage": {
+    "message": "Buscando juegos en esta página"
+  },
+  "scanningPageInfo": {
+    "message": "Si menciona un juego del catálogo, la tarjeta aparece abajo a la derecha."
+  },
+  "notAvailable": {
+    "message": "No disponible en esta página"
+  },
+  "notAvailableInfo": {
+    "message": "Solo funciona en Steam y PlayStation. Se puede activar abajo para el resto de la web."
+  },
+  "grantTitle": {
+    "message": "Que funcione en toda la web"
+  },
+  "grantBody": {
+    "message": "Hoy funciona en Steam y PlayStation. Activalo y también te avisa en blogs, notas y reseñas que mencionen un juego de VR."
+  },
+  "grantBtn": {
+    "message": "Activar en todos los sitios"
+  },
+  "grantedTitle": {
+    "message": "Activo en toda la web"
+  },
+  "revokeBtn": {
+    "message": "Desactivar"
+  },
+  "cardTitle": {
+    "message": "Compatibilidad VR.AR"
+  },
+  "mentionedHere": {
+    "message": "Mencionado en esta página"
+  },
+  "close": {
+    "message": "Cerrar"
+  },
+  "selectHeadset": {
+    "message": "Seleccionar visor"
+  },
+  "availableOn": {
+    "message": "Disponible en: "
+  },
+  "approxCaveat": {
+    "message": "Coincidencia aproximada. Si se trata de otra edición o de un juego parecido, el dato puede no corresponder."
+  },
+  "detectedBecause": {
+    "message": "Detectado porque esta página menciona el juego."
+  },
+  "alsoOnPage": {
+    "message": "También en esta página"
+  },
+  "moreLink": {
+    "message": "Ver más en VR.AR ↗"
+  },
+  "moreLinkUrl": {
+    "message": "https://vr.ar/guias/mejores-juegos-vr-2026"
+  },
+  "muteBtn": {
+    "message": "Ocultar en este sitio"
+  },
+  "pillAria": {
+    "message": "VR.AR: $1 — $2. Abrir detalle"
+  },
+  "verdictYes": {
+    "message": "Funciona en tu visor"
+  },
+  "verdictPc": {
+    "message": "Sí, pero con PC"
+  },
+  "verdictPcInfo": {
+    "message": "Requiere una PC capaz de mover VR"
+  },
+  "verdictPcInfoPsvr2": {
+    "message": "Requiere una PC y el adaptador oficial de PS VR2"
+  },
+  "verdictUnknown": {
+    "message": "Sin datos para este visor"
+  },
+  "verdictUnknownInfo": {
+    "message": "Todavía no verificamos este juego con este modelo."
+  },
+  "verdictNo": {
+    "message": "No funciona en tu visor"
+  },
+  "verdictNoInfo": {
+    "message": "Solo está disponible en $1"
+  },
+  "verdictNoInfoNone": {
+    "message": "No está en ninguna plataforma compatible con tu visor"
+  },
+  "listJoin": {
+    "message": " y "
+  },
+  "optTitle": {
+    "message": "Preferencias"
+  },
+  "optAutoHint": {
+    "message": "Si se desactiva, la extensión no aparece en ninguna página."
+  },
+  "optMutedTitle": {
+    "message": "Sitios silenciados"
+  },
+  "optMutedHint": {
+    "message": "Sitios donde elegiste ocultar la tarjeta."
+  },
+  "optMutedEmpty": {
+    "message": "Ninguno por ahora."
+  },
+  "optUnmute": {
+    "message": "Volver a mostrar"
+  },
+  "privacyPolicy": {
+    "message": "Política de privacidad"
+  },
+  "headsetOther": {
+    "message": "Otro visor"
+  }
+}

@@ -79,7 +79,31 @@ Política completa: https://vr.ar/extension-privacidad
 1. `chrome://extensions` → activar "Modo desarrollador".
 2. "Cargar descomprimida" → elegir esta carpeta.
 
+## Idiomas
+
+La interfaz está en **español e inglés**, y Chrome elige sola según el idioma del
+navegador: español si el navegador está en español (cualquier variante), inglés en
+cualquier otro caso. Los textos viven en `_locales/es/messages.json` y
+`_locales/en/messages.json`; en el código no queda ningún texto suelto.
+
+Al agregar un texto nuevo: se define la clave en **los dos** archivos y se usa
+`VRAR_t('clave')` desde JS, o `data-i18n="clave"` desde el HTML. Si falta una
+traducción, aparece el nombre de la clave — a propósito, para que se note.
+
+La razón de fondo no es cosmética: las comunidades de VR realmente activas
+(Reddit, Product Hunt) son de habla inglesa, y una herramienta que solo habla
+español no se puede compartir ahí.
+
 ## Historial
+
+### v2.2.0
+- **Inglés.** La extensión ahora habla los dos idiomas, con el sistema `_locales`
+  de Chrome. `default_locale` es `en`: quien tenga el navegador en español ve
+  español, y cualquier otro idioma cae en inglés.
+- Se corrigió, de paso, que el enlace "Ver más en VR.AR" apuntaba siempre a la
+  guía en español; ahora lleva a `/guides/` o a `/guias/` según el idioma.
+- "Otro visor" era el único nombre de visor que era texto y no marca: también
+  se traduce.
 
 ### v2.1.1
 - **Español neutro.** Los textos de la interfaz ya no usan voseo ni giros

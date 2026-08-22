@@ -14,7 +14,7 @@ async function paint() {
     name.textContent = site;
     const undo = document.createElement('button');
     undo.type = 'button';
-    undo.textContent = 'Volver a mostrar';
+    undo.textContent = globalThis.VRAR_t('optUnmute');
     undo.addEventListener('click', async () => {
       const current = await chrome.storage.local.get({ mutedSites: [] });
       await chrome.storage.local.set({ mutedSites: current.mutedSites.filter((s) => s !== site) });
@@ -26,4 +26,6 @@ async function paint() {
 }
 
 enabled.addEventListener('change', () => chrome.storage.local.set({ enabled: enabled.checked }));
+
+globalThis.VRAR_applyI18n();
 paint();

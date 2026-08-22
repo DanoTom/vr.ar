@@ -6,7 +6,7 @@
 // botón del popup, y ahí Chrome le pide permiso en el momento.
 
 const SCRIPT_ID = 'vrar-everywhere';
-const FILES = ['src/data.js', 'src/detect.js', 'src/ui.js', 'src/content.js'];
+const FILES = ['src/i18n.js', 'src/data.js', 'src/detect.js', 'src/ui.js', 'src/content.js'];
 
 async function syncEverywhereScript() {
   const granted = await chrome.permissions.contains({ origins: ['http://*/*', 'https://*/*'] });

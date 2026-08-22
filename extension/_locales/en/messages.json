@@ -1,0 +1,155 @@
+{
+  "extName": {
+    "message": "VR.AR — Does it work on my headset?"
+  },
+  "extDesc": {
+    "message": "Tells you whether a VR game works on your headset, on Steam, PlayStation and any other page that mentions it."
+  },
+  "popupWhat": {
+    "message": "Tells you whether a VR game works on your headset, on Steam, PlayStation and any other page that mentions it."
+  },
+  "yourHeadset": {
+    "message": "Your headset"
+  },
+  "searching": {
+    "message": "Checking…"
+  },
+  "autoShow": {
+    "message": "Show the card automatically"
+  },
+  "catalogCount": {
+    "message": "$1 games"
+  },
+  "typeStandalonePc": {
+    "message": "Standalone and PC VR"
+  },
+  "typePcOnly": {
+    "message": "PC VR only"
+  },
+  "typeManual": {
+    "message": "Manual compatibility"
+  },
+  "storeSupported": {
+    "message": "Supported store"
+  },
+  "storeSupportedInfo": {
+    "message": "Open a game's page and the card shows up on its own."
+  },
+  "scanningPage": {
+    "message": "Looking for games on this page"
+  },
+  "scanningPageInfo": {
+    "message": "If it mentions a game from the catalogue, the card appears at the bottom right."
+  },
+  "notAvailable": {
+    "message": "Not available on this page"
+  },
+  "notAvailableInfo": {
+    "message": "It only works on Steam and PlayStation. You can turn it on below for the rest of the web."
+  },
+  "grantTitle": {
+    "message": "Make it work across the web"
+  },
+  "grantBody": {
+    "message": "Right now it works on Steam and PlayStation. Turn this on and it will also tell you on blogs, articles and reviews that mention a VR game."
+  },
+  "grantBtn": {
+    "message": "Turn on for all sites"
+  },
+  "grantedTitle": {
+    "message": "On across the web"
+  },
+  "revokeBtn": {
+    "message": "Turn off"
+  },
+  "cardTitle": {
+    "message": "VR.AR compatibility"
+  },
+  "mentionedHere": {
+    "message": "Mentioned on this page"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "selectHeadset": {
+    "message": "Select headset"
+  },
+  "availableOn": {
+    "message": "Available on: "
+  },
+  "approxCaveat": {
+    "message": "Approximate match. If this is a different edition or a similarly named game, the answer may not apply."
+  },
+  "detectedBecause": {
+    "message": "Detected because this page mentions the game."
+  },
+  "alsoOnPage": {
+    "message": "Also on this page"
+  },
+  "moreLink": {
+    "message": "More on VR.AR ↗"
+  },
+  "moreLinkUrl": {
+    "message": "https://vr.ar/guides/best-vr-games-2026"
+  },
+  "muteBtn": {
+    "message": "Hide on this site"
+  },
+  "pillAria": {
+    "message": "VR.AR: $1 — $2. Open details"
+  },
+  "verdictYes": {
+    "message": "Works on your headset"
+  },
+  "verdictPc": {
+    "message": "Yes, but with a PC"
+  },
+  "verdictPcInfo": {
+    "message": "Requires a PC able to run VR"
+  },
+  "verdictPcInfoPsvr2": {
+    "message": "Requires a PC and the official PS VR2 adapter"
+  },
+  "verdictUnknown": {
+    "message": "No data for this headset"
+  },
+  "verdictUnknownInfo": {
+    "message": "We haven't verified this game on this model yet."
+  },
+  "verdictNo": {
+    "message": "Doesn't work on your headset"
+  },
+  "verdictNoInfo": {
+    "message": "Only available on $1"
+  },
+  "verdictNoInfoNone": {
+    "message": "It isn't on any platform your headset supports"
+  },
+  "listJoin": {
+    "message": " and "
+  },
+  "optTitle": {
+    "message": "Preferences"
+  },
+  "optAutoHint": {
+    "message": "If you turn this off, the extension won't appear on any page."
+  },
+  "optMutedTitle": {
+    "message": "Muted sites"
+  },
+  "optMutedHint": {
+    "message": "Sites where you chose to hide the card."
+  },
+  "optMutedEmpty": {
+    "message": "None so far."
+  },
+  "optUnmute": {
+    "message": "Show again"
+  },
+  "privacyPolicy": {
+    "message": "Privacy policy"
+  },
+  "headsetOther": {
+    "message": "Other headset"
+  }
+}

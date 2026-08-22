@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "VR.AR — ¿Funciona en mi visor?",
-  "version": "2.1.1",
-  "description": "Indica si un juego de VR funciona en tu visor, en Steam, PlayStation y cualquier otra página que lo mencione.",
+  "name": "__MSG_extName__",
+  "version": "2.2.0",
+  "description": "__MSG_extDesc__",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "action": {
-    "default_title": "VR.AR — ¿Funciona en mi visor?",
+    "default_title": "__MSG_extName__",
     "default_popup": "src/popup.html"
   },
   "permissions": [
@@ -28,6 +28,7 @@
         "https://www.playstation.com/*"
       ],
       "js": [
+        "src/i18n.js",
         "src/data.js",
         "src/detect.js",
         "src/ui.js",
@@ -39,5 +40,6 @@
   "options_page": "src/options.html",
   "background": {
     "service_worker": "src/background.js"
-  }
+  },
+  "default_locale": "en"
 }

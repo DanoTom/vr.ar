@@ -100,6 +100,75 @@ virtual en español.
 
 ---
 
+## Ficha en inglés (segundo idioma de la tienda)
+
+Desde la versión 2.2.0 la extensión está en español e inglés. La Chrome Web Store
+permite cargar la ficha en varios idiomas: en el panel, arriba de la ficha, hay un
+selector de idioma. Se agrega **English** y se pegan estos textos. La ficha en
+español queda igual.
+
+**Name**
+```
+VR.AR — Does it work on my headset?
+```
+
+**Short description** (máx. 132)
+```
+Tells you if a VR game works on your headset: on Steam, PlayStation and any blog or article. Free, no account.
+```
+
+**Detailed description**
+```
+Does that VR game work on your headset?
+
+You're reading an article about a VR game, or looking at its Steam page, and the
+same question shows up: will this run on the headset I own?
+
+VR.AR answers it without you searching for anything. You pick your headset once
+and, when a page mentions a game from the catalogue, a small card appears at the
+bottom right with the answer.
+
+HOW IT WORKS
+
+• On Steam and the PlayStation Store it works the moment you install it.
+• On any other page — blogs, articles, reviews, forums — it works if you grant
+  access from the extension's button. That decision is yours.
+• If it doesn't detect a game, nothing appears. It stays out of the way.
+
+WHAT IT TELLS YOU
+
+• Whether it runs natively on your headset, and which store it's on.
+• Whether it runs but needs a PC (PC VR), including the PS VR2 adapter route.
+• Whether it doesn't run, and which platforms it is on.
+• If we haven't verified that game on your model yet, it says so instead of
+  making up an answer.
+
+SUPPORTED HEADSETS
+
+Meta Quest 3, Quest 3S and Quest 2, PlayStation VR2, PICO 4 and PICO 4 Ultra,
+Valve Index and HTC Vive.
+
+HONESTY
+
+The catalogue has 91 games, verified platform by platform. It doesn't include
+every game that exists, which is why this matters: when we don't have the data,
+the extension says so rather than inventing an answer. Title matching is strict
+too, so "War Thunder Mobile" is never confused with "War Thunder".
+
+PRIVACY
+
+Everything happens in your browser. No accounts, no analytics, no history, no
+data sent to any server. The only thing stored, on your own machine, is the
+headset you picked.
+
+Made by VR.AR (https://vr.ar), an independent, free site about virtual reality.
+```
+
+Las justificaciones de permisos y el propósito único se cargan una sola vez y no
+dependen del idioma de la ficha.
+
+---
+
 ## Justificaciones que pide Google
 
 **Propósito único (single purpose)**

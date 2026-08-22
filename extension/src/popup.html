@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VR.AR — ¿Funciona en mi visor?</title>
+<title>VR.AR</title>
 <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -13,37 +13,37 @@
 </header>
 
 <main>
-  <p class="what">Indica si un juego de realidad virtual funciona en tu visor, en Steam, PlayStation y cualquier otra página que lo mencione.</p>
+  <p class="what" data-i18n="popupWhat"></p>
 
-  <label class="label" for="headset">Tu visor</label>
+  <label class="label" for="headset" data-i18n="yourHeadset"></label>
   <select id="headset" aria-describedby="headsetType"></select>
   <p class="type" id="headsetType"></p>
 
   <section class="now" id="now" aria-live="polite">
     <span class="dot" id="dot"></span>
     <div>
-      <strong id="verdict">Buscando…</strong>
+      <strong id="verdict" data-i18n="searching"></strong>
       <span id="detail"></span>
     </div>
   </section>
 
   <section class="grant" id="grant" hidden>
-    <strong>Que funcione en toda la web</strong>
-    <p>Hoy funciona en Steam y PlayStation. Activalo y también te avisa en blogs, notas y reseñas que mencionen un juego de VR.</p>
-    <button id="grantBtn" type="button">Activar en todos los sitios</button>
+    <strong data-i18n="grantTitle"></strong>
+    <p data-i18n="grantBody"></p>
+    <button id="grantBtn" type="button" data-i18n="grantBtn"></button>
   </section>
 
   <section class="granted" id="granted" hidden>
     <span class="check" aria-hidden="true">✓</span>
     <div>
-      <strong>Activo en toda la web</strong>
-      <button id="revokeBtn" type="button" class="linkbtn">Desactivar</button>
+      <strong data-i18n="grantedTitle"></strong>
+      <button id="revokeBtn" type="button" class="linkbtn" data-i18n="revokeBtn"></button>
     </div>
   </section>
 
   <label class="toggle">
     <input type="checkbox" id="enabled">
-    <span>Mostrar la tarjeta automáticamente</span>
+    <span data-i18n="autoShow"></span>
   </label>
 </main>
 
@@ -52,6 +52,7 @@
   <span class="count" id="catalogCount"></span>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="../src/data.js"></script>
 <script src="popup.js"></script>
 </body>

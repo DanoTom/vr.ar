@@ -10,6 +10,7 @@
 
 (() => {
   const HOST_ID = 'vrar-shadow-host';
+  const t = (key, subs) => globalThis.VRAR_t(key, subs);
 
   const CSS = `
 :host { all: initial; }
@@ -187,7 +188,7 @@ a.link:hover { text-decoration: underline; }
 
     verdict() {
       const result = globalThis.VRAR_resolve?.(this.hit?.game, this.opts.headsetId);
-      return result || { status: 'unknown', label: 'Sin datos para este visor', detail: '' };
+      return result || { status: 'unknown', label: t('verdictUnknown'), detail: '' };
     }
 
     mount() {
@@ -212,7 +213,7 @@ a.link:hover { text-decoration: underline; }
       const pill = document.createElement('button');
       pill.type = 'button';
       pill.className = 'pill';
-      pill.setAttribute('aria-label', `VR.AR: ${this.hit.game.title} — ${result.label}. Abrir detalle`);
+      pill.setAttribute('aria-label', t('pillAria', [this.hit.game.title, result.label]));
       pill.innerHTML = `
         <span class="dot ${result.status}"></span>
         <span class="pill-body">
@@ -236,34 +237,34 @@ a.link:hover { text-decoration: underline; }
       const card = document.createElement('div');
       card.className = 'card';
       card.setAttribute('role', 'dialog');
-      card.setAttribute('aria-label', 'Compatibilidad VR.AR');
+      card.setAttribute('aria-label', t('cardTitle'));
       card.innerHTML = `
         <div class="head">
           <span class="logo">VR<span>.AR</span></span>
-          <span class="src">${esc(this.opts.siteLabel || 'Mencionado en esta página')}</span>
-          <button class="x" type="button" aria-label="Cerrar">×</button>
+          <span class="src">${esc(this.opts.siteLabel || t('mentionedHere'))}</span>
+          <button class="x" type="button" aria-label="${esc(t('close'))}">×</button>
         </div>
         <div class="game">${esc(game.title)}</div>
-        <div class="label">Tu visor</div>
-        <select aria-label="Seleccionar visor">
-          ${headsets.map((h) => `<option value="${esc(h.id)}"${h.id === this.opts.headsetId ? ' selected' : ''}>${esc(h.name)}</option>`).join('')}
+        <div class="label">${esc(t('yourHeadset'))}</div>
+        <select aria-label="${esc(t('selectHeadset'))}">
+          ${headsets.map((h) => `<option value="${esc(h.id)}"${h.id === this.opts.headsetId ? ' selected' : ''}>${esc(globalThis.VRAR_headsetName?.(h) || h.name)}</option>`).join('')}
         </select>
         <div class="verdict ${result.status}">
           ${ICON[result.status] || ICON.unknown}
           <div><strong>${esc(result.label)}</strong>${result.detail ? `<span>${esc(result.detail)}</span>` : ''}</div>
         </div>
-        ${platforms.length ? `<div class="where">Disponible en: <b>${esc(platforms.join(' · '))}</b></div>` : ''}
-        ${approx ? `<div class="caveat">Coincidencia aproximada. Si se trata de otra edición o de un juego parecido, el dato puede no corresponder.</div>` : ''}
-        ${mentioned && !approx ? `<div class="where">Detectado porque esta página menciona el juego.</div>` : ''}
-        ${others.length ? `<div class="others"><div class="others-label">También en esta página</div>${
+        ${platforms.length ? `<div class="where">${esc(t('availableOn'))}<b>${esc(platforms.join(' · '))}</b></div>` : ''}
+        ${approx ? `<div class="caveat">${esc(t('approxCaveat'))}</div>` : ''}
+        ${mentioned && !approx ? `<div class="where">${esc(t('detectedBecause'))}</div>` : ''}
+        ${others.length ? `<div class="others"><div class="others-label">${esc(t('alsoOnPage'))}</div>${
           others.map((hit) => {
             const r = globalThis.VRAR_resolve?.(hit.game, this.opts.headsetId) || { status: 'unknown' };
             const index = this.opts.hits.indexOf(hit);
             return `<button class="other" type="button" data-index="${index}"><span class="dot ${r.status}"></span><span>${esc(hit.game.title)}</span></button>`;
           }).join('')}</div>` : ''}
         <div class="foot">
-          <a class="link" href="https://vr.ar/guias/mejores-juegos-vr-2026" target="_blank" rel="noopener noreferrer">Ver más en VR.AR ↗</a>
-          <button class="mute" type="button">Ocultar en este sitio</button>
+          <a class="link" href="${esc(t('moreLinkUrl'))}" target="_blank" rel="noopener noreferrer">${esc(t('moreLink'))}</a>
+          <button class="mute" type="button">${esc(t('muteBtn'))}</button>
         </div>`;
 
       card.querySelector('.x').addEventListener('click', () => this.opts.onClose?.());
