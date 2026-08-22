@@ -80,10 +80,10 @@ QUÉ TE DICE
 • Si todavía no verificamos ese juego con tu modelo, lo dice en vez de inventar una
   respuesta.
 
-VISORES SOPORTADOS
+QUÉ VISORES CUBRE
 
-Meta Quest 3, Quest 3S y Quest 2, PlayStation VR2, PICO 4 y PICO 4 Ultra,
-Valve Index y HTC Vive.
+Al instalarla se elige el visor propio de una lista, que incluye los modelos
+autónomos de Meta, PICO y PlayStation, y los principales visores de PC.
 
 HONESTIDAD
 
@@ -146,10 +146,10 @@ WHAT IT TELLS YOU
 • If we haven't verified that game on your model yet, it says so instead of
   making up an answer.
 
-SUPPORTED HEADSETS
+WHICH HEADSETS IT COVERS
 
-Meta Quest 3, Quest 3S and Quest 2, PlayStation VR2, PICO 4 and PICO 4 Ultra,
-Valve Index and HTC Vive.
+When you install it you pick your headset from a list, which includes the
+standalone models from Meta, PICO and PlayStation, plus the main PC headsets.
 
 HONESTY
 
@@ -262,6 +262,31 @@ cada una para ver qué campo falta.
    habilita cuando las tres están completas y guardadas, y el panel no siempre
    deja claro cuál falta. Guardar el borrador antes de cambiar de pestaña.
 7. Enviar a revisión. Suele tardar de un día a dos semanas.
+
+## Rechazos que ya tuvimos
+
+### Agosto de 2026 — "Spam a través de palabras clave" (ref. Yellow Argon)
+
+**Qué señalaron:** una sola línea de la descripción detallada, la que enumeraba
+los visores soportados: *"Meta Quest 3, Quest 3S y Quest 2, PlayStation VR2,
+PICO 4 y PICO 4 Ultra, Valve Index y HTC Vive."* Ocho nombres de modelo seguidos,
+sin frase alrededor, leídos por el detector como una lista de palabras clave.
+
+**Qué NO señalaron:** las capturas. El envío incluía una captura nueva de Steam y
+no aparece mencionada en ninguna parte del rechazo.
+
+**Cómo se resolvió:** se reemplazó la enumeración por una frase que dice lo mismo
+sin listar modelos ("los modelos autónomos de Meta, PICO y PlayStation, y los
+principales visores de PC"). Se corrigió en los dos idiomas de la ficha.
+
+**Lo que hay que recordar:** en la ficha de la tienda, cualquier enumeración larga
+de marcas o modelos es riesgosa aunque sea verdadera y útil. Va en prosa. En el
+sitio propio no hay problema —la política es de la tienda, no de la web—, así que
+la lista completa de visores sigue estando en /extension, que es donde alguien la
+busca de verdad.
+
+Si volviera a rechazarse por lo mismo, el paso siguiente es sacar los nombres de
+marca por completo de esa frase.
 
 ## Qué esperar después de enviar
 
