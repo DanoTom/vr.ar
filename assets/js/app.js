@@ -703,7 +703,10 @@ function applyLangToExtBanner() {
   const sub = document.getElementById('home-ext-sub');
   if (sub) sub.textContent = es
     ? 'Te dice si un juego de VR funciona en tu visor mientras navegás. Gratis y sin cuenta.'
-    : 'It tells you whether a VR game runs on your headset while you browse. Free, no account. Spanish interface for now.';
+    : 'It tells you whether a VR game runs on your headset while you browse. Free, no account.';
+  // Cada idioma tiene su propia página de la extensión.
+  const card = document.getElementById('home-ext');
+  if (card) card.href = es ? 'extension.html' : 'chrome-extension.html';
 }
 
 function applyLangToIntro() {
@@ -723,7 +726,10 @@ function applyLangToIntro() {
   const fg = document.getElementById('footer-guides');
   if (fg) { fg.textContent = t.footerGuides; fg.href = currentLang === 'es' ? 'guias/' : 'guides/'; }
   const fe = document.getElementById('footer-ext');
-  if (fe) fe.textContent = currentLang === 'es' ? 'Extensión de Chrome' : 'Chrome extension';
+  if (fe) {
+    fe.textContent = currentLang === 'es' ? 'Extensión de Chrome' : 'Chrome extension';
+    fe.href = currentLang === 'es' ? 'extension.html' : 'chrome-extension.html';
+  }
   const fa = document.getElementById('footer-about');
   if (fa) fa.textContent = t.footerAbout;
   const fp = document.getElementById('footer-privacy');

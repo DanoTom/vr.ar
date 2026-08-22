@@ -225,7 +225,18 @@
 
   <url>
     <loc>https://vr.ar/extension</loc>
-    <lastmod>2026-08-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/extension"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/chrome-extension"/>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vr.ar/chrome-extension</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/extension"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/chrome-extension"/>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

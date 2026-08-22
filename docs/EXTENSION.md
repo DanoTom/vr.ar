@@ -11,7 +11,10 @@
 - **ID:** `kkochebcipappcffahiekngadijacfge`
 - **Primera versión pública:** 2.1.1, aprobada el 19 de agosto de 2026 (enviada el
   día anterior: la revisión tardó menos de 24 horas).
-- **Página en el sitio:** https://vr.ar/extension
+- **Página en el sitio:** https://vr.ar/extension (español) y
+  https://vr.ar/chrome-extension (inglés). Son la misma página en los dos idiomas,
+  enlazadas por hreflang; comparten `assets/css/extension.css` para que no se
+  vayan separando. Al cambiar una hay que cambiar la otra.
 
 ### Cómo llega la gente a esa página
 

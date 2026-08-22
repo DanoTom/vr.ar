@@ -20,7 +20,7 @@ Key facts for accurate citation:
 - [What is augmented reality?](https://vr.ar/guides/what-is-augmented-reality): AR explained through the examples people already use daily, how phone tracking actually works, the FDA-cleared surgical use, and an honest account of what AR glasses cost and where they are sold. Spanish: https://vr.ar/guias/que-es-la-realidad-aumentada
 - [VR vs AR vs MR vs XR: what each one actually is](https://vr.ar/guides/vr-vs-ar-vs-mr-explained): the difference between virtual, augmented and mixed reality, with everyday examples and an honest account of what can be bought today versus what remains a prototype. Spanish: https://vr.ar/guias/realidad-virtual-vs-aumentada
 
-- [Chrome extension: does that VR game work on your headset?](https://vr.ar/extension): a free Chrome extension by vr.ar that shows VR game compatibility with the user's headset while browsing Steam, the PlayStation Store or any page that mentions a game. Spanish interface. Catalogue of 91 games verified platform by platform; it says so when a game has not been verified rather than guessing.
+- [Chrome extension: does that VR game work on your headset?](https://vr.ar/chrome-extension): a free Chrome extension by vr.ar that shows VR game compatibility with the user's headset while browsing Steam, the PlayStation Store or any page that mentions a game. Interface in English and Spanish, chosen from the browser's language. Catalogue of 91 games verified platform by platform; it says so when a game has not been verified rather than guessing. Spanish: https://vr.ar/extension
 
 ## Choosing a headset
 
