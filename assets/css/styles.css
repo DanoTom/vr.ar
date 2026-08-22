@@ -773,6 +773,46 @@ body:not(.lang-es) .lang-label.es{color:var(--text-dim)}
 .hg-games{grid-column:1 / -1;text-align:center}
 @media(max-width:560px){.home-guides-grid{grid-template-columns:1fr}}
 
+/* ─── Launch banner: the Chrome extension, on the home page ─── */
+.home-ext{
+  display:flex;align-items:center;gap:14px;
+  width:100%;max-width:680px;margin:clamp(26px,4vw,38px) auto 0;
+  padding:15px 18px;text-align:left;text-decoration:none;
+  border:1px solid rgba(123,111,255,0.35);border-radius:15px;
+  background:
+    linear-gradient(180deg,rgba(0,212,255,0.07),rgba(123,111,255,0.09));
+  backdrop-filter:blur(10px);
+  position:relative;z-index:1;
+  opacity:0;animation:fadeUp 0.8s 0.5s ease forwards;
+  transition:border-color .22s ease,transform .22s ease,box-shadow .22s ease;
+}
+.home-ext:hover{
+  border-color:rgba(0,212,255,0.6);transform:translateY(-2px);
+  box-shadow:0 10px 30px -14px rgba(0,212,255,0.55);
+}
+.home-ext-badge{
+  flex:0 0 auto;align-self:flex-start;
+  font-family:'Orbitron',monospace;font-size:0.55rem;letter-spacing:0.16em;
+  padding:5px 9px;border-radius:7px;
+  background:linear-gradient(135deg,var(--cyan),#7b6fff);
+  color:#04121f;font-weight:700;
+}
+.home-ext-body{display:flex;flex-direction:column;gap:3px;min-width:0}
+.home-ext-title{
+  font-family:'Unbounded',sans-serif;font-weight:700;
+  font-size:clamp(0.9rem,2.4vw,1.02rem);color:#fff;line-height:1.3;
+}
+.home-ext-sub{font-size:0.83rem;line-height:1.45;color:var(--text-dim,#9fb0c8)}
+.home-ext-arrow{
+  flex:0 0 auto;margin-left:auto;color:var(--cyan);
+  font-size:1.15rem;transition:transform .22s ease;
+}
+.home-ext:hover .home-ext-arrow{transform:translateX(3px)}
+@media(max-width:560px){
+  .home-ext{align-items:flex-start;gap:11px;padding:14px 15px}
+  .home-ext-arrow{display:none}
+}
+
 @media(max-width:600px) {
   .result-card-inner{grid-template-columns:1fr}
   .result-img-wrap{padding:28px;height:190px}

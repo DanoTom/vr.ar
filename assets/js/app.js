@@ -677,6 +677,21 @@ function applyLangToHomeGuides() {
   });
 }
 
+// ─── Launch banner for the Chrome extension (home page) ───
+function applyLangToExtBanner() {
+  const es = currentLang === 'es';
+  const badge = document.getElementById('home-ext-badge');
+  if (badge) badge.textContent = es ? 'NUEVO' : 'NEW';
+  const title = document.getElementById('home-ext-title');
+  if (title) title.textContent = es
+    ? 'Ya está publicada nuestra extensión de Chrome'
+    : 'Our Chrome extension is live';
+  const sub = document.getElementById('home-ext-sub');
+  if (sub) sub.textContent = es
+    ? 'Te dice si un juego de VR funciona en tu visor mientras navegás. Gratis y sin cuenta.'
+    : 'It tells you whether a VR game runs on your headset while you browse. Free, no account. Spanish interface for now.';
+}
+
 function applyLangToIntro() {
   const t = tx();
   document.getElementById('txt-eyebrow').textContent = t.eyebrow;
@@ -693,6 +708,8 @@ function applyLangToIntro() {
   if (ng) { ng.textContent = t.footerGuides; ng.href = currentLang === 'es' ? 'guias/' : 'guides/'; }
   const fg = document.getElementById('footer-guides');
   if (fg) { fg.textContent = t.footerGuides; fg.href = currentLang === 'es' ? 'guias/' : 'guides/'; }
+  const fe = document.getElementById('footer-ext');
+  if (fe) fe.textContent = currentLang === 'es' ? 'Extensión de Chrome' : 'Chrome extension';
   const fa = document.getElementById('footer-about');
   if (fa) fa.textContent = t.footerAbout;
   const fp = document.getElementById('footer-privacy');
@@ -701,6 +718,7 @@ function applyLangToIntro() {
   if (fd) fd.textContent = t.footerDisclosure;
   applyLangToFAQ();
   applyLangToHomeGuides();
+  applyLangToExtBanner();
 }
 
 function setLang(lang) {
