@@ -54,6 +54,127 @@ leerlo**. Es la única acción de difusión que demostró resultado medible.
   vale la pena buscar antes de escribir.
 - Formato que funcionó: honesto, corto, diciendo que somos los autores.
 
+Desde agosto de 2026 la extensión está en inglés, así que estas comunidades ya son
+alcanzables. El posteo está escrito más abajo.
+
+---
+
+## El posteo de la extensión en Reddit
+
+### Antes de publicar, tres cosas
+
+1. **Leer las reglas del subreddit ese día.** No pude verificarlas desde el entorno de
+   trabajo (Reddit está bloqueado ahí), y cambian. En un relevamiento de 49 subreddits
+   donde suelen postear fundadores, **el 61% prohíbe la autopromoción**. Si el sidebar
+   la prohíbe, no hay vuelta: se busca otro subreddit o se espera.
+2. **La cuenta necesita historial.** Una cuenta nueva posteando un link propio es el
+   caso clásico de borrado automático. La regla informal es 90% participación y 10%
+   promoción. Conviene pasar dos o tres semanas respondiendo preguntas de
+   compatibilidad —que es literalmente lo que sabemos hacer— antes de postear esto.
+3. **No repetir el mismo texto en varios subreddits.** Reddit lo detecta y lo penaliza.
+   Si va a más de uno, se reescribe.
+
+### Por qué postear ahora y no esperar a tener más juegos
+
+Con 90 juegos van a decir "falta el mío". Con 200 también: existen miles. Esperar no
+elimina esa reacción, solo la posterga. Y hay una razón mejor para no esperar: **el
+posteo puede pedir justamente eso**. Preguntar qué falta convierte al que iba a
+quejarse en alguien que aporta, y nos deja una lista priorizada por lo que la gente
+realmente juega, en vez de que adivinemos nosotros cuáles agregar. Eso vale más que
+llegar con el catálogo el doble de grande y sin saber qué le importa a nadie.
+
+### Posteo — r/virtualreality (o r/OculusQuest)
+
+Título (elegir uno):
+```
+I got tired of googling whether a VR game runs on my headset, so I built a
+browser extension that answers it — and published the data behind it
+```
+```
+I built a free extension that tells you if a VR game works on your headset
+while you browse Steam — the catalogue is open data, and it says "we don't
+know" instead of guessing
+```
+
+Cuerpo:
+```
+I run a small independent VR site, and the question I could never answer quickly
+was the simplest one: does this game actually run on the headset I own?
+
+Every game ships on some platforms and not others, storefronts word it
+inconsistently, and half the "compatibility lists" out there are wrong in the
+worst possible way — they say a game is unavailable when nobody ever checked.
+
+So I built a Chrome extension. You pick your headset once, and when a page
+mentions a game from the catalogue, a small card shows up at the bottom right
+with the answer: runs natively, runs with a PC, doesn't run, or — and this is
+the part I care about — we haven't verified that one yet. It says that out loud
+instead of guessing. It works on Steam and the PlayStation Store out of the box;
+anywhere else only if you turn it on yourself, because I don't think an
+extension should demand access to your whole browsing session just to be tried.
+
+No account, no analytics, no data leaves your browser. The only thing stored is
+which headset you picked.
+
+The catalogue is 90 games, checked store by store. That is obviously not every
+VR game, which brings me to what I actually want from this post:
+
+**Which games should I add first?** Reply with the ones you look up most and
+I'll verify those next. I'd rather spend the effort on titles people actually
+own than on whatever I happen to think is popular.
+
+Two other things, in case they're useful to someone:
+
+- The whole dataset is public, not locked in the extension: [link to
+  vr-game-compatibility] and the raw JSON at [link to vr-games.json], CC BY 4.0.
+  Platforms we never verified are listed explicitly as unverified, so an absence
+  never means "not available". Take it, use it, correct me.
+- If you spot a wrong entry, tell me and I'll fix it. Getting compatibility
+  wrong is worse than having no data, because it makes someone buy something
+  they can't use.
+
+Extension: [store link]
+```
+
+### Respuestas listas para los comentarios previsibles
+
+**"¿Por qué pide permiso para todos los sitios?"**
+```
+It doesn't, unless you turn it on. It installs with access to Steam and the
+PlayStation Store only — that's in the manifest. The "any page" mode is an
+optional permission you grant from the extension's own button, and you can
+revoke it there too. That's why the install screen doesn't show the scary
+"read all your data" warning.
+```
+
+**"¿Cómo sé que no me trackea?"**
+```
+Fair question, and you shouldn't take my word for it. Nothing is sent anywhere:
+the catalogue ships inside the extension and the matching happens locally. The
+privacy policy is one page: vr.ar/extension-privacidad. If someone wants to
+check the network tab and call me out, please do.
+```
+
+**"Falta mi juego" / "el dato X está mal"**
+```
+Thanks — adding it to the list. If it's wrong I'd rather know: which platform
+and which headset? I'll re-check against the store listing and fix it.
+```
+
+**"¿Y por qué no lo hace la tienda?"**
+```
+Honestly, no idea. It's the first thing anyone wants to know and it's the one
+thing nobody states plainly.
+```
+
+### Después de postear
+
+- Contestar todos los comentarios el mismo día. Ahí se gana o se pierde.
+- Anotar los juegos que pidan: esa lista es la próxima tanda del catálogo, y es
+  el motivo por el que este posteo vale más que uno que solo anuncia.
+- Si un dato resulta estar mal, corregirlo ese día y decirlo en el hilo. Es la
+  mejor publicidad posible para una herramienta cuyo argumento es la honestidad.
+
 ---
 
 ## Nivel 2 — Medios de VR en español (pitch corto por formulario)
