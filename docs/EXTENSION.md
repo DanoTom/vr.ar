@@ -87,7 +87,7 @@ autónomos de Meta, PICO y PlayStation, y los principales visores de PC.
 
 HONESTIDAD
 
-El catálogo tiene 91 juegos, verificados plataforma por plataforma. No están todos
+El catálogo tiene 90 juegos, verificados plataforma por plataforma. No están todos
 los que existen, y por eso importa lo siguiente: cuando no tenemos el dato, la
 extensión lo dice en vez de inventar una respuesta. La coincidencia de títulos
 también es estricta, así que "War Thunder Mobile" no se confunde con "War Thunder".
@@ -153,7 +153,7 @@ standalone models from Meta, PICO and PlayStation, plus the main PC headsets.
 
 HONESTY
 
-The catalogue has 91 games, verified platform by platform. It doesn't include
+The catalogue has 90 games, verified platform by platform. It doesn't include
 every game that exists, which is why this matters: when we don't have the data,
 the extension says so rather than inventing an answer. Title matching is strict
 too, so "War Thunder Mobile" is never confused with "War Thunder".
@@ -255,7 +255,7 @@ cada una para ver qué campo falta.
 3. Verificar: cargar descomprimida en `chrome://extensions`, revisar que no haya
    errores, y probar una tienda y un blog.
 4. Si cambió la cantidad de juegos, **actualizar el número en la descripción
-   detallada** (dice "El catálogo tiene 91 juegos").
+   detallada** (dice "El catálogo tiene 90 juegos").
 5. Empaquetar en zip **el contenido** de `extension/`, no la carpeta que lo contiene.
 6. Subir al panel de desarrollador y completar **todas las pestañas**: Ficha de
    Store, Prácticas de privacidad y Distribución. El botón de enviar solo se

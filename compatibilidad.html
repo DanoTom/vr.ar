@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de compatibilidad de juegos de VR — vr.ar</title>
+<meta name="description" content="Qué juegos de realidad virtual funcionan en cada plataforma: 90 títulos verificados uno por uno. Datos abiertos, y decimos cuándo no tenemos el dato.">
+<link rel="canonical" href="https://vr.ar/compatibilidad">
+<link rel="alternate" hreflang="es" href="https://vr.ar/compatibilidad">
+<link rel="alternate" hreflang="en" href="https://vr.ar/vr-game-compatibility">
+<link rel="alternate" hreflang="x-default" href="https://vr.ar/vr-game-compatibility">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Catálogo de compatibilidad de juegos de VR — vr.ar">
+<meta property="og:description" content="Qué juegos de realidad virtual funcionan en cada plataforma: 90 títulos verificados uno por uno. Datos abiertos, y decimos cuándo no tenemos el dato.">
+<meta property="og:url" content="https://vr.ar/compatibilidad">
+
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/exo2-400-latin.woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/catalog.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Catálogo de compatibilidad de juegos de VR — vr.ar",
+  "description": "Qué juegos de realidad virtual funcionan en cada plataforma: 90 títulos verificados uno por uno. Datos abiertos, y decimos cuándo no tenemos el dato.",
+  "url": "https://vr.ar/compatibilidad",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "inLanguage": "es",
+  "dateModified": "2026-08-23",
+  "creator": { "@type": "Organization", "name": "vr.ar", "url": "https://vr.ar/" },
+  "distribution": [{
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://vr.ar/data/vr-games.json"
+  }]
+}
+</script>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-orb bg-orb-1"></div>
+
+<div id="app">
+  <nav class="topbar">
+    <a class="topbar-logo" href="index.html" style="text-decoration:none">VR<span>.</span>AR</a>
+    <div class="topbar-right">
+      <a class="topbar-link" href="index.html">INICIO</a>
+      <a class="topbar-link" href="guias/">GUÍAS</a>
+      <a class="topbar-link" href="extension.html">EXTENSIÓN</a>
+    </div>
+  </nav>
+
+  <div class="cat-wrap">
+    <h1>Catálogo de compatibilidad de juegos de VR</h1>
+    <p class="cat-lead">Qué juegos de realidad virtual están disponibles en cada plataforma, verificados uno por uno contra las fichas oficiales de cada tienda. Son 90 juegos y 360 combinaciones juego × plataforma.</p>
+    <p class="cat-honest">Lo que no verificamos figura como <strong>sin verificar</strong>, no como “no está”. Esa distinción es el motivo por el que se puede confiar en el resto del dato: afirmar que un juego no existe en una plataforma cuando en realidad no lo miramos es el error que vuelve inútil una tabla como esta.</p>
+
+    <div class="cat-controls">
+      <label class="cat-field">
+        <span>Tu visor</span>
+        <select id="headset">
+          <option value="">Ver solo las plataformas</option>
+          <option value="quest-3">Meta Quest 3</option>
+          <option value="quest-3s">Meta Quest 3S</option>
+          <option value="quest-2">Meta Quest 2</option>
+          <option value="psvr2">PlayStation VR2</option>
+          <option value="pico-4">PICO 4</option>
+          <option value="pico-4-ultra">PICO 4 Ultra</option>
+          <option value="valve-index">Valve Index</option>
+          <option value="htc-vive">HTC Vive</option>
+        </select>
+      </label>
+      <label class="cat-field cat-field-grow">
+        <span class="sr-only">Buscar un juego…</span>
+        <input type="search" id="q" placeholder="Buscar un juego…" autocomplete="off">
+      </label>
+      <span class="cat-count" id="count"></span>
+    </div>
+
+    <div class="cat-table-wrap">
+      <table class="cat-table" id="table">
+        <thead>
+          <tr>
+            <th scope="col">Juego</th>
+            <th scope="col" class="col-verdict" id="verdictHead">¿Funciona?</th>
+            <th scope="col">Meta Horizon Store</th>
+            <th scope="col">SteamVR / PC VR</th>
+            <th scope="col">PlayStation VR2</th>
+            <th scope="col">Tienda PICO</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr data-title="alien: rogue incursion vr" data-slug="alien-rogue-incursion">
+        <th scope="row">Alien: Rogue Incursion VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="among us 3d" data-slug="among-us-3d">
+        <th scope="row">Among Us 3D</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="arizona sunshine 2" data-slug="arizona-sunshine-2">
+        <th scope="row">Arizona Sunshine 2</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="assetto corsa" data-slug="assetto-corsa">
+        <th scope="row">Assetto Corsa</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="assetto corsa competizione" data-slug="assetto-corsa-competizione">
+        <th scope="row">Assetto Corsa Competizione</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="automobilista 2" data-slug="automobilista-2">
+        <th scope="row">Automobilista 2</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="beat saber" data-slug="beat-saber">
+        <th scope="row">Beat Saber</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="blade &amp; sorcery" data-slug="blade-sorcery">
+        <th scope="row">Blade &amp; Sorcery</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="blade &amp; sorcery: nomad" data-slug="blade-sorcery-nomad">
+        <th scope="row">Blade &amp; Sorcery: Nomad</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="bonelab" data-slug="bonelab">
+        <th scope="row">BONELAB</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="boneworks" data-slug="boneworks">
+        <th scope="row">BONEWORKS</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="breachers" data-slug="breachers-psvr2">
+        <th scope="row">Breachers</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="c-smash vrs new dimension" data-slug="c-smash-vrs-new-dimension">
+        <th scope="row">C-Smash VRS New Dimension</th>
+        <td class="c verdict"></td>
+        <td class="c unk" title="unverified">–</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="carx drift racing online" data-slug="carx-drift-racing-online">
+        <th scope="row">CarX Drift Racing Online</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="crossfire: sierra squad" data-slug="crossfire-sierra-squad">
+        <th scope="row">Crossfire: Sierra Squad</th>
+        <td class="c verdict"></td>
+        <td class="c unk" title="unverified">–</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="dcs world steam edition" data-slug="dcs-world-steam-edition">
+        <th scope="row">DCS World Steam Edition</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="demeo" data-slug="demeo">
+        <th scope="row">Demeo</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="derail valley" data-slug="derail-valley">
+        <th scope="row">Derail Valley</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="dirt rally 2.0" data-slug="dirt-rally-2-0">
+        <th scope="row">DiRT Rally 2.0</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="eleven table tennis" data-slug="eleven-table-tennis">
+        <th scope="row">Eleven Table Tennis</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="elite dangerous" data-slug="elite-dangerous">
+        <th scope="row">Elite Dangerous</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="escape simulator" data-slug="escape-simulator">
+        <th scope="row">Escape Simulator</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="f1® 25" data-slug="f1-25">
+        <th scope="row">F1® 25</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="fallout 4 vr" data-slug="fallout-4-vr">
+        <th scope="row">Fallout 4 VR</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="five nights at freddy’s: help wanted 2" data-slug="five-nights-at-freddy-s-help-wanted-2">
+        <th scope="row">Five Nights at Freddy’s: Help Wanted 2</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="five nights at freddy's: secret of the mimic" data-slug="fnaf-secret-of-the-mimic">
+        <th scope="row">Five Nights at Freddy's: Secret of the Mimic</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="ghostbusters: rise of the ghost lord" data-slug="ghostbusters-rise-of-the-ghost-lord">
+        <th scope="row">Ghostbusters: Rise of the Ghost Lord</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="ghosts of tabor" data-slug="ghosts-of-tabor">
+        <th scope="row">Ghosts of Tabor</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="golf+" data-slug="golf">
+        <th scope="row">GOLF+</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="gorilla tag" data-slug="gorilla-tag">
+        <th scope="row">Gorilla Tag</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="gorn" data-slug="gorn">
+        <th scope="row">GORN</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="gran turismo 7" data-slug="gran-turismo-7">
+        <th scope="row">Gran Turismo 7</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="green hell vr" data-slug="green-hell-vr">
+        <th scope="row">Green Hell VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="half-life: alyx" data-slug="half-life-alyx">
+        <th scope="row">Half-Life: Alyx</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="hitman world of assassination" data-slug="hitman-world-of-assassination">
+        <th scope="row">HITMAN World of Assassination</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="horizon call of the mountain" data-slug="horizon-call-of-the-mountain">
+        <th scope="row">Horizon Call of the Mountain</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="hubris" data-slug="hubris">
+        <th scope="row">Hubris</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="i am cat" data-slug="i-am-cat">
+        <th scope="row">I Am Cat</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="il-2 sturmovik: battle of stalingrad" data-slug="il-2-sturmovik">
+        <th scope="row">IL-2 Sturmovik: Battle of Stalingrad</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="into the radius 2" data-slug="into-the-radius-2">
+        <th scope="row">Into the Radius 2</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="into the radius vr" data-slug="into-the-radius-vr">
+        <th scope="row">Into the Radius VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="job simulator" data-slug="job-simulator">
+        <th scope="row">Job Simulator</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="kayak vr: mirage" data-slug="kayak-vr-mirage">
+        <th scope="row">Kayak VR: Mirage</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="keep talking and nobody explodes" data-slug="keep-talking-and-nobody-explodes">
+        <th scope="row">Keep Talking and Nobody Explodes</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="le mans ultimate" data-slug="le-mans-ultimate">
+        <th scope="row">Le Mans Ultimate</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="legendary tales" data-slug="legendary-tales">
+        <th scope="row">Legendary Tales</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="madison vr" data-slug="madison-vr">
+        <th scope="row">MADiSON VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="metro awakening" data-slug="metro-awakening">
+        <th scope="row">Metro Awakening</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="microsoft flight simulator (2020) 40th anniversary edition" data-slug="microsoft-flight-simulator-2020">
+        <th scope="row">Microsoft Flight Simulator (2020) 40th Anniversary Edition</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="microsoft flight simulator 2024" data-slug="microsoft-flight-simulator-2024">
+        <th scope="row">Microsoft Flight Simulator 2024</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="moss" data-slug="moss">
+        <th scope="row">Moss</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="moss: book ii" data-slug="moss-book-ii">
+        <th scope="row">Moss: Book II</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="no man's sky" data-slug="no-mans-sky">
+        <th scope="row">No Man's Sky</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="pavlov" data-slug="pavlov">
+        <th scope="row">Pavlov</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="payday 2 vr" data-slug="payday-2">
+        <th scope="row">PAYDAY 2 VR</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="phasmophobia" data-slug="phasmophobia">
+        <th scope="row">Phasmophobia</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="pistol whip" data-slug="pistol-whip">
+        <th scope="row">Pistol Whip</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="population: one" data-slug="population-one">
+        <th scope="row">Population: One</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="project wingman" data-slug="project-wingman">
+        <th scope="row">Project Wingman</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="ragnarock" data-slug="ragnarock">
+        <th scope="row">Ragnarock</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="real vr fishing" data-slug="real-vr-fishing">
+        <th scope="row">Real VR Fishing</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="red matter 2" data-slug="red-matter-2">
+        <th scope="row">Red Matter 2</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="resident evil 4 (vr mode)" data-slug="resident-evil-4-vr-mode">
+        <th scope="row">Resident Evil 4 (VR Mode)</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="resident evil 4 vr" data-slug="resident-evil-4-vr">
+        <th scope="row">Resident Evil 4 VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="resident evil village" data-slug="resident-evil-village">
+        <th scope="row">Resident Evil Village</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="skydance's behemoth" data-slug="behemoth">
+        <th scope="row">Skydance's BEHEMOTH</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="star wars: tales from the galaxy's edge - enhanced edition" data-slug="star-wars-tales-galaxys-edge-enhanced">
+        <th scope="row">Star Wars: Tales from the Galaxy's Edge - Enhanced Edition</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="subnautica" data-slug="subnautica">
+        <th scope="row">Subnautica</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="superhot vr" data-slug="superhot-vr">
+        <th scope="row">SUPERHOT VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="synapse" data-slug="synapse">
+        <th scope="row">Synapse</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="synth riders" data-slug="synth-riders">
+        <th scope="row">Synth Riders</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="tabletop simulator" data-slug="tabletop-simulator">
+        <th scope="row">Tabletop Simulator</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="the 7th guest vr" data-slug="the-7th-guest-vr">
+        <th scope="row">The 7th Guest VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="the dark pictures: switchback vr" data-slug="the-dark-pictures-switchback-vr">
+        <th scope="row">The Dark Pictures: Switchback VR</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="the elder scrolls v: skyrim vr" data-slug="the-elder-scrolls-v-skyrim-vr">
+        <th scope="row">The Elder Scrolls V: Skyrim VR</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="the forest" data-slug="the-forest">
+        <th scope="row">The Forest</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="the light brigade" data-slug="the-light-brigade">
+        <th scope="row">The Light Brigade</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="the room vr: a dark matter" data-slug="the-room-vr">
+        <th scope="row">The Room VR: A Dark Matter</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="the thrill of the fight" data-slug="the-thrill-of-the-fight">
+        <th scope="row">The Thrill of the Fight</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="the thrill of the fight 2" data-slug="the-thrill-of-the-fight-2">
+        <th scope="row">The Thrill of the Fight 2</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="the walking dead: saints &amp; sinners" data-slug="walking-dead-saints-sinners">
+        <th scope="row">The Walking Dead: Saints &amp; Sinners</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="underdogs" data-slug="underdogs">
+        <th scope="row">UnderDogs</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="vacation simulator" data-slug="vacation-simulator">
+        <th scope="row">Vacation Simulator</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="vertigo 2" data-slug="vertigo-2">
+        <th scope="row">Vertigo 2</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c unk" title="unverified">–</td>
+      </tr>
+      <tr data-title="vrchat" data-slug="vrchat">
+        <th scope="row">VRChat</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="vtol vr" data-slug="vtol-vr">
+        <th scope="row">VTOL VR</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="walkabout mini golf vr" data-slug="walkabout-mini-golf">
+        <th scope="row">Walkabout Mini Golf VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+      </tr>
+      <tr data-title="war thunder" data-slug="war-thunder">
+        <th scope="row">War Thunder</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="x-plane 12" data-slug="x-plane-12">
+        <th scope="row">X-Plane 12</th>
+        <td class="c verdict"></td>
+        <td class="c no" title="no">✕</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+      <tr data-title="zombie army vr" data-slug="zombie-army-vr">
+        <th scope="row">Zombie Army VR</th>
+        <td class="c verdict"></td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c yes" title="yes">✓</td>
+        <td class="c no" title="no">✕</td>
+      </tr>
+        </tbody>
+      </table>
+      <p class="cat-empty" id="empty" hidden>Ningún juego coincide con esa búsqueda.</p>
+    </div>
+
+    <div class="cat-legend">
+      <div class="cat-legend-title">Cómo leer la tabla</div>
+      <ul>
+        <li><span class="c yes">✓</span> Está disponible en esa plataforma (verificado)</li>
+        <li><span class="c no">✕</span> No está disponible (verificado)</li>
+        <li><span class="c unk">–</span> Todavía no lo verificamos</li>
+      </ul>
+    </div>
+
+    <section class="cat-section">
+      <h2>Usar estos datos</h2>
+      <p>El catálogo completo está publicado como archivo abierto en <a href="/data/vr-games.json">/data/vr-games.json</a>, bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>: se puede usar, citar y redistribuir mencionando a vr.ar. Si encontrás un dato equivocado, escribinos a <a href="mailto:westartmind@gmail.com">westartmind@gmail.com</a> y lo corregimos.</p>
+      <p class="cat-updated">Actualizado el 2026-08-23</p>
+    </section>
+
+    <div class="cat-cta">
+      <div class="cat-cta-title">¿Lo querés mientras navegás?</div>
+      <p>Nuestra extensión de Chrome usa este mismo catálogo y te avisa sobre las páginas que mencionan un juego.</p>
+      <div class="cat-cta-actions">
+        <a class="cat-btn" href="extension.html">Ver la extensión →</a>
+        <a class="cat-btn-ghost" href="index.html">Hacer el test de VR Finder →</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="index.html">Inicio</a>
+    <span class="site-footer-sep">·</span>
+    <a href="guias/">Guías</a>
+    <span class="site-footer-sep">·</span>
+    <a href="extension.html">Extensión</a>
+    <span class="site-footer-sep">·</span>
+    <a href="privacy.html">Política de privacidad</a>
+  </footer>
+</div>
+
+<script>
+/* La derivación visor → veredicto es la misma que usa la extensión en
+   extension/src/data.js (función resolve). Si cambia allá, cambia acá. */
+(function () {
+  var HEADSETS = [{"id":"quest-3","native":["quest"],"pcvr":true},{"id":"quest-3s","native":["quest"],"pcvr":true},{"id":"quest-2","native":["quest"],"pcvr":true},{"id":"psvr2","native":["psvr2"],"pcvr":true},{"id":"pico-4","native":["pico"],"pcvr":true},{"id":"pico-4-ultra","native":["pico"],"pcvr":true},{"id":"valve-index","native":[],"pcvr":true},{"id":"htc-vive","native":[],"pcvr":true}];
+  var GAMES = {"alien-rogue-incursion":{"on":["psvr2","quest","steam"],"off":["pico"]},"among-us-3d":{"on":["pico","psvr2","quest","steam"],"off":[]},"arizona-sunshine-2":{"on":["pico","psvr2","quest","steam"],"off":[]},"assetto-corsa":{"on":["steam"],"off":["pico","psvr2","quest"]},"assetto-corsa-competizione":{"on":["steam"],"off":["pico","psvr2","quest"]},"automobilista-2":{"on":["steam"],"off":["pico","psvr2","quest"]},"beat-saber":{"on":["psvr2","quest","steam"],"off":["pico"]},"blade-sorcery":{"on":["steam"],"off":["pico","psvr2","quest"]},"blade-sorcery-nomad":{"on":["pico","quest"],"off":["psvr2","steam"]},"bonelab":{"on":["quest","steam"],"off":["psvr2"]},"boneworks":{"on":["steam"],"off":["pico","psvr2","quest"]},"breachers-psvr2":{"on":["pico","psvr2","quest","steam"],"off":[]},"c-smash-vrs-new-dimension":{"on":["psvr2"],"off":["steam"]},"carx-drift-racing-online":{"on":["steam"],"off":["pico","psvr2","quest"]},"crossfire-sierra-squad":{"on":["psvr2","steam"],"off":[]},"dcs-world-steam-edition":{"on":["steam"],"off":["pico","psvr2","quest"]},"demeo":{"on":["pico","psvr2","quest","steam"],"off":[]},"derail-valley":{"on":["steam"],"off":["pico","psvr2","quest"]},"dirt-rally-2-0":{"on":["steam"],"off":["pico","psvr2","quest"]},"eleven-table-tennis":{"on":["pico","quest","steam"],"off":[]},"elite-dangerous":{"on":["steam"],"off":["psvr2","quest"]},"escape-simulator":{"on":["quest","steam"],"off":["pico","psvr2"]},"f1-25":{"on":["steam"],"off":["pico","psvr2","quest"]},"fallout-4-vr":{"on":["steam"],"off":["pico","psvr2","quest"]},"five-nights-at-freddy-s-help-wanted-2":{"on":["pico","psvr2","quest","steam"],"off":[]},"fnaf-secret-of-the-mimic":{"on":["psvr2","steam"],"off":["quest"]},"ghostbusters-rise-of-the-ghost-lord":{"on":["psvr2","quest"],"off":["pico","steam"]},"ghosts-of-tabor":{"on":["pico","psvr2","quest","steam"],"off":[]},"golf":{"on":["quest"],"off":["psvr2"]},"gorilla-tag":{"on":["psvr2","quest","steam"],"off":["pico"]},"gorn":{"on":["pico","psvr2","quest","steam"],"off":[]},"gran-turismo-7":{"on":["psvr2"],"off":["pico","quest","steam"]},"green-hell-vr":{"on":["pico","psvr2","quest","steam"],"off":[]},"half-life-alyx":{"on":["steam"],"off":["pico","psvr2","quest"]},"hitman-world-of-assassination":{"on":["psvr2","steam"],"off":["pico","quest"]},"horizon-call-of-the-mountain":{"on":["psvr2"],"off":["pico","quest","steam"]},"hubris":{"on":["pico","psvr2","quest","steam"],"off":[]},"i-am-cat":{"on":["pico","psvr2","quest","steam"],"off":[]},"il-2-sturmovik":{"on":["steam"],"off":["pico","psvr2","quest"]},"into-the-radius-2":{"on":["quest","steam"],"off":["psvr2"]},"into-the-radius-vr":{"on":["pico","psvr2","quest","steam"],"off":[]},"job-simulator":{"on":["pico","psvr2","quest","steam"],"off":[]},"kayak-vr-mirage":{"on":["psvr2","steam"],"off":["quest"]},"keep-talking-and-nobody-explodes":{"on":["quest","steam"],"off":["psvr2"]},"le-mans-ultimate":{"on":["steam"],"off":["pico","psvr2","quest"]},"legendary-tales":{"on":["psvr2","quest","steam"],"off":[]},"madison-vr":{"on":["psvr2","quest","steam"],"off":[]},"metro-awakening":{"on":["psvr2","quest","steam"],"off":[]},"microsoft-flight-simulator-2020":{"on":["steam"],"off":["pico","psvr2","quest"]},"microsoft-flight-simulator-2024":{"on":["psvr2","steam"],"off":["pico","quest"]},"moss":{"on":["pico","psvr2","quest","steam"],"off":[]},"moss-book-ii":{"on":["pico","psvr2","quest","steam"],"off":[]},"no-mans-sky":{"on":["psvr2","steam"],"off":["quest"]},"pavlov":{"on":["psvr2","quest","steam"],"off":["pico"]},"payday-2":{"on":["steam"],"off":["pico","psvr2","quest"]},"phasmophobia":{"on":["psvr2","steam"],"off":["pico","quest"]},"pistol-whip":{"on":["pico","psvr2","quest","steam"],"off":[]},"population-one":{"on":["quest"],"off":["pico","psvr2","steam"]},"project-wingman":{"on":["psvr2","steam"],"off":["pico","quest"]},"ragnarock":{"on":["pico","psvr2","quest","steam"],"off":[]},"real-vr-fishing":{"on":["pico","quest","steam"],"off":[]},"red-matter-2":{"on":["pico","psvr2","quest","steam"],"off":[]},"resident-evil-4-vr-mode":{"on":["psvr2"],"off":["pico","quest","steam"]},"resident-evil-4-vr":{"on":["quest"],"off":["pico","psvr2","steam"]},"resident-evil-village":{"on":["psvr2"],"off":["pico","quest","steam"]},"behemoth":{"on":["psvr2","quest","steam"],"off":["pico"]},"star-wars-tales-galaxys-edge-enhanced":{"on":["psvr2","quest"],"off":["pico","steam"]},"subnautica":{"on":["steam"],"off":["pico","psvr2","quest"]},"superhot-vr":{"on":["pico","quest","steam"],"off":["psvr2"]},"synapse":{"on":["psvr2"],"off":["pico","quest","steam"]},"synth-riders":{"on":["pico","psvr2","quest","steam"],"off":[]},"tabletop-simulator":{"on":["steam"],"off":["pico","psvr2","quest"]},"the-7th-guest-vr":{"on":["psvr2","quest","steam"],"off":[]},"the-dark-pictures-switchback-vr":{"on":["psvr2"],"off":["pico","quest","steam"]},"the-elder-scrolls-v-skyrim-vr":{"on":["steam"],"off":["pico","psvr2","quest"]},"the-forest":{"on":["steam"],"off":["pico","psvr2","quest"]},"the-light-brigade":{"on":["psvr2","quest","steam"],"off":[]},"the-room-vr":{"on":["pico","psvr2","quest","steam"],"off":[]},"the-thrill-of-the-fight":{"on":["quest","steam"],"off":["pico","psvr2"]},"the-thrill-of-the-fight-2":{"on":["quest"],"off":["pico","psvr2","steam"]},"walking-dead-saints-sinners":{"on":["pico","psvr2","quest","steam"],"off":[]},"underdogs":{"on":["pico","psvr2","quest","steam"],"off":[]},"vacation-simulator":{"on":["pico","psvr2","quest","steam"],"off":[]},"vertigo-2":{"on":["psvr2","steam"],"off":["quest"]},"vrchat":{"on":["pico","quest","steam"],"off":["psvr2"]},"vtol-vr":{"on":["steam"],"off":["pico","psvr2","quest"]},"walkabout-mini-golf":{"on":["pico","psvr2","quest","steam"],"off":[]},"war-thunder":{"on":["steam"],"off":["pico","psvr2","quest"]},"x-plane-12":{"on":["steam"],"off":["pico","psvr2","quest"]},"zombie-army-vr":{"on":["psvr2","quest","steam"],"off":["pico"]}};
+  var LABEL = {"yes":"Sí","pc":"Con PC","no":"No","unknown":"Sin datos"};
+  var WORD = ["juego","juegos"];
+
+  function verdict(slug, headsetId) {
+    var h = HEADSETS.filter(function (x) { return x.id === headsetId; })[0];
+    var g = GAMES[slug];
+    if (!h || !g) return null;
+    if ((h.native || []).some(function (p) { return g.on.indexOf(p) > -1; })) return 'yes';
+    if (h.pcvr && g.on.indexOf('steam') > -1) return 'pc';
+    var needed = (h.native || []).slice();
+    if (h.pcvr) needed.push('steam');
+    var allChecked = needed.every(function (p) { return g.off.indexOf(p) > -1; });
+    return allChecked ? 'no' : 'unknown';
+  }
+
+  var table = document.getElementById('table');
+  var rows = [].slice.call(table.tBodies[0].rows);
+  var select = document.getElementById('headset');
+  var input = document.getElementById('q');
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+
+  function paint() {
+    var id = select.value;
+    var term = input.value.trim().toLowerCase();
+    table.classList.toggle('with-verdict', !!id);
+    var shown = 0;
+    rows.forEach(function (row) {
+      var match = !term || row.dataset.title.indexOf(term) > -1;
+      row.hidden = !match;
+      if (match) shown++;
+      var cell = row.querySelector('.verdict');
+      if (!id) { cell.className = 'c verdict'; cell.textContent = ''; return; }
+      var v = verdict(row.dataset.slug, id) || 'unknown';
+      cell.className = 'c verdict v-' + v;
+      cell.textContent = LABEL[v];
+    });
+    count.textContent = shown + ' ' + (shown === 1 ? WORD[0] : WORD[1]);
+    empty.hidden = shown > 0;
+  }
+
+  select.addEventListener('change', paint);
+  input.addEventListener('input', paint);
+  paint();
+})();
+</script>
+</body>
+</html>

@@ -8,9 +8,10 @@ Key facts for accurate citation:
 - Editorial stance is deliberately honest: the site states when a product is not worth buying, flags mixed evidence as mixed, and does not publish sponsored reviews.
 - Headsets covered: Meta Quest 3 and Quest 3S, PlayStation VR2, Pico 4 Ultra, Pimax Crystal Light and Crystal Super, Bigscreen Beyond 2.
 - Prices cited across the site (verified July 2026, after Meta's April 2026 increase): Quest 3S from US$349, Quest 3 US$599, PSVR2 around US$399, Apple Vision Pro around US$3,500, Meta Ray-Ban Display US$799 (United States only).
-- Funding: affiliate commissions from specialised VR retailers, plus one ad unit on the guides; the quiz and home page carry no advertising. vr.ar left the Amazon Associates Programme in August 2026, so links to Amazon are plain searches that earn the site nothing. Disclosure appears on every page that contains affiliate links.
+- Funding: affiliate commissions from specialised VR retailers. The site carries no advertising at all: the AdSense unit was removed in August 2026. vr.ar also left the Amazon Associates Programme that month, so links to Amazon are plain searches that earn the site nothing. Disclosure appears on every page that contains affiliate links.
 - Health-related guides (motion sickness, using VR with glasses) state explicitly that they are not medical or optometric advice.
 - Contact: westartmind@gmail.com
+- Licensing terms for AI use are declared in machine-readable form at https://vr.ar/license.xml (RSL standard).
 
 ## Start here
 
@@ -20,7 +21,9 @@ Key facts for accurate citation:
 - [What is augmented reality?](https://vr.ar/guides/what-is-augmented-reality): AR explained through the examples people already use daily, how phone tracking actually works, the FDA-cleared surgical use, and an honest account of what AR glasses cost and where they are sold. Spanish: https://vr.ar/guias/que-es-la-realidad-aumentada
 - [VR vs AR vs MR vs XR: what each one actually is](https://vr.ar/guides/vr-vs-ar-vs-mr-explained): the difference between virtual, augmented and mixed reality, with everyday examples and an honest account of what can be bought today versus what remains a prototype. Spanish: https://vr.ar/guias/realidad-virtual-vs-aumentada
 
-- [Chrome extension: does that VR game work on your headset?](https://vr.ar/chrome-extension): a free Chrome extension by vr.ar that shows VR game compatibility with the user's headset while browsing Steam, the PlayStation Store or any page that mentions a game. Interface in English and Spanish, chosen from the browser's language. Catalogue of 91 games verified platform by platform; it says so when a game has not been verified rather than guessing. Spanish: https://vr.ar/extension
+- [VR game compatibility catalogue](https://vr.ar/vr-game-compatibility): which platforms each of 90 VR games is actually available on, verified store by store. Open data under CC BY 4.0, machine-readable at https://vr.ar/data/vr-games.json. Platforms that were not verified for a given game are listed explicitly as unverified rather than assumed unavailable, so the absence of a platform never means "not available". Spanish: https://vr.ar/compatibilidad
+
+- [Chrome extension: does that VR game work on your headset?](https://vr.ar/chrome-extension): a free Chrome extension by vr.ar that shows VR game compatibility with the user's headset while browsing Steam, the PlayStation Store or any page that mentions a game. Interface in English and Spanish, chosen from the browser's language. Catalogue of 90 games verified platform by platform; it says so when a game has not been verified rather than guessing. Spanish: https://vr.ar/extension
 
 ## Choosing a headset
 

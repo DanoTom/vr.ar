@@ -1,0 +1,108 @@
+/* Catálogo de compatibilidad (/compatibilidad y /vr-game-compatibility).
+   Generado por tools/gen-catalog.mjs; este archivo se edita a mano. */
+
+.cat-wrap{max-width:900px;margin:0 auto;padding:clamp(24px,5vw,44px) 20px 60px;position:relative;z-index:1}
+
+.cat-wrap h1{
+  font-family:'Unbounded',sans-serif;font-weight:800;color:#fff;
+  font-size:clamp(1.6rem,4.6vw,2.5rem);line-height:1.15;margin:0;letter-spacing:-0.01em;
+}
+.cat-lead{font-size:clamp(0.98rem,2.2vw,1.08rem);line-height:1.65;color:var(--text-dim);margin:16px 0 0}
+.cat-honest{
+  font-size:0.95rem;line-height:1.6;color:var(--text-dim);
+  margin:16px 0 0;padding:13px 15px;border-radius:12px;
+  border:1px solid rgba(0,212,255,0.22);background:rgba(0,212,255,0.05);
+}
+.cat-honest strong{color:#fff;font-weight:600}
+
+/* ── Controles ── */
+.cat-controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;margin:clamp(22px,4vw,32px) 0 14px}
+.cat-field{display:flex;flex-direction:column;gap:5px;font-size:0.78rem;color:var(--text-dim)}
+.cat-field-grow{flex:1 1 200px}
+.cat-field select,.cat-field input{
+  font:inherit;font-size:0.92rem;color:var(--text);
+  padding:9px 12px;border-radius:10px;
+  border:1px solid var(--border);background:rgba(8,14,30,0.75);
+}
+.cat-field select:focus,.cat-field input:focus{outline:2px solid var(--cyan);outline-offset:1px}
+.cat-field input{width:100%}
+.cat-count{font-size:0.8rem;color:var(--text-dim);padding-bottom:10px;white-space:nowrap}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ── Tabla ── */
+.cat-table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:14px;background:rgba(8,14,30,0.6)}
+.cat-table{width:100%;border-collapse:collapse;font-size:0.9rem;min-width:600px}
+.cat-table th,.cat-table td{padding:10px 12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.05)}
+.cat-table thead th{
+  position:sticky;top:0;z-index:1;
+  background:rgba(10,16,34,0.97);backdrop-filter:blur(6px);
+  font-family:'Orbitron',monospace;font-size:0.6rem;letter-spacing:0.1em;
+  text-transform:uppercase;color:var(--text-dim);white-space:nowrap;
+}
+.cat-table tbody th{font-weight:500;color:#fff;font-size:0.92rem}
+.cat-table tbody tr:hover{background:rgba(0,212,255,0.04)}
+.cat-table tbody tr:last-child th,.cat-table tbody tr:last-child td{border-bottom:0}
+.cat-table td.c{text-align:center;font-size:0.95rem;width:1%;white-space:nowrap}
+.c.yes{color:#3ddc97}
+.c.no{color:#ff6b81}
+.c.unk{color:#7d8ba3}
+
+/* La columna del veredicto solo aparece cuando se eligió un visor. */
+.col-verdict,.cat-table td.verdict{display:none}
+.cat-table.with-verdict .col-verdict,.cat-table.with-verdict td.verdict{display:table-cell}
+td.verdict{font-size:0.82rem !important;font-weight:600}
+.v-yes{color:#3ddc97}
+.v-pc{color:#ffb800}
+.v-no{color:#ff6b81}
+.v-unknown{color:#7d8ba3}
+
+.cat-empty{padding:22px;text-align:center;color:var(--text-dim);font-size:0.92rem;margin:0}
+
+/* ── Leyenda ── */
+.cat-legend{margin-top:16px;font-size:0.86rem;color:var(--text-dim)}
+.cat-legend-title{
+  font-family:'Orbitron',monospace;font-size:0.6rem;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--text-dim);margin-bottom:8px;
+}
+.cat-legend ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px 22px}
+.cat-legend li{display:flex;align-items:center;gap:8px;line-height:1.5}
+.cat-legend .c{display:inline-block;width:1.1em;text-align:center;font-size:0.95rem}
+
+/* ── Secciones ── */
+.cat-section{margin-top:clamp(34px,6vw,52px)}
+.cat-section h2{
+  font-family:'Unbounded',sans-serif;font-weight:700;color:#fff;
+  font-size:clamp(1.1rem,3vw,1.4rem);margin:0 0 12px;
+}
+.cat-section p{font-size:0.98rem;line-height:1.7;color:var(--text-dim);margin:0}
+.cat-section a{color:var(--cyan)}
+.cat-updated{margin-top:12px !important;font-size:0.84rem !important}
+
+/* ── Cierre ── */
+.cat-cta{
+  margin-top:clamp(32px,6vw,48px);text-align:center;
+  padding:clamp(24px,5vw,36px) 22px;border-radius:18px;
+  border:1px solid rgba(123,111,255,0.32);
+  background:linear-gradient(180deg,rgba(0,212,255,0.07),rgba(123,111,255,0.1));
+}
+.cat-cta-title{font-family:'Unbounded',sans-serif;font-weight:700;color:#fff;font-size:clamp(1.05rem,2.8vw,1.3rem)}
+.cat-cta p{margin:10px auto 0;max-width:460px;font-size:0.95rem;line-height:1.6;color:var(--text-dim)}
+.cat-cta-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px}
+.cat-btn{
+  display:inline-flex;align-items:center;padding:14px 24px;border-radius:13px;
+  background:linear-gradient(135deg,#00d4ff,#7b6fff);color:#04121f;text-decoration:none;
+  font-family:'Orbitron',monospace;font-weight:700;font-size:0.75rem;
+  letter-spacing:0.08em;text-transform:uppercase;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.cat-btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px -14px rgba(0,212,255,0.75)}
+.cat-btn-ghost{
+  display:inline-flex;align-items:center;padding:14px 22px;border-radius:13px;
+  border:1px solid var(--border);color:var(--text);text-decoration:none;font-size:0.9rem;
+  transition:border-color .2s ease,background .2s ease;
+}
+.cat-btn-ghost:hover{border-color:var(--border-hover);background:rgba(0,212,255,0.05)}
+
+@media(max-width:560px){
+  .cat-count{width:100%;padding-bottom:0}
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licencia legible por máquina de vr.ar, en el formato RSL (Really Simple
+  Licensing, rslstandard.org). Declara cómo puede usarse este contenido para
+  desarrollar o alimentar sistemas de IA.
+
+  El criterio: el catálogo de compatibilidad es abierto y solo pedimos
+  atribución, porque queremos que se use y se cite. El resto del contenido
+  editorial se puede usar con atribución para responder preguntas; para
+  entrenar modelos pedimos que nos escriban.
+-->
+<rsl xmlns="https://rslstandard.org/rsl">
+  <content url="https://vr.ar/data/vr-games.json">
+    <license>
+      <permits type="usage">all</permits>
+      <permits type="user">all</permits>
+      <payment type="attribution">
+        <standard>https://creativecommons.org/licenses/by/4.0/</standard>
+      </payment>
+    </license>
+  </content>
+
+  <content url="https://vr.ar/">
+    <license>
+      <permits type="usage">search,ai-summarize</permits>
+      <permits type="user">all</permits>
+      <payment type="attribution">
+        <standard>https://creativecommons.org/licenses/by/4.0/</standard>
+      </payment>
+    </license>
+    <license>
+      <permits type="usage">train-ai,train-genai</permits>
+      <payment type="purchase">
+        <standard>https://vr.ar/about</standard>
+      </payment>
+    </license>
+    <copyright>vr.ar</copyright>
+    <contact-email>westartmind@gmail.com</contact-email>
+  </content>
+</rsl>

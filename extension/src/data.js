@@ -472,9 +472,11 @@ const CATALOG = [
   },
   {
     "slug": "resident-evil-4-vr-mode",
-    "title": "Resident Evil 4 Modo VR",
+    "title": "Resident Evil 4 (VR Mode)",
     "aliases": [
-      "resident evil 4 vr mode"
+      "resident evil 4 vr mode",
+      "resident evil 4 modo vr",
+      "resident evil 4 remake"
     ],
     "on": [
       "psvr2"
@@ -501,20 +503,18 @@ const CATALOG = [
     ]
   },
   {
-    "slug": "blade-and-sorcery",
-    "title": "Blade and Sorcery",
+    "slug": "blade-sorcery-nomad",
+    "title": "Blade & Sorcery: Nomad",
     "aliases": [
-      "blade & sorcery"
-    ],
-    "steam": [
-      "629730"
+      "blade and sorcery nomad",
+      "blade sorcery nomad"
     ],
     "on": [
-      "steam",
       "quest",
       "pico"
     ],
     "off": [
+      "steam",
       "psvr2"
     ]
   },
@@ -715,17 +715,17 @@ const CATALOG = [
     ]
   },
   {
-    "slug": "resident-evil-4",
-    "title": "Resident Evil 4",
+    "slug": "resident-evil-4-vr",
+    "title": "Resident Evil 4 VR",
     "aliases": [
-      "resident evil 4 remake"
+      "resident evil 4 vr quest"
     ],
     "on": [
-      "quest",
-      "psvr2"
+      "quest"
     ],
     "off": [
       "steam",
+      "psvr2",
       "pico"
     ]
   },
@@ -1003,6 +1003,10 @@ const CATALOG = [
   {
     "slug": "arizona-sunshine-2",
     "title": "Arizona Sunshine 2",
+    "aliases": [
+      "arizona sunshine vr 2",
+      "arizona sunshine 2 vr"
+    ],
     "on": [
       "quest",
       "steam",
@@ -1379,20 +1383,6 @@ const CATALOG = [
     "off": [
       "quest"
     ]
-  },
-  {
-    "slug": "arizona-sunshine-2-2",
-    "title": "Arizona Sunshine® VR 2",
-    "aliases": [
-      "arizona sunshine 2"
-    ],
-    "on": [
-      "quest",
-      "steam",
-      "psvr2",
-      "pico"
-    ],
-    "off": []
   },
   {
     "slug": "breachers-psvr2",

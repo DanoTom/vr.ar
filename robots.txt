@@ -4,3 +4,9 @@ Allow: /
 Sitemap: https://vr.ar/sitemap.xml
 
 # AI systems: https://vr.ar/llms.txt
+# Datos abiertos de compatibilidad: https://vr.ar/data/vr-games.json
+
+# ─── Licencia legible por máquina (estándar RSL, rslstandard.org) ───
+# No bloqueamos a ningún rastreador: queremos que nos citen. Solo declaramos
+# bajo qué condiciones se puede usar lo que publicamos.
+License: https://vr.ar/license.xml

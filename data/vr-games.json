@@ -1,0 +1,1515 @@
+{
+  "name": "vr.ar — VR game compatibility catalogue",
+  "description": "Which platforms each VR game is actually available on, verified one by one. Platforms not verified for a game are listed explicitly under unverified_on rather than being assumed unavailable.",
+  "homepage": "https://vr.ar/vr-game-compatibility",
+  "homepage_es": "https://vr.ar/compatibilidad",
+  "version": "2026-08-23",
+  "updated": "2026-08-23",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "vr.ar — https://vr.ar",
+  "publisher": {
+    "name": "vr.ar",
+    "url": "https://vr.ar",
+    "email": "westartmind@gmail.com"
+  },
+  "method": "Each game was checked store by store against the official listings. A platform appears in available_on or not_available_on only when it was verified; everything else stays in unverified_on.",
+  "platforms": {
+    "quest": "Meta Horizon Store",
+    "steam": "SteamVR / PC VR",
+    "psvr2": "PlayStation VR2",
+    "pico": "PICO Store"
+  },
+  "headsets": [
+    {
+      "id": "quest-3",
+      "name": "Meta Quest 3",
+      "native_platforms": [
+        "quest"
+      ],
+      "supports_pc_vr": true
+    },
+    {
+      "id": "quest-3s",
+      "name": "Meta Quest 3S",
+      "native_platforms": [
+        "quest"
+      ],
+      "supports_pc_vr": true
+    },
+    {
+      "id": "quest-2",
+      "name": "Meta Quest 2",
+      "native_platforms": [
+        "quest"
+      ],
+      "supports_pc_vr": true
+    },
+    {
+      "id": "psvr2",
+      "name": "PlayStation VR2",
+      "native_platforms": [
+        "psvr2"
+      ],
+      "supports_pc_vr": true
+    },
+    {
+      "id": "pico-4",
+      "name": "PICO 4",
+      "native_platforms": [
+        "pico"
+      ],
+      "supports_pc_vr": true
+    },
+    {
+      "id": "pico-4-ultra",
+      "name": "PICO 4 Ultra",
+      "native_platforms": [
+        "pico"
+      ],
+      "supports_pc_vr": true
+    },
+    {
+      "id": "valve-index",
+      "name": "Valve Index",
+      "native_platforms": [],
+      "supports_pc_vr": true
+    },
+    {
+      "id": "htc-vive",
+      "name": "HTC Vive",
+      "native_platforms": [],
+      "supports_pc_vr": true
+    }
+  ],
+  "coverage": {
+    "games": 90,
+    "platform_checks": 360,
+    "verified": 339,
+    "verified_share": 94.2
+  },
+  "games": [
+    {
+      "slug": "alien-rogue-incursion",
+      "title": "Alien: Rogue Incursion VR",
+      "aliases": [
+        "alien rogue incursion"
+      ],
+      "steam_app_ids": [
+        "1850050"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "among-us-3d",
+      "title": "Among Us 3D",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "arizona-sunshine-2",
+      "title": "Arizona Sunshine 2",
+      "aliases": [
+        "arizona sunshine vr 2",
+        "arizona sunshine 2 vr"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "assetto-corsa",
+      "title": "Assetto Corsa",
+      "steam_app_ids": [
+        "244210"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "assetto-corsa-competizione",
+      "title": "Assetto Corsa Competizione",
+      "aliases": [
+        "acc"
+      ],
+      "steam_app_ids": [
+        "805550"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "automobilista-2",
+      "title": "Automobilista 2",
+      "steam_app_ids": [
+        "1066890"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "beat-saber",
+      "title": "Beat Saber",
+      "steam_app_ids": [
+        "620980"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "blade-sorcery",
+      "title": "Blade & Sorcery",
+      "aliases": [
+        "blade and sorcery"
+      ],
+      "steam_app_ids": [
+        "629730"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "blade-sorcery-nomad",
+      "title": "Blade & Sorcery: Nomad",
+      "aliases": [
+        "blade and sorcery nomad",
+        "blade sorcery nomad"
+      ],
+      "available_on": [
+        "pico",
+        "quest"
+      ],
+      "not_available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "bonelab",
+      "title": "BONELAB",
+      "steam_app_ids": [
+        "1592190"
+      ],
+      "available_on": [
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "psvr2"
+      ],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "boneworks",
+      "title": "BONEWORKS",
+      "steam_app_ids": [
+        "823500"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "breachers-psvr2",
+      "title": "Breachers",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "c-smash-vrs-new-dimension",
+      "title": "C-Smash VRS New Dimension",
+      "aliases": [
+        "c-smash vrs"
+      ],
+      "available_on": [
+        "psvr2"
+      ],
+      "not_available_on": [
+        "steam"
+      ],
+      "unverified_on": [
+        "quest",
+        "pico"
+      ]
+    },
+    {
+      "slug": "carx-drift-racing-online",
+      "title": "CarX Drift Racing Online",
+      "steam_app_ids": [
+        "635260"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "crossfire-sierra-squad",
+      "title": "Crossfire: Sierra Squad",
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": [
+        "quest",
+        "pico"
+      ]
+    },
+    {
+      "slug": "dcs-world-steam-edition",
+      "title": "DCS World Steam Edition",
+      "aliases": [
+        "dcs world"
+      ],
+      "steam_app_ids": [
+        "223750"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "demeo",
+      "title": "Demeo",
+      "steam_app_ids": [
+        "1484280"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "derail-valley",
+      "title": "Derail Valley",
+      "steam_app_ids": [
+        "588030"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "dirt-rally-2-0",
+      "title": "DiRT Rally 2.0",
+      "aliases": [
+        "dirt rally 2"
+      ],
+      "steam_app_ids": [
+        "690790"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "eleven-table-tennis",
+      "title": "Eleven Table Tennis",
+      "available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": [
+        "psvr2"
+      ]
+    },
+    {
+      "slug": "elite-dangerous",
+      "title": "Elite Dangerous",
+      "steam_app_ids": [
+        "359320"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "escape-simulator",
+      "title": "Escape Simulator",
+      "steam_app_ids": [
+        "1435790"
+      ],
+      "available_on": [
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "f1-25",
+      "title": "F1® 25",
+      "steam_app_ids": [
+        "3059520"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "fallout-4-vr",
+      "title": "Fallout 4 VR",
+      "steam_app_ids": [
+        "611660"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "five-nights-at-freddy-s-help-wanted-2",
+      "title": "Five Nights at Freddy’s: Help Wanted 2",
+      "aliases": [
+        "five nights at freddys help wanted 2",
+        "fnaf help wanted 2"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "fnaf-secret-of-the-mimic",
+      "title": "Five Nights at Freddy's: Secret of the Mimic",
+      "aliases": [
+        "five nights at freddys secret of the mimic",
+        "fnaf secret of the mimic"
+      ],
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [
+        "quest"
+      ],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "ghostbusters-rise-of-the-ghost-lord",
+      "title": "Ghostbusters: Rise of the Ghost Lord",
+      "available_on": [
+        "psvr2",
+        "quest"
+      ],
+      "not_available_on": [
+        "pico",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "ghosts-of-tabor",
+      "title": "Ghosts of Tabor",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "golf",
+      "title": "GOLF+",
+      "available_on": [
+        "quest"
+      ],
+      "not_available_on": [
+        "psvr2"
+      ],
+      "unverified_on": [
+        "steam",
+        "pico"
+      ]
+    },
+    {
+      "slug": "gorilla-tag",
+      "title": "Gorilla Tag",
+      "steam_app_ids": [
+        "1533390"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "gorn",
+      "title": "GORN",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "gran-turismo-7",
+      "title": "Gran Turismo 7",
+      "available_on": [
+        "psvr2"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "green-hell-vr",
+      "title": "Green Hell VR",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "half-life-alyx",
+      "title": "Half-Life: Alyx",
+      "steam_app_ids": [
+        "546560"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "hitman-world-of-assassination",
+      "title": "HITMAN World of Assassination",
+      "steam_app_ids": [
+        "1659040"
+      ],
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "horizon-call-of-the-mountain",
+      "title": "Horizon Call of the Mountain",
+      "available_on": [
+        "psvr2"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "hubris",
+      "title": "Hubris",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "i-am-cat",
+      "title": "I Am Cat",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "il-2-sturmovik",
+      "title": "IL-2 Sturmovik: Battle of Stalingrad",
+      "aliases": [
+        "il 2 sturmovik",
+        "il-2 sturmovik"
+      ],
+      "steam_app_ids": [
+        "307960"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "into-the-radius-2",
+      "title": "Into the Radius 2",
+      "steam_app_ids": [
+        "2307350"
+      ],
+      "available_on": [
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "psvr2"
+      ],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "into-the-radius-vr",
+      "title": "Into the Radius VR",
+      "aliases": [
+        "into the radius"
+      ],
+      "steam_app_ids": [
+        "1012790"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "job-simulator",
+      "title": "Job Simulator",
+      "steam_app_ids": [
+        "448280"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "kayak-vr-mirage",
+      "title": "Kayak VR: Mirage",
+      "steam_app_ids": [
+        "1683340"
+      ],
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [
+        "quest"
+      ],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "keep-talking-and-nobody-explodes",
+      "title": "Keep Talking and Nobody Explodes",
+      "steam_app_ids": [
+        "341800"
+      ],
+      "available_on": [
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "psvr2"
+      ],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "le-mans-ultimate",
+      "title": "Le Mans Ultimate",
+      "steam_app_ids": [
+        "2399420"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "legendary-tales",
+      "title": "Legendary Tales",
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "madison-vr",
+      "title": "MADiSON VR",
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "metro-awakening",
+      "title": "Metro Awakening",
+      "steam_app_ids": [
+        "2669410"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "microsoft-flight-simulator-2020",
+      "title": "Microsoft Flight Simulator (2020) 40th Anniversary Edition",
+      "aliases": [
+        "microsoft flight simulator",
+        "microsoft flight simulator 2020"
+      ],
+      "steam_app_ids": [
+        "1250410"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "microsoft-flight-simulator-2024",
+      "title": "Microsoft Flight Simulator 2024",
+      "aliases": [
+        "microsoft flight simulator"
+      ],
+      "steam_app_ids": [
+        "2537590"
+      ],
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "moss",
+      "title": "Moss",
+      "aliases": [
+        "moss vr"
+      ],
+      "steam_app_ids": [
+        "846470"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "moss-book-ii",
+      "title": "Moss: Book II",
+      "aliases": [
+        "moss ii vr",
+        "moss ii"
+      ],
+      "steam_app_ids": [
+        "2059670"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "no-mans-sky",
+      "title": "No Man's Sky",
+      "aliases": [
+        "no mans sky"
+      ],
+      "steam_app_ids": [
+        "275850"
+      ],
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [
+        "quest"
+      ],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "pavlov",
+      "title": "Pavlov",
+      "aliases": [
+        "pavlov vr"
+      ],
+      "steam_app_ids": [
+        "555160"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "payday-2",
+      "title": "PAYDAY 2 VR",
+      "aliases": [
+        "payday 2"
+      ],
+      "steam_app_ids": [
+        "218620"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "phasmophobia",
+      "title": "Phasmophobia",
+      "steam_app_ids": [
+        "739630"
+      ],
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "pistol-whip",
+      "title": "Pistol Whip",
+      "steam_app_ids": [
+        "1079800"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "population-one",
+      "title": "Population: One",
+      "available_on": [
+        "quest"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "project-wingman",
+      "title": "Project Wingman",
+      "steam_app_ids": [
+        "895870"
+      ],
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "ragnarock",
+      "title": "Ragnarock",
+      "steam_app_ids": [
+        "1345820"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "real-vr-fishing",
+      "title": "Real VR Fishing",
+      "available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": [
+        "psvr2"
+      ]
+    },
+    {
+      "slug": "red-matter-2",
+      "title": "Red Matter 2",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "resident-evil-4-vr-mode",
+      "title": "Resident Evil 4 (VR Mode)",
+      "aliases": [
+        "resident evil 4 vr mode",
+        "resident evil 4 modo vr",
+        "resident evil 4 remake"
+      ],
+      "available_on": [
+        "psvr2"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "resident-evil-4-vr",
+      "title": "Resident Evil 4 VR",
+      "aliases": [
+        "resident evil 4 vr quest"
+      ],
+      "available_on": [
+        "quest"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "resident-evil-village",
+      "title": "Resident Evil Village",
+      "aliases": [
+        "resident evil 8"
+      ],
+      "available_on": [
+        "psvr2"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "behemoth",
+      "title": "Skydance's BEHEMOTH",
+      "aliases": [
+        "behemoth",
+        "skydances behemoth"
+      ],
+      "steam_app_ids": [
+        "1707990"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "star-wars-tales-galaxys-edge-enhanced",
+      "title": "Star Wars: Tales from the Galaxy's Edge - Enhanced Edition",
+      "aliases": [
+        "star wars tales from the galaxys edge enhanced edition",
+        "tales from the galaxys edge"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest"
+      ],
+      "not_available_on": [
+        "pico",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "subnautica",
+      "title": "Subnautica",
+      "steam_app_ids": [
+        "264710"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "superhot-vr",
+      "title": "SUPERHOT VR",
+      "steam_app_ids": [
+        "617830"
+      ],
+      "available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "psvr2"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "synapse",
+      "title": "Synapse",
+      "available_on": [
+        "psvr2"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "synth-riders",
+      "title": "Synth Riders",
+      "steam_app_ids": [
+        "885000"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "tabletop-simulator",
+      "title": "Tabletop Simulator",
+      "steam_app_ids": [
+        "286160"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "the-7th-guest-vr",
+      "title": "The 7th Guest VR",
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "the-dark-pictures-switchback-vr",
+      "title": "The Dark Pictures: Switchback VR",
+      "aliases": [
+        "switchback vr"
+      ],
+      "available_on": [
+        "psvr2"
+      ],
+      "not_available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "the-elder-scrolls-v-skyrim-vr",
+      "title": "The Elder Scrolls V: Skyrim VR",
+      "aliases": [
+        "skyrim vr"
+      ],
+      "steam_app_ids": [
+        "611670"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "the-forest",
+      "title": "The Forest",
+      "steam_app_ids": [
+        "242760"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "the-light-brigade",
+      "title": "The Light Brigade",
+      "steam_app_ids": [
+        "1579880"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "the-room-vr",
+      "title": "The Room VR: A Dark Matter",
+      "aliases": [
+        "the room vr"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "the-thrill-of-the-fight",
+      "title": "The Thrill of the Fight",
+      "available_on": [
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "the-thrill-of-the-fight-2",
+      "title": "The Thrill of the Fight 2",
+      "available_on": [
+        "quest"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "steam"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "walking-dead-saints-sinners",
+      "title": "The Walking Dead: Saints & Sinners",
+      "aliases": [
+        "saints and sinners"
+      ],
+      "steam_app_ids": [
+        "916840"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "underdogs",
+      "title": "UnderDogs",
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "vacation-simulator",
+      "title": "Vacation Simulator",
+      "steam_app_ids": [
+        "726830"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "vertigo-2",
+      "title": "Vertigo 2",
+      "steam_app_ids": [
+        "843390"
+      ],
+      "available_on": [
+        "psvr2",
+        "steam"
+      ],
+      "not_available_on": [
+        "quest"
+      ],
+      "unverified_on": [
+        "pico"
+      ]
+    },
+    {
+      "slug": "vrchat",
+      "title": "VRChat",
+      "steam_app_ids": [
+        "438100"
+      ],
+      "available_on": [
+        "pico",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "psvr2"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "vtol-vr",
+      "title": "VTOL VR",
+      "steam_app_ids": [
+        "667970"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "walkabout-mini-golf",
+      "title": "Walkabout Mini Golf VR",
+      "aliases": [
+        "walkabout mini golf"
+      ],
+      "steam_app_ids": [
+        "1408230"
+      ],
+      "available_on": [
+        "pico",
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [],
+      "unverified_on": []
+    },
+    {
+      "slug": "war-thunder",
+      "title": "War Thunder",
+      "steam_app_ids": [
+        "236390"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "x-plane-12",
+      "title": "X-Plane 12",
+      "steam_app_ids": [
+        "2014780"
+      ],
+      "available_on": [
+        "steam"
+      ],
+      "not_available_on": [
+        "pico",
+        "psvr2",
+        "quest"
+      ],
+      "unverified_on": []
+    },
+    {
+      "slug": "zombie-army-vr",
+      "title": "Zombie Army VR",
+      "steam_app_ids": [
+        "2058030"
+      ],
+      "available_on": [
+        "psvr2",
+        "quest",
+        "steam"
+      ],
+      "not_available_on": [
+        "pico"
+      ],
+      "unverified_on": []
+    }
+  ]
+}

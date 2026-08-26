@@ -96,6 +96,20 @@ español no se puede compartir ahí.
 
 ## Historial
 
+### v2.2.1
+- **Tres correcciones de datos que aparecieron al publicar el catálogo en el
+  sitio.** Verlo como tabla dejó a la vista lo que adentro de la extensión no se
+  notaba:
+  - *Resident Evil 4* afirmaba funcionar en Quest y en PS VR2. Es falso: en Quest
+    está el port del juego original (*Resident Evil 4 VR*) y en PS VR2 el modo VR
+    del remake de 2023. Son dos juegos distintos y ahora figuran separados.
+  - *Blade & Sorcery* estaba cargado dos veces con datos opuestos, y cada ficha
+    tenía a la otra como alias, así que la respuesta dependía de cuál coincidiera
+    primero. El de PC es *Blade & Sorcery*; el standalone es *Blade & Sorcery:
+    Nomad* (Quest y PICO 4, no está en Steam).
+  - *Arizona Sunshine 2* estaba duplicado con datos idénticos.
+- El catálogo queda en **90 juegos**, todos con datos consistentes.
+
 ### v2.2.0
 - **Inglés.** La extensión ahora habla los dos idiomas, con el sistema `_locales`
   de Chrome. `default_locale` es `en`: quien tenga el navegador en español ve

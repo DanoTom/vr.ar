@@ -81,7 +81,7 @@ como un pronóstico. Tomamos el diagnóstico; no tomamos la urgencia.
 El activo del proyecto dejó de ser el tráfico. Hoy tenemos tres activos, en orden
 de durabilidad:
 
-1. **El catálogo de compatibilidad verificado.** 91 juegos, plataforma por
+1. **El catálogo de compatibilidad verificado.** 90 juegos, plataforma por
    plataforma, con fuente y fecha en `extension/research/`. Es un dato que casi
    nadie tiene ordenado, que las tiendas no publican con claridad, y que un
    modelo de lenguaje no puede inventar de forma confiable. Es lo más valioso que
@@ -108,20 +108,24 @@ de durabilidad:
 - No se bloquea a los crawlers de IA. Queremos ser citados.
 - No se insiste con publicidad. Ver "pendiente" más abajo.
 
-**Propuestas, pendientes de decisión de Daniel:**
+**Aprobadas por Daniel y ya aplicadas (23 de agosto de 2026):**
 
-- **Publicar el catálogo como recurso público**, en dos formas: un archivo legible
-  por máquina en una URL estable, y una página navegable para personas. Razones:
-  le da a los asistentes algo concreto que citar, le da a otros sitios algo que
-  enlazar (un recurso se enlaza; un artículo de opinión no), alimenta nuestras
-  próximas herramientas, y es la base de cualquier conversación futura de
-  licenciamiento. Riesgo asumido: alguien lo puede copiar. Un sitio chico no
-  defiende datos escondiéndolos, sino manteniéndolos.
-- **Adoptar RSL** en `robots.txt`. Cuesta cinco líneas y deja la puerta abierta.
-- **Sacar AdSense.** Rinde 0,01 dólares, aparece en unas 30 guías, agrega scripts
-  de terceros que frenan el sitio, obliga al aviso de cookies, y contradice lo que
-  decimos en la extensión ("sin publicidad"). Es la decisión más fácil de todas
-  desde lo económico y la única que toca un ingreso, por chico que sea.
+- **El catálogo se publicó como recurso público**: `/data/vr-games.json` bajo
+  licencia CC BY 4.0, más las páginas navegables `/compatibilidad` (es) y
+  `/vr-game-compatibility` (en). Se generan con `tools/gen-catalog.mjs` desde
+  `extension/src/data.js`, que sigue siendo la única fuente de verdad.
+- **RSL adoptado**: `robots.txt` apunta a `/license.xml`, que declara el catálogo
+  como abierto con atribución y el contenido editorial como citable con
+  atribución. No se bloquea a ningún rastreador.
+- **AdSense eliminado** de las 36 páginas que lo tenían. El sitio ya no muestra
+  publicidad de ningún tipo, lo que además vuelve cierta la frase "sin
+  publicidad" que usamos en la extensión.
+
+Publicar el catálogo tuvo un efecto inmediato que no habíamos previsto: al verlo
+en una tabla aparecieron tres errores que dentro de la extensión eran invisibles
+—dos juegos duplicados con datos contradictorios y una afirmación falsa sobre
+Resident Evil 4—. Exponer los datos es, además de una apuesta de distribución,
+un control de calidad.
 
 ## Cómo sabremos si nos equivocamos
 
