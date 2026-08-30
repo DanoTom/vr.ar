@@ -127,6 +127,13 @@ en una tabla aparecieron tres errores que dentro de la extensión eran invisible
 Resident Evil 4—. Exponer los datos es, además de una apuesta de distribución,
 un control de calidad.
 
+## Cómo se ejecuta y cómo se mide
+
+El plan mes a mes hasta la revisión, y la tabla donde se anotan los números, están
+en `docs/METRICAS.md`. Los criterios de decisión de esa revisión quedaron escritos
+**antes** de tener los números, a propósito: es la única forma de que no los
+interpretemos a conveniencia cuando lleguen.
+
 ## Cómo sabremos si nos equivocamos
 
 - Si en tres meses la extensión no pasa de unos pocos cientos de usuarios pese a
