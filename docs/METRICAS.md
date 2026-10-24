@@ -20,13 +20,22 @@ El primer día de cada mes, cinco minutos:
 
 | Mes | Usuarios semanales | Instalaciones | Impresiones GSC | Clics GSC | Visitas | Qué se hizo |
 |---|---|---|---|---|---|---|
-| Ago 2026 | — | recién publicada | | | ~20/día | Extensión publicada (19/8) y traducida al inglés (23/8). Catálogo abierto, AdSense afuera, RSL. |
-| Sep 2026 | | | | | | |
-| Oct 2026 | | | | | | |
+| Jun 2026 (desde el 17) | — | — | 223 | 4 | | Sitio nuevo en Search Console. |
+| Jul 2026 | — | — | 1.372 | 6 | | Guías nuevas y las primeras guías de fondo (cornerstones). |
+| Ago 2026 | — | recién publicada | 1.015 | 3 | ~20/día | Extensión publicada (19/8) y traducida al inglés (23/8). Catálogo abierto, AdSense afuera, RSL. |
+| Sep 2026 | 12 (al 30/9) | | 1.132 | 4 | | Nada: proyecto en pausa. El 22/9 todo el sitio salta de posición ~30 a ~12 sin cambios nuestros. |
+| Oct 2026 (al 22) | 20 (al 23/10) | | 1.935 | 26 | | Nada hasta el 24/10. Se retoma con la rutina semanal (`docs/PILOTO.md`). |
 | Nov 2026 | | | | | | |
 
-*Las celdas de agosto que faltan las completás cuando entres al panel; no las
-inventamos.*
+*Las celdas vacías no se inventan: se completan cuando hay dato.* Los números de
+Search Console de junio a octubre son del **mes calendario**, sacados del export del
+24/10, no de "últimos 28 días". La extensión tenía 7 usuarios semanales el 24/9 y 20
+el 23/10: creció sola, sin difusión. Pero por el propio criterio de abajo, todavía no
+mide nada.
+
+El salto del 22/9 se ve mejor por mes que por número suelto: de un mes antes a un mes
+después, los clics pasaron de 2 a 29, la posición media de 43 a 12, y las impresiones
+en las funciones de IA de Google de 19 a 356.
 
 ## Qué significa cada resultado en noviembre
 
