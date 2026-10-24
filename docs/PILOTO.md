@@ -34,6 +34,9 @@
    5. Contenido nuevo, solo con evidencia de demanda (consultas reales en Search
       Console, o un hueco comprobable) y algo propio que aportar. Máximo dos pares nuevos
       por mes.
+
+   Aparte de eso, mientras el directorio esté en fase 0 o 1, cada rutina suma fichas
+   verificadas según `docs/DIRECTORIO.md`.
 5. **Hacerlo bien.** Estilo según `docs/ESTILO.md`, verificación local según
    OPERACIONES §6, y el par EN/ES el mismo día.
 6. **Publicar** a `main` y comprobarlo en el sitio vivo.
@@ -71,7 +74,7 @@ saber qué funcionó.
 |---|---|---|
 | GitHub `DanoTom/vr.ar` | todo el trabajo en el sitio | activo |
 | vr.ar desde el entorno | comprobar el sitio vivo | activo desde el 24/10/2026 |
-| Search Console por API | `tools/gsc.mjs`, lee la variable `GSC_SERVICE_ACCOUNT_JSON` | pendiente de Daniel |
+| Search Console por API | `tools/gsc.mjs`, lee la variable `GSC_SERVICE_ACCOUNT_JSON` (el JSON en base64, en una sola línea) | cuenta creada; falta cargar la variable |
 | Chrome Web Store | usuarios de la extensión | no tiene API de estadísticas: Daniel exporta el CSV una vez por mes |
 
 La clave de Search Console es de una cuenta de servicio con permiso **Restringido**
@@ -81,6 +84,20 @@ chat.
 ## Bitácora
 
 Lo más nuevo arriba. Una entrada por semana.
+
+### 2026-10-24 (más tarde) — catálogo abierto y directorio
+
+- **Arreglado:** `/data/vr-games.json` daba 404 desde agosto. El deploy borraba toda la
+  carpeta `data/` y con ella el archivo público, que está enlazado desde `robots.txt`,
+  `license.xml`, `llms.txt` y las dos páginas del catálogo. Ahora se publica, y el deploy
+  falla si vuelve a faltar. Comprobado en vivo: responde 200, con 90 juegos y licencia
+  CC BY 4.0.
+- **Decidido por Daniel:** el camino de ingresos es el directorio de estudios XR, no los
+  afiliados. El plan, con criterios por fase, está en `docs/DIRECTORIO.md`. La fase 0
+  (40 fichas) arranca en noviembre, dentro de las rutinas.
+- Search Console: Daniel hizo los pasos 1 a 5. La variable de entorno se carga en base64
+  (una sola línea), porque el campo no acepta el JSON en varias líneas. Se prueba el
+  lunes.
 
 ### 2026-10-24 — arranque
 
