@@ -4,7 +4,11 @@
 > en el sitio en el futuro. Acá está todo lo que hay que saber para operar vr.ar sin romper
 > nada: cómo está armado, cómo se publica una guía, qué convenciones seguimos y por qué,
 > qué contenido caduca y cuándo, y qué hacer cuando algo falla.
-> Última actualización: julio 2026.
+> Última actualización: octubre 2026.
+>
+> **Desde octubre de 2026 el sitio se opera con una rutina semanal**: el mandato, los
+> límites y la bitácora están en `docs/PILOTO.md`, y cómo escribimos en
+> `docs/ESTILO.md`. Leer los dos antes de tocar contenido.
 
 ---
 
@@ -29,9 +33,9 @@
   publica contenido de relleno. (Ya rechazamos una oferta de "links DR60-80 por $50" —
   eso es spam de links y Google lo penaliza.)
 
-**Monetización actual:** AdSense (un solo bloque manual dentro del artículo; home y quiz
-sin publicidad, por decisión estratégica) + links de afiliados Amazon/Awin presentados con
-transparencia.
+**Monetización actual:** solo links de afiliados Amazon/Awin presentados con
+transparencia. AdSense se sacó de todo el sitio en agosto de 2026 (ver
+`docs/ESTRATEGIA.md`): el sitio no muestra publicidad de ningún tipo.
 
 ---
 
@@ -111,15 +115,15 @@ asistente lo convierte al template y verifica. Paso a paso:
    `guides/vr-vs-ar-vs-mr-explained.html` y su par). El template incluye, en orden:
    - `<title>` ≤ ~65 caracteres; `meta description` de ~150–160.
    - Canonical + 3 hreflang + og (`type=article`, title, description, url, **og:image**).
-   - Script de AdSense en el `<head>` (client `ca-pub-9232748982913595`).
+   - **Sin AdSense** (eliminado en agosto 2026): ni el script en el `<head>` ni el bloque
+     `ad-slot`. Las guías anteriores a esa fecha ya no lo tienen; no copiarlo de ningún
+     borrador viejo.
    - Favicons (`/favicon.ico` 48x48, `/favicon.svg`, `/apple-touch-icon.png`).
    - JSON-LD `Article` (con `datePublished`, `image`, publisher vr.ar) + `BreadcrumbList`.
    - Topbar con selector `guide-lang` EN/ES apuntando al par correcto.
    - Migas (`guide-crumb`), `h1`, `guide-meta` ("Actualizado en julio de 2026 · X min de
      lectura" / "Updated July 2026 · X min read").
    - `figure.guide-hero` con `width`/`height` reales y `decoding="async"`.
-   - Un solo bloque `ad-slot` con el `<ins>` de AdSense (slot `3704317570`) a mitad del
-     artículo.
    - Opcional: bloque "Equipo recomendado"/"Recommended gear" con links `.guide-buy`
      (`rel="noopener noreferrer sponsored"`).
    - Bloque `.guide-cta` invitando al quiz.
@@ -142,8 +146,8 @@ asistente lo convierte al template y verifica. Paso a paso:
 8. **Verificar localmente** (§6): imagen carga, sin overflow horizontal a 390px, JSON-LD
    parsea, hreflang recíproco, links internos existen, consola sin errores (los de
    AdSense en local se ignoran).
-9. **Publicar** (§4) y pedirle a Daniel que confirme en el sitio vivo (desde este entorno
-   no se puede acceder a vr.ar — la red lo bloquea).
+9. **Publicar** (§4) y confirmar en el sitio vivo. Desde el 24/10/2026 el entorno puede
+   ver vr.ar: se chequea con `curl` o con el navegador, ya no hace falta pedírselo a Daniel.
 
 ---
 
@@ -266,9 +270,10 @@ Los textos ES del script (título, descripción, etc.) viven dentro de `gen-es-h
   hasta agotar el tiempo. Sin eso, verificar 30 páginas no termina nunca.
 - **E2E del quiz:** selectores reales — `#btn-start-cta` para arrancar, `.opt[data-idx="0"]`
   para elegir, `#btn-next` para avanzar (no auto-avanza), `#results` al final.
-- **Red del entorno:** `vr.ar` y `*.pages.dev` están **bloqueados** (403). No se puede ver
-  el sitio vivo desde acá; se verifica localmente y Daniel confirma en producción.
-  WebSearch sí funciona. GitHub se opera vía las herramientas MCP (`mcp__github__*`).
+- **Red del entorno:** desde el 24/10/2026 `vr.ar` es accesible (antes daba 403): se
+  verifica en local y después en producción. `www.vr.ar` sigue sin pasar por el proxy
+  (502) y `*.pages.dev` no se probó. Las APIs de Google (`googleapis.com`) responden,
+  que es lo que usa `tools/gsc.mjs`. WebSearch sí funciona. GitHub se opera vía las herramientas MCP (`mcp__github__*`).
 - **Reinicios del contenedor:** borran el scratchpad y a veces la rama `main` local
   (`git fetch origin main && git checkout -B main origin/main` la recupera).
 
@@ -329,6 +334,9 @@ lleva la disclosure completa. Nunca recomendar algo solo porque tiene link.
 
 ## 9. AdSense
 
+> **Eliminado de todas las páginas en agosto de 2026** (ver `docs/ESTRATEGIA.md`). Lo que
+> sigue queda como registro de cómo estaba armado; no es para volver a aplicarlo.
+
 - Cuenta aprobada. Publisher: `ca-pub-9232748982913595`. `ads.txt` en la raíz:
   `google.com, pub-9232748982913595, DIRECT, f08c47fec0942fa0`.
 - **Un solo bloque manual** (slot `3704317570`) a mitad de cada guía. **Auto-ads apagado
@@ -368,3 +376,5 @@ lleva la disclosure completa. Nunca recomendar algo solo porque tiene link.
 8. **Los datos de visores viven en `data/`**; `build.py --check` antes y después.
 9. **Commits claros y uno por tema.** El historial es la memoria del proyecto.
 10. **Ante la duda, preguntar a Daniel.** Es su sitio y conoce a su público.
+11. **Escribir según `docs/ESTILO.md`.** Un texto que suena a generado por IA no se
+    publica, aunque los datos estén bien.
