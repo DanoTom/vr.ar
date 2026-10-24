@@ -37,10 +37,16 @@ jobs:
           tar --exclude='./.git' --exclude='./_site' -cf - . | tar -xf - -C _site
           rm -rf _site/.github _site/docs _site/tools _site/data _site/extension \
                  _site/build.py _site/README.md _site/.gitignore
+          # data/ es interna (fichas de visores para build.py), salvo los datos
+          # abiertos, que se devuelven uno por uno. Están enlazados desde
+          # robots.txt, license.xml, llms.txt y las páginas del catálogo.
+          mkdir -p _site/data
+          cp data/vr-games.json _site/data/
           echo "Archivos a publicar: $(find _site -type f | wc -l)"
           echo "Páginas HTML: $(find _site -name '*.html' | wc -l)"
           # Comprobación mínima: si falta la home, algo salió muy mal.
           test -f _site/index.html
+          test -f _site/data/vr-games.json
 
       - name: Proyectos de Pages disponibles (diagnóstico)
         continue-on-error: true
