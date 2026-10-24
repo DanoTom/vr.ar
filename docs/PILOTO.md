@@ -74,7 +74,7 @@ saber qué funcionó.
 |---|---|---|
 | GitHub `DanoTom/vr.ar` | todo el trabajo en el sitio | activo |
 | vr.ar desde el entorno | comprobar el sitio vivo | activo desde el 24/10/2026 |
-| Search Console por API | `tools/gsc.mjs`, lee la variable `GSC_SERVICE_ACCOUNT_JSON` (el JSON en base64, en una sola línea) | cuenta creada; falta cargar la variable |
+| Search Console por API | `tools/gsc.mjs`, lee la variable `GSC_SERVICE_ACCOUNT_JSON` (el JSON en base64, en una sola línea) | activo desde el 24/10/2026 (propiedad `sc-domain:vr.ar`). Una sesión ve la variable solo si arrancó después de que se cargó. |
 | Chrome Web Store | usuarios de la extensión | no tiene API de estadísticas: Daniel exporta el CSV una vez por mes |
 
 La clave de Search Console es de una cuenta de servicio con permiso **Restringido**
@@ -95,9 +95,15 @@ Lo más nuevo arriba. Una entrada por semana.
 - **Decidido por Daniel:** el camino de ingresos es el directorio de estudios XR, no los
   afiliados. El plan, con criterios por fase, está en `docs/DIRECTORIO.md`. La fase 0
   (40 fichas) arranca en noviembre, dentro de las rutinas.
-- Search Console: Daniel hizo los pasos 1 a 5. La variable de entorno se carga en base64
-  (una sola línea), porque el campo no acepta el JSON en varias líneas. Se prueba el
-  lunes.
+- **Search Console conectado.** La variable se carga en base64 (una sola línea), porque
+  el campo no acepta el JSON en varias líneas. Se verificó desde una sesión nueva: lee
+  `sc-domain:vr.ar` sin errores, y los números coinciden con el export (29 clics y
+  2.317 impresiones del 24/9 al 21/10). Con datos reales, las tablas del script pasaron
+  a ordenarse por impresiones: por clics, casi todo empataba en 0 y quedaba alfabético.
+- Lo que muestra la primera lectura por API: la guía de limpieza de lentes en inglés ya
+  está en posición 10,6, con 558 impresiones y 4 clics. Quest 3 vs 3S (EN) está en
+  18,1 con 248 impresiones y 0 clics. VR con anteojos (EN) está en 8,5 con 126
+  impresiones y 0 clics: ahí el problema es el título o la descripción, no la posición.
 
 ### 2026-10-24 — arranque
 

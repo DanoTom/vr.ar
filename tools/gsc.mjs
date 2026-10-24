@@ -107,6 +107,9 @@ const sum = (rows) => {
   const pos = impressions ? rows.reduce((a, r) => a + r.position * r.impressions, 0) / impressions : 0;
   return { clicks, impressions, pos };
 };
+// La API ordena por clics; con casi todo en 0 clics, el resto sale alfabético y
+// esconde lo que más se muestra. Las tablas van por impresiones.
+const byImpressions = (rows) => [...rows].sort((a, b) => b.impressions - a.impressions);
 const pct = (a, b) => (b ? `${a >= b ? '+' : ''}${Math.round(((a - b) / b) * 100)}%` : 'n/d');
 const short = (url) => url.replace(/^https:\/\/(www\.)?vr\.ar/, '') || '/';
 
@@ -144,7 +147,7 @@ console.log(`| Impresiones | ${cur.impressions} | ${prev.impressions} | ${pct(cu
 console.log(`| Posición media | ${cur.pos.toFixed(1)} | ${prev.pos.toFixed(1)} | |\n`);
 
 console.log('## Páginas\n');
-console.log(table(pages, (r) => short(r.keys[0]), 20), '\n');
+console.log(table(byImpressions(pages), (r) => short(r.keys[0]), 20), '\n');
 
 console.log('## Oportunidades (posición 8–30, 30+ impresiones)\n');
 if (!opportunities.length) console.log('Ninguna en esta ventana.\n');
@@ -155,7 +158,7 @@ for (const r of opportunities.slice(0, 10)) {
 }
 
 console.log('\n## Consultas\n');
-console.log(table(queries, (r) => r.keys[0], 30));
+console.log(table(byImpressions(queries), (r) => r.keys[0], 30));
 
 if (OUT) {
   fs.mkdirSync(OUT, { recursive: true });
