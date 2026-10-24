@@ -95,6 +95,8 @@ Lo más nuevo arriba. Una entrada por semana.
 - **Decidido por Daniel:** el camino de ingresos es el directorio de estudios XR, no los
   afiliados. El plan, con criterios por fase, está en `docs/DIRECTORIO.md`. La fase 0
   (40 fichas) arranca en noviembre, dentro de las rutinas.
+- **Extensión 2.2.1 subida a la tienda por Daniel** (24/10). Trae las tres correcciones
+  del catálogo. En la próxima rutina se confirma que la tienda ya muestre la 2.2.1.
 - **Search Console conectado.** La variable se carga en base64 (una sola línea), porque
   el campo no acepta el JSON en varias líneas. Se verificó desde una sesión nueva: lee
   `sc-domain:vr.ar` sin errores, y los números coinciden con el export (29 clics y
