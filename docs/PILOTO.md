@@ -42,8 +42,9 @@
 6. **Publicar** a `main` y comprobarlo en el sitio vivo.
 7. **Anotar en la bitácora** qué se cambió, por qué, qué se espera que pase y cuándo
    mirarlo.
-8. **Informarle a Daniel**, corto: los números de la semana, qué se hizo, qué necesita
-   de él (si hace falta algo) y qué sigue.
+8. **Informarle a Daniel, en español** (rioplatense, con voseo, como todo lo que se le
+   escribe), corto: los números de la semana, qué se hizo, qué necesita de él (si hace
+   falta algo) y qué sigue.
 
 **No se toca la misma página dos veces en menos de cuatro semanas**, salvo para corregir
 un error. Google tarda en reaccionar, y si todo cambia todo el tiempo no hay forma de
@@ -63,7 +64,7 @@ saber qué funcionó.
 
 | Cuándo | Qué |
 |---|---|
-| Primer lunes de cada mes | Completar la fila del mes en `docs/METRICAS.md`. Pedirle a Daniel el CSV de usuarios semanales de la extensión. |
+| Primer lunes de cada mes | Completar la fila del mes en `docs/METRICAS.md`. Los usuarios de la extensión se leen de la ficha pública de la tienda; no hace falta pedirle el CSV a Daniel. |
 | Noviembre 2026 | Revisión de noviembre (criterios en `docs/METRICAS.md`) y contenido de regalos (`docs/BRIEFS.md`). |
 | Desde el 1/12/2026 | Recordarle a Daniel que renueve el dominio antes del 13/01/2027. Mientras corre el período de gracia, NIC no permite transferirlo: si hay una venta en curso, es crítico. |
 | Enero 2027 | Renovar las guías "(2026)" (OPERACIONES §7). |
@@ -75,7 +76,7 @@ saber qué funcionó.
 | GitHub `DanoTom/vr.ar` | todo el trabajo en el sitio | activo |
 | vr.ar desde el entorno | comprobar el sitio vivo | activo desde el 24/10/2026 |
 | Search Console por API | `tools/gsc.mjs`, lee la variable `GSC_SERVICE_ACCOUNT_JSON` (el JSON en base64, en una sola línea) | activo desde el 24/10/2026 (propiedad `sc-domain:vr.ar`). Una sesión ve la variable solo si arrancó después de que se cargó. |
-| Chrome Web Store | usuarios de la extensión | no tiene API de estadísticas: Daniel exporta el CSV una vez por mes |
+| Chrome Web Store, ficha pública | usuarios de la extensión y versión publicada | activo desde el 26/10/2026. El número de "usuarios" de la ficha coincide con los usuarios semanales del panel (19 en los dos al 24/10). El panel, con el detalle por país e idioma, sigue siendo de Daniel. |
 
 La clave de Search Console es de una cuenta de servicio con permiso **Restringido**
 (solo lectura). Vive en la configuración del entorno, nunca en el repositorio ni en el
@@ -84,6 +85,17 @@ chat.
 ## Bitácora
 
 Lo más nuevo arriba. Una entrada por semana.
+
+### 2026-10-26 (más tarde) — respuesta de Daniel
+
+- **El informe va en español a partir de ahora.** El de esta primera rutina salió en
+  inglés, sin querer. Quedó en el paso 8 de la rutina y en el texto de la tarea
+  programada.
+- La 2.2.1 de la extensión **sigue en revisión**: la ficha pública muestra la 2.2.0.
+- Daniel habilitó `chromewebstore.google.com`. La ficha marca 19 usuarios, lo mismo que
+  su CSV para el 24/10, así que la rutina lee ese número sola y ya no necesita el CSV.
+  Según el CSV, los usuarios semanales fueron 10 el 26/9, 14 el 2/10, 16 el 11/10 y 19
+  el 24/10.
 
 ### 2026-10-26 — primera rutina
 
