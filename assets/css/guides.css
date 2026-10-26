@@ -40,7 +40,7 @@
 .guide h2{ font-family:'Unbounded',sans-serif; font-size:1.28rem; color:#fff; margin:36px 0 12px; line-height:1.25; }
 .guide h3{ font-weight:600; color:var(--cyan); font-size:1.05rem; margin:24px 0 8px; }
 .guide p,.guide li{ font-size:0.97rem; line-height:1.8; color:rgba(200,215,255,0.76); margin-bottom:14px; }
-.guide ul{ padding-left:22px; }
+.guide ul,.guide ol{ padding-left:22px; }
 .guide strong{ color:#fff; font-weight:600; }
 .guide a{ color:var(--cyan); }
 /* buttons must keep dark text on their bright gradients (beat .guide a) */

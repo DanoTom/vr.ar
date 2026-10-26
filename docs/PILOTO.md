@@ -85,6 +85,43 @@ chat.
 
 Lo más nuevo arriba. Una entrada por semana.
 
+### 2026-10-26 — primera rutina
+
+- **Números** (28 días al 23/10): 28 clics, 2.432 impresiones, posición 12,0, contra 3,
+  874 y 28,6 del período anterior. Última semana (17 a 23/10): 9 clics y 740
+  impresiones; contra la semana previa, 27% más impresiones con casi los mismos clics.
+- **Sitio vivo:** la home, el sitemap, el catálogo JSON y las guías principales
+  responden 200, y las `.html` redirigen.
+- **Arreglado en `tools/gsc.mjs`:** `node tools/gsc.mjs 7` devolvía 28 días, porque sin
+  `--out` se descartaba el primer argumento. Se agregó `--page`, que muestra las
+  consultas de una sola página.
+- **Acción de la semana: la guía de limpieza de lentes, EN + ES.**
+  - Por qué: es la página con más impresiones (564 en 28 días, posición 10,8), pero sus
+    consultas principales ("clean quest 3 lenses", "how to clean meta quest 3 lenses")
+    estaban en posición 15 a 20, con 0 clics.
+  - **Dato incorrecto corregido.** La guía decía que Meta permite humedecer el paño con
+    agua. Las páginas de Meta sobre las lentes de las Quest 3 (configuración, centro de
+    seguridad, empañamiento) dicen solo en seco; el agua aparece únicamente en un
+    artículo general de limpieza. También decía que el sol quema las pantallas "en
+    segundos", cuando Meta dice "menos de un minuto".
+  - Se sacaron dos cosas que no se pudieron verificar: echarle el aliento a la lente, y
+    sacar la interfaz facial con los botones de ajuste.
+  - Estructura nueva: la respuesta en la primera línea, pasos numerados, qué no usar,
+    qué hacer con una mancha que no sale, el sol, la interfaz facial y las rayas. Cada
+    dato de Meta enlaza a su página. El título en inglés ahora dice "Meta Quest 3",
+    como lo busca la gente; el título en español no cambió.
+  - meta.com no abre desde el entorno, porque la red lo bloquea. Lo citado sale de los
+    extractos de búsqueda de esas páginas, que coinciden entre sí.
+  - `guides.css` ahora da estilo a las listas numeradas; ninguna guía las usaba.
+  - **Medir el 23/11**, no antes: `node tools/gsc.mjs 28 --page
+    /guides/how-to-clean-quest-3-lenses`. Mirar la posición de las consultas de
+    limpieza y si aparecen clics.
+- **Extensión:** la tienda de Chrome no abre desde el entorno, así que no se pudo ver si
+  la 2.2.1 ya está publicada. Se le pregunta a Daniel.
+- **Próxima rutina (2/11, primer lunes del mes):** completar la fila de octubre en
+  METRICAS (pedirle el CSV a Daniel) y arrancar la fase 0 del directorio. Candidata SEO:
+  Quest 3 vs 3S en inglés (posición 17,9, 249 impresiones, 0 clics).
+
 ### 2026-10-24 (más tarde) — catálogo abierto y directorio
 
 - **Arreglado:** `/data/vr-games.json` daba 404 desde agosto. El deploy borraba toda la
