@@ -131,7 +131,8 @@ Lo más nuevo arriba. Una entrada por semana.
 - **Extensión:** la tienda de Chrome no abre desde el entorno, así que no se pudo ver si
   la 2.2.1 ya está publicada. Se le pregunta a Daniel.
 - **Próxima rutina (2/11, primer lunes del mes):** completar la fila de octubre en
-  METRICAS (pedirle el CSV a Daniel) y arrancar la fase 0 del directorio. Candidata SEO:
+  METRICAS (los usuarios de la extensión, de la ficha pública) y arrancar la fase 0 del
+  directorio. Candidata SEO:
   Quest 3 vs 3S en inglés (posición 17,9, 249 impresiones, 0 clics).
 
 ### 2026-10-24 (más tarde) — catálogo abierto y directorio
