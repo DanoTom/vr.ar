@@ -13,6 +13,10 @@
  *   node tools/gsc.mjs                 ventana de 28 días
  *   node tools/gsc.mjs 7               ventana de 7 días
  *   node tools/gsc.mjs 28 --out dir    además guarda los datos crudos en dir/
+ *   node tools/gsc.mjs 28 --page /guides/quest-3-vs-quest-3s
+ *                                      solo esa página: sus números y las
+ *                                      consultas que la traen (para decidir qué
+ *                                      mejorar en ella)
  *
  * Search Console publica los datos con ~3 días de demora; la ventana termina ahí.
  */
@@ -26,9 +30,13 @@ const API = 'https://www.googleapis.com/webmasters/v3';
 const LAG_DAYS = 3;
 
 const args = process.argv.slice(2);
-const outIdx = args.indexOf('--out');
-const OUT = outIdx >= 0 ? args[outIdx + 1] : null;
-const DAYS = Number(args.find((a, i) => /^\d+$/.test(a) && i !== outIdx + 1) || 28);
+const FLAGS = ['--out', '--page'];
+const flag = (name) => (args.includes(name) ? args[args.indexOf(name) + 1] : null);
+const OUT = flag('--out');
+const PAGE = flag('--page');
+// El número de días es el primer argumento numérico que no sea el valor de un flag.
+const flagValueIdx = new Set(FLAGS.map((f) => args.indexOf(f)).filter((i) => i >= 0).map((i) => i + 1));
+const DAYS = Number(args.find((a, i) => /^\d+$/.test(a) && !flagValueIdx.has(i)) || 28);
 
 // ── Credenciales ────────────────────────────────────────────────────────────
 function loadKey() {
@@ -94,10 +102,13 @@ async function pickSite(token) {
   return site.siteUrl;
 }
 
-function query(token, site, [startDate, endDate], dimensions, rowLimit = 250) {
-  return api(token, 'POST', `${API}/sites/${encodeURIComponent(site)}/searchAnalytics/query`, {
-    startDate, endDate, dimensions, rowLimit, dataState: 'final',
-  }).then((r) => r.rows || []);
+function query(token, site, [startDate, endDate], dimensions, rowLimit = 250, pageUrl = null) {
+  const body = { startDate, endDate, dimensions, rowLimit, dataState: 'final' };
+  if (pageUrl) {
+    body.dimensionFilterGroups = [{ filters: [{ dimension: 'page', operator: 'equals', expression: pageUrl }] }];
+  }
+  return api(token, 'POST', `${API}/sites/${encodeURIComponent(site)}/searchAnalytics/query`, body)
+    .then((r) => r.rows || []);
 }
 
 // ── Resumen ─────────────────────────────────────────────────────────────────
@@ -123,6 +134,22 @@ const key = loadKey();
 const token = await getToken(key);
 const site = await pickSite(token);
 const w = windows(DAYS);
+
+if (PAGE) {
+  const url = PAGE.startsWith('http') ? PAGE : `https://vr.ar${PAGE}`;
+  const [dCur, dPrev, q] = await Promise.all([
+    query(token, site, w.cur, ['date'], 250, url),
+    query(token, site, w.prev, ['date'], 250, url),
+    query(token, site, w.cur, ['query'], 250, url),
+  ]);
+  const c = sum(dCur);
+  const p = sum(dPrev);
+  console.log(`# ${short(url)} — ${w.cur[0]} a ${w.cur[1]} (${DAYS} días)\n`);
+  console.log(`Clics ${c.clicks} (antes ${p.clicks}) · Impresiones ${c.impressions} (antes ${p.impressions})`
+    + ` · Posición ${c.pos.toFixed(1)} (antes ${p.pos.toFixed(1)})\n`);
+  console.log(q.length ? table(byImpressions(q), (r) => r.keys[0], 50) : 'Sin consultas en esta ventana.');
+  process.exit(0);
+}
 
 const [byDateCur, byDatePrev, pages, queries, pagesPrev] = await Promise.all([
   query(token, site, w.cur, ['date']),
