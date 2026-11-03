@@ -74,7 +74,7 @@ saber qué funcionó.
 | Acceso | Para qué | Estado |
 |---|---|---|
 | GitHub `DanoTom/vr.ar` | todo el trabajo en el sitio | activo |
-| vr.ar desde el entorno | comprobar el sitio vivo | activo desde el 24/10/2026 |
+| Red del entorno | comprobar el sitio vivo, la tienda y las webs de los estudios del directorio | acceso completo desde el 3/11/2026. Antes estaba limitada a una lista de dominios, que se perdió una vez: si algo vuelve a dar 403 en el proxy ("policy denial"), es la red y lo resuelve Daniel en la configuración del entorno. Clutch da 403 por su cuenta, porque bloquea robots. |
 | Search Console por API | `tools/gsc.mjs`, lee la variable `GSC_SERVICE_ACCOUNT_JSON` (el JSON en base64, en una sola línea) | activo desde el 24/10/2026 (propiedad `sc-domain:vr.ar`). Una sesión ve la variable solo si arrancó después de que se cargó. |
 | Chrome Web Store, ficha pública | usuarios de la extensión y versión publicada | activo desde el 26/10/2026. El número de "usuarios" de la ficha coincide con los usuarios semanales del panel (19 en los dos al 24/10). El panel, con el detalle por país e idioma, sigue siendo de Daniel. |
 
@@ -85,6 +85,19 @@ chat.
 ## Bitácora
 
 Lo más nuevo arriba. Una entrada por semana.
+
+### 2026-11-03 (más tarde) — red abierta
+
+- Daniel habilitó el acceso completo a la red. Comprobado: vr.ar, la tienda de Chrome y
+  las webs de estudios responden.
+- **Sitio vivo:** las dos versiones de Quest 3 vs 3S están publicadas con la tabla nueva
+  y el CSS `.compare-table`.
+- **Extensión:** la ficha muestra la **2.2.1**, ya aprobada (Daniel dice que hace varios
+  días), y **20 usuarios**.
+- **`www.vr.ar` no existe en el DNS.** Google Public DNS no devuelve ningún registro para
+  `www` (vr.ar sí resuelve), así que quien escribe la dirección con "www" ve un error.
+  Search Console llegó a registrar una impresión en una URL con www. Arreglarlo es tocar
+  Cloudflare: se le propuso a Daniel, con los pasos. Pendiente de él.
 
 ### 2026-11-03 — rutina del lunes 2/11, hecha el martes
 
