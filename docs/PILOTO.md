@@ -86,6 +86,52 @@ chat.
 
 Lo más nuevo arriba. Una entrada por semana.
 
+### 2026-11-03 — rutina del lunes 2/11, hecha el martes
+
+- **La corrida del lunes 2/11 no terminó** y no dejó nada a medias: `main` seguía igual
+  que el 26/10. Se hizo completa el martes 3, cuando Daniel pidió reintentarla.
+- **Red cerrada.** El entorno ya no abre vr.ar, la tienda de Chrome ni las webs de los
+  estudios: el proxy los rechaza por política. El 26/10 vr.ar y la tienda andaban. Siguen
+  funcionando GitHub y las APIs de Google, así que Search Console anda. Sin vr.ar, la
+  comprobación en vivo se reemplaza por la ejecución del deploy en GitHub Actions. Se le
+  pide a Daniel que vuelva a abrir la red.
+- **Números.** 28 días al 31/10: 37 clics, 3.728 impresiones, posición 11,5 (antes 6,
+  1.252 y 17,7). Última semana (25 al 31/10): 11 clics y 1.736 impresiones, más del
+  doble que la semana anterior (778), posición 10,9. **Octubre completo:** 40 clics,
+  3.968 impresiones, posición 11,5. Fila cargada en METRICAS. Usuarios de la extensión:
+  19 al 24/10, el último dato que hubo.
+- **Limpieza de lentes (cambiada el 26/10):** en 28 días pasó a 938 impresiones y
+  posición 10,0. Es pronto para atribuirlo al cambio; se mide el 23/11, como estaba
+  previsto.
+- **Acción de la semana: Quest 3 vs 3S, EN + ES.**
+  - Por qué: 653 impresiones en 28 días en inglés, posición 15, 1 clic. Todas las
+    consultas son variantes de "meta quest 3 vs 3s" o "cuál conviene".
+  - **Dato que había quedado viejo:** la guía decía que no había un visor nuevo
+    confirmado. En la Connect del 23/9 Meta anunció los Meta VR Glasses (unos
+    US$1.300, primavera boreal de 2027, menos campo de visión que la Quest 3, sin
+    controles). La sección de "¿conviene esperar?" ahora lo dice, con fuente.
+  - Precios confirmados sin cambios desde abril: US$349,99 / 449,99 / 599,99.
+  - Estructura nueva: la respuesta en la primera línea, una tabla lado a lado (precio,
+    lentes, resolución, campo de visión, distancia entre lentes, sensor de profundidad,
+    auriculares, batería, chip, juegos), qué paga la diferencia, qué es igual, 128 o
+    256 GB, si conviene esperar, y cuál comprar. Se sumaron dos diferencias que la guía
+    no tenía: la distancia entre lentes (3 posiciones fijas en la 3S, ajuste continuo de
+    58 a 71 mm en la Quest 3) y la entrada para auriculares. Hay enlaces internos a las
+    guías de PC y de batería.
+  - Los títulos ahora arrancan con "Meta Quest 3 vs 3S", como se busca.
+  - **CSS:** la tabla de los hubs tiene un ancho mínimo de 540 px, y en un celular
+    escondía la columna de la Quest 3. Se agregó la variante `.compare-table`, sin ese
+    mínimo; la tabla entra entera en 390 px. La de cinco columnas no cambió.
+  - **Medir el 30/11:** `node tools/gsc.mjs 28 --page /guides/quest-3-vs-quest-3s`.
+- **Directorio, fase 0.** Hay 30 candidatos en `data/estudios-xr/candidatos.json`,
+  sacados de búsquedas, más una lista de fuentes para seguir buscando (asociaciones,
+  festivales, Clutch). **Ninguno está verificado:** el criterio exige revisar la web de
+  cada estudio, y la red no lo permite. Muchos aparecen solo en notas de 2016 a 2023.
+  Con la red abierta, la verificación es el primer trabajo de la próxima rutina.
+- **Para más adelante:** los Meta VR Glasses van a tener búsquedas en español cuando se
+  acerque la salida. Es candidato a guía propia hacia febrero o marzo, con la regla de
+  "primero la guía, después el quiz".
+
 ### 2026-10-26 (más tarde) — respuesta de Daniel
 
 - **El informe va en español a partir de ahora.** El de esta primera rutina salió en

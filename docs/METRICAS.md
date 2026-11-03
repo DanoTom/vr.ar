@@ -24,12 +24,14 @@ El primer día de cada mes, cinco minutos:
 | Jul 2026 | — | — | 1.372 | 6 | | Guías nuevas y las primeras guías de fondo (cornerstones). |
 | Ago 2026 | — | recién publicada | 1.015 | 3 | ~20/día | Extensión publicada (19/8) y traducida al inglés (23/8). Catálogo abierto, AdSense afuera, RSL. |
 | Sep 2026 | 12 (al 30/9) | | 1.132 | 4 | | Nada: proyecto en pausa. El 22/9 todo el sitio salta de posición ~30 a ~12 sin cambios nuestros. |
-| Oct 2026 (al 22) | 20 (al 23/10) | | 1.935 | 26 | | Nada hasta el 24/10. Se retoma con la rutina semanal (`docs/PILOTO.md`). |
+| Oct 2026 | 19 (al 24/10) | | 3.968 | 40 | | Retomado el 24/10: rutina semanal (`docs/PILOTO.md`), Search Console por API, el catálogo JSON publicado (daba 404) y la guía de limpieza de lentes corregida (26/10). Plan del directorio. |
 | Nov 2026 | | | | | | |
 
 *Las celdas vacías no se inventan: se completan cuando hay dato.* Los números de
-Search Console de junio a octubre son del **mes calendario**, sacados del export del
-24/10, no de "últimos 28 días". La extensión tenía 7 usuarios semanales el 24/9 y 20
+Search Console son del **mes calendario**, no de "últimos 28 días": de junio a
+septiembre salen del export del 24/10, y desde octubre de la API (`node tools/gsc.mjs`
+con la ventana del mes). Los usuarios de octubre son del 24/10, el último dato que
+hubo: el 3/11 la tienda no abría desde el entorno. La extensión tenía 7 usuarios semanales el 24/9 y 20
 el 23/10: creció sola, sin difusión. Pero por el propio criterio de abajo, todavía no
 mide nada.
 

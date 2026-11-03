@@ -1,0 +1,337 @@
+{
+  "actualizado": "2026-11-03",
+  "para_que": "Lista de trabajo de la fase 0 del directorio (docs/DIRECTORIO.md). Nada de esto se publica: data/ no se despliega.",
+  "estados": {
+    "candidato": "Apareció en una fuente secundaria. Falta revisar su web.",
+    "verificado": "Web activa y al menos un proyecto XR público de los últimos 24 meses, comprobado en su web.",
+    "descartado": "No cumple el criterio. Se anota por qué, para no volver a revisarlo."
+  },
+  "aviso": "Al 3/11/2026 el entorno no puede abrir webs de estudios (la red lo bloquea), así que ningún candidato está verificado. Lo que dice cada uno sale de notas y listados de terceros, muchos de años anteriores.",
+  "estudios": [
+    {
+      "nombre": "Malak XR",
+      "pais": "México",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Estudio de producción virtual y realidad extendida. Solo una nota de 2023.",
+      "fuentes": [
+        "https://www.panoramaaudiovisual.com/en/2023/11/02/malak-xr-estudio-mexico-produccion-virtual-realidad-extendida"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Luciérnaga Studio",
+      "pais": "México",
+      "ciudad": "Monterrey",
+      "que_dicen_las_fuentes": "Experiencias de VR para marketing, inmobiliarias y capacitación, según ensun.io.",
+      "fuentes": [
+        "https://ensun.io/search/augmented-reality-development/mexico"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "ImmersiveSpaces",
+      "pais": "México",
+      "ciudad": "Guadalajara",
+      "que_dicen_las_fuentes": "Visualización arquitectónica y VR, según ensun.io.",
+      "fuentes": [
+        "https://ensun.io/search/augmented-reality-development/mexico"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Virtual Bifrost",
+      "pais": "México",
+      "ciudad": "Monterrey",
+      "que_dicen_las_fuentes": "Líneas para industria, educación y construcción.",
+      "fuentes": [
+        "https://mexicoindustry.com/empresa/virtual-bifrost-technology"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Fyware",
+      "pais": "México",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "AR y VR para inmobiliarias, educación e industria. Nota del Tec de Monterrey, posiblemente vieja.",
+      "fuentes": [
+        "https://conectastg.tec.mx/es/pdf-generator/90486"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Mersive",
+      "pais": "México",
+      "ciudad": "Querétaro",
+      "que_dicen_las_fuentes": "VR para capacitación, según El CEO.",
+      "fuentes": [
+        "https://elceo.com/tecnologia/startups-mexicanas-que-trabajan-con-realidad-virtual"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Happinss",
+      "pais": "México",
+      "ciudad": "Guadalajara",
+      "que_dicen_las_fuentes": "VR para bienestar laboral, según El CEO.",
+      "fuentes": [
+        "https://elceo.com/tecnologia/startups-mexicanas-que-trabajan-con-realidad-virtual"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Apolo Estudio",
+      "pais": "España",
+      "ciudad": "Valladolid",
+      "que_dicen_las_fuentes": "Estudio de AR, VR, animación 3D y gemelos digitales, fundado en 2022. Apareció en un resumen de búsqueda sin enlace propio: buscarle fuente.",
+      "fuentes": [],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Two Reality",
+      "pais": "España",
+      "ciudad": "Alicante",
+      "que_dicen_las_fuentes": "Agencia de VR y AR para formación y simulaciones de empresa.",
+      "fuentes": [
+        "https://gust.com/companies/TWOREALITY",
+        "https://alicanteplaza.es/alicanteplaza/tworeality-una-empresa-de-realidad-virtual-que-idea-y-produce-aplicaciones-para-gafas-virtuales"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Virtual Voyagers",
+      "pais": "España",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Entornos virtuales, más de 200 proyectos según Forbes. Fuente vieja.",
+      "fuentes": [
+        "https://forbes.es/?p=126042"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Holobox",
+      "pais": "Colombia",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Contenidos holográficos, VR y AR; una experiencia VR sobre páramos.",
+      "fuentes": [
+        "https://impactotic.co/empresas/holobox/"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Allbreaker",
+      "pais": "Colombia",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Especializada en VR y AR, según Enter.co.",
+      "fuentes": [
+        "https://www.enter.co/especiales/colombia-bringiton/todas-las-realidades-de-allbreaker"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Aumenta2",
+      "pais": "Colombia",
+      "ciudad": "Medellín",
+      "que_dicen_las_fuentes": "AR para mercadeo y publicidad. Nota de la Alcaldía de 2022.",
+      "fuentes": [
+        "https://www.medellin.gov.co/es/?p=69476"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Brash 3D",
+      "pais": "Colombia",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Apps, AR y experiencias 360°, según Enter.co.",
+      "fuentes": [
+        "https://www.enter.co/?p=263740"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "ITSense",
+      "pais": "Colombia",
+      "ciudad": "Bogotá",
+      "que_dicen_las_fuentes": "Figura en la lista de VR de Clutch para Colombia. Puede ser una fábrica de software general.",
+      "fuentes": [
+        "https://clutch.co/co/developers/virtual-reality.md"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Metavr",
+      "pais": "Argentina",
+      "ciudad": "Córdoba",
+      "que_dicen_las_fuentes": "VR con desarrollo propio; clientes como la Municipalidad y la UNC. Nota sin fecha.",
+      "fuentes": [
+        "https://infonegocios.info/amp/enfoque/metavr-la-empresa-cordobesa-de-realidad-virtual-que-busca-posicionarse-en-el-mercado-tech-de-argentina-y-el-mundo"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "VRE",
+      "pais": "Argentina",
+      "ciudad": "Córdoba",
+      "que_dicen_las_fuentes": "Lleva módulos de VR a eventos de empresa. Alquiler, no desarrollo: revisar si entra.",
+      "fuentes": [
+        "https://infonegocios.info/default/vre-te-lleva-la-experiencia-de-jugar-con-la-realidad-virtual-a-tu-evento-empresarial-diversion-para-tus-invitados-desde-80-000"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Realidad 360° Argentina",
+      "pais": "Argentina",
+      "ciudad": "Buenos Aires",
+      "que_dicen_las_fuentes": "Productora de contenido XR; más de 50 experiencias VR desde 2014 y un estudio de captura volumétrica.",
+      "fuentes": [
+        "https://stereopsia.com/?p=7825"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Studio Soup",
+      "pais": "Argentina",
+      "ciudad": "Buenos Aires",
+      "que_dicen_las_fuentes": "Estudio de animación 3D y XR desde 2008.",
+      "fuentes": [
+        "https://studio-soup.itch.io"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Virtual360",
+      "pais": "Argentina",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Fundada en 2016 según CB Insights. Actividad actual sin confirmar.",
+      "fuentes": [
+        "https://www.cbinsights.com/company/utopic-estudios/"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Utopic Estudios",
+      "pais": "Argentina",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Mencionada por CB Insights junto a Virtual360. Sin más datos.",
+      "fuentes": [
+        "https://www.cbinsights.com/company/utopic-estudios/"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Siltium",
+      "pais": "Argentina",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "En la lista de VR de Clutch para Argentina.",
+      "fuentes": [
+        "https://clutch.co/ar/developers/virtual-reality.md"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Kinetic Software",
+      "pais": "Argentina",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "En la lista de VR de Clutch para Argentina.",
+      "fuentes": [
+        "https://clutch.co/ar/developers/virtual-reality.md"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "TOTS",
+      "pais": "Argentina",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "En la lista de VR de Clutch para Argentina. Puede ser una fábrica de software general.",
+      "fuentes": [
+        "https://clutch.co/ar/developers/virtual-reality.md"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Mobink",
+      "pais": "Chile",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Apps móviles de AR. Nota vieja.",
+      "fuentes": [
+        "https://www.mch.cl/uso-de-realidad-aumentada-avanza-en-mineria-marketing-y-educacion/"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Microgeo",
+      "pais": "Chile",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "AR para ingeniería, construcción y minería.",
+      "fuentes": [
+        "https://www.mch.cl/uso-de-realidad-aumentada-avanza-en-mineria-marketing-y-educacion/"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "DevArtisan SpA",
+      "pais": "Chile",
+      "ciudad": "Santiago",
+      "que_dicen_las_fuentes": "En la lista de VR de Clutch para Santiago.",
+      "fuentes": [
+        "https://clutch.co/cl/developers/virtual-reality/santiago.md"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "osoBorroso",
+      "pais": "Chile",
+      "ciudad": "La Florida",
+      "que_dicen_las_fuentes": "En la lista de VR de Clutch para Santiago.",
+      "fuentes": [
+        "https://clutch.co/cl/developers/virtual-reality/santiago.md"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Visual UniVRs",
+      "pais": "Chile",
+      "ciudad": "",
+      "que_dicen_las_fuentes": "Ficha en Sortlist.",
+      "fuentes": [
+        "https://www.sortlist.es/agency/visual-univrs"
+      ],
+      "estado": "candidato"
+    },
+    {
+      "nombre": "Treeview",
+      "pais": "Uruguay",
+      "ciudad": "Montevideo",
+      "que_dicen_las_fuentes": "Estudio XR conocido en la región. Uruguay no está entre los cinco mercados de la fase 0: queda para después.",
+      "fuentes": [
+        "https://clutch.co/developers/virtual-reality/latin-america.md"
+      ],
+      "estado": "candidato"
+    }
+  ],
+  "fuentes_para_seguir_buscando": [
+    {
+      "nombre": "ACHEX, Asociación Chilena de Experiencias Inmersivas",
+      "url": "https://linkedin.com/company/achex-org"
+    },
+    {
+      "nombre": "INMERSIVA XR, Asociación de Realidad Extendida de España (socios y premios anuales)",
+      "url": "https://inmersivaxr.com"
+    },
+    {
+      "nombre": "VR FEST MX, festival de VR de México (creadores participantes)",
+      "url": "https://filmfreeway.com/vrfestmx"
+    },
+    {
+      "nombre": "Ruta N, Medellín",
+      "url": "https://observatoriocti.rutanmedellin.org/pdfs/Infográfico-RVRA.pdf"
+    },
+    {
+      "nombre": "Crea Digital (MinTIC Colombia), proyectos seleccionados",
+      "url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/439225:Crea-Digital-2026-selecciono-los-18-proyectos-que-impulsaran-la-industria-creativa-digital-colombiana"
+    },
+    {
+      "nombre": "Clutch, listas de VR por país",
+      "url": "https://clutch.co/developers/virtual-reality/latin-america.md"
+    }
+  ]
+}
