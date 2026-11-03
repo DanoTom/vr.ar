@@ -59,6 +59,11 @@
 .pillar-table td{ color:rgba(200,215,255,0.8); }
 .pillar-table tbody tr td:first-child{ color:#fff; font-weight:600; white-space:nowrap; }
 .pillar-table tbody tr:last-child td{ border-bottom:none; }
+/* Comparación de dos productos: tres columnas cortas, tiene que entrar entera en un
+   celular. Sin el ancho mínimo de la tabla de cinco columnas. */
+.compare-table{ min-width:0; }
+.compare-table th, .compare-table td{ padding:9px 8px; }
+.compare-table tbody tr td:first-child{ white-space:normal; width:34%; }
 
 /* callout / verdict box */
 .guide-box{ border:1px solid var(--border); background:rgba(0,212,255,0.045); border-radius:14px; padding:18px 22px; margin:24px 0; }
