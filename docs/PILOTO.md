@@ -69,6 +69,22 @@ saber qué funcionó.
 | Desde el 1/12/2026 | Recordarle a Daniel que renueve el dominio antes del 13/01/2027. Mientras corre el período de gracia, NIC no permite transferirlo: si hay una venta en curso, es crítico. |
 | Enero 2027 | Renovar las guías "(2026)" (OPERACIONES §7). |
 
+## Novedades y contenido nuevo
+
+**No hacemos noticias.** Competir en velocidad con UploadVR o Road to VR está perdido, y
+una noticia deja de buscarse en una semana. Lo que sí hacemos es la guía que responde
+**qué le cambia a la gente** una novedad: eso se sigue buscando durante meses, y es lo
+que el sitio hace mejor. La guía se actualiza cuando cambian los datos.
+
+Cola, en orden (máximo dos pares nuevos por mes):
+
+| Cuándo | Guía | Por qué ahora |
+|---|---|---|
+| Noviembre 2026 | **Qué pasa con la Quest 2** (y si conviene comprarla usada) | Meta cerró las funciones nuevas: la última actualización con funciones, v2.13, sale entre enero y marzo de 2027, y las de seguridad siguen hasta diciembre de 2027. Los juegos instalados siguen andando; desde diciembre de 2027 no se publican apps nuevas para ella. Mucha gente en Latinoamérica tiene una o la compra usada, y la confusión ("ya no tiene soporte") es grande. Fuentes: páginas de ayuda y de seguridad de Meta y su blog de desarrolladores. |
+| Noviembre 2026, antes del 27 | **Qué visor regalar** (brief 6 de `docs/BRIEFS.md`) | Black Friday y Navidad. Es la única guía del año con temporada. |
+| Diciembre 2026 | **Anteojos inteligentes en español:** cuáles hay, qué hacen y cuáles llegan a Latinoamérica | Es donde crece el mercado (los visores caen y los anteojos suben), y el dominio dice "AR". |
+| Febrero o marzo 2027 | **Meta VR Glasses** | Salen en la primavera boreal de 2027. Primero la guía, después el quiz. |
+
 ## Accesos
 
 | Acceso | Para qué | Estado |
@@ -85,6 +101,16 @@ chat.
 ## Bitácora
 
 Lo más nuevo arriba. Una entrada por semana.
+
+### 2026-11-05 — www arreglado y cola de contenidos
+
+- Daniel creó el registro `www` y la redirección en Cloudflare. Comprobado:
+  `www.vr.ar/...` devuelve 301 a la misma ruta en `vr.ar`.
+- Última semana (27/10 al 2/11): 16 clics y 2.015 impresiones, contra 7 y 943 la semana
+  anterior; posición 11,2.
+- Daniel preguntó por las novedades (la Quest 2, los anteojos). Quedó escrita la regla
+  (guías de "qué te cambia", no noticias) y la cola, en "Novedades y contenido nuevo".
+  Los datos de la Quest 2 se verificaron en páginas de Meta.
 
 ### 2026-11-03 (más tarde) — red abierta
 
