@@ -45,6 +45,13 @@
 8. **Informarle a Daniel, en español** (rioplatense, con voseo, como todo lo que se le
    escribe), corto: los números de la semana, qué se hizo, qué necesita de él (si hace
    falta algo) y qué sigue.
+9. **Actualizar el Mapa de vr.ar**, la página privada de una pantalla donde Daniel ve en
+   qué estamos sin tener que acordarse: https://claude.ai/artifact/MfSbf6aqFMhEJu6YBGsqTP.
+   La fuente es `docs/mapa.html`. Se cambia la fecha, los números (clics de la última
+   semana, el gráfico mensual cuando cierra un mes, la extensión), el estado de los tres
+   frentes, las próximas fechas y "lo último que se hizo" (las cuatro entradas más
+   nuevas). Se republica con el tool Artifact desde ese mismo archivo, o pasando la URL
+   si es otra conversación.
 
 **No se toca la misma página dos veces en menos de cuatro semanas**, salvo para corregir
 un error. Google tarda en reaccionar, y si todo cambia todo el tiempo no hay forma de
@@ -111,6 +118,10 @@ Lo más nuevo arriba. Una entrada por semana.
 - Daniel preguntó por las novedades (la Quest 2, los anteojos). Quedó escrita la regla
   (guías de "qué te cambia", no noticias) y la cola, en "Novedades y contenido nuevo".
   Los datos de la Quest 2 se verificaron en páginas de Meta.
+- Daniel dijo que entre semana se olvida del plan. Se armó el **Mapa de vr.ar**, una
+  página privada con el estado en una pantalla
+  (https://claude.ai/artifact/MfSbf6aqFMhEJu6YBGsqTP, fuente `docs/mapa.html`).
+  Actualizarlo es el paso 9 de la rutina.
 
 ### 2026-11-03 (más tarde) — red abierta
 

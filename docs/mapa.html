@@ -1,0 +1,241 @@
+<title>Mapa de vr.ar</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&family=Unbounded:wght@500;700&display=swap">
+<style>
+/* Página de estado que se actualiza cada lunes. Fuente: docs/mapa.html.
+   Layout: encabezado, fila de números, los tres frentes en columnas,
+   y abajo las próximas fechas junto a lo que le toca a Daniel. */
+:root {
+  --bg: #F2F5F8;
+  --surface: #FFFFFF;
+  --ink: #152030;
+  --muted: #586474;
+  --line: #DAE1EA;
+  --accent: #0B7285;
+  --accent-soft: #E1F2F5;
+  --bar: #BAC7D4;
+  --ok: #1E7549;
+  --ok-soft: #E2F2E9;
+  --warn: #935600;
+  --warn-soft: #FAEFD9;
+  --display: 'Unbounded', 'Segoe UI', system-ui, sans-serif;
+  --body: 'Exo 2', 'Segoe UI', system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0C121A; --surface: #131B26; --ink: #E5ECF4; --muted: #95A3B4; --line: #243142;
+    --accent: #55CFE0; --accent-soft: #12303A; --bar: #3B4B5F;
+    --ok: #62D39C; --ok-soft: #123224; --warn: #F0B45E; --warn-soft: #33260F;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0C121A; --surface: #131B26; --ink: #E5ECF4; --muted: #95A3B4; --line: #243142;
+  --accent: #55CFE0; --accent-soft: #12303A; --bar: #3B4B5F;
+  --ok: #62D39C; --ok-soft: #123224; --warn: #F0B45E; --warn-soft: #33260F;
+  color-scheme: dark;
+}
+
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+.wrap {
+  max-width: 1080px; margin: 0 auto; display: grid; gap: 20px;
+  padding-block: 28px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+.eyebrow { font-family: var(--display); font-weight: 500; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.eyebrow b { color: var(--accent); font-weight: 500; }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(1.55rem, 3.2vw, 2.1rem); letter-spacing: -.01em; margin: 0; text-wrap: balance; }
+.meta { color: var(--muted); margin: 6px 0 0; font-size: .9rem; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; min-width: 0; }
+.label { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin: 0; }
+.note { color: var(--muted); font-size: .82rem; margin: 6px 0 0; }
+
+/* Números */
+.numbers { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.chart { width: 100%; max-width: 100%; height: auto; display: block; margin-top: 8px; }
+.chart .bar { fill: var(--bar); }
+.chart .bar-now { fill: var(--accent); }
+.chart .base { stroke: var(--line); stroke-width: 1; }
+.chart .val { fill: var(--ink); font: 600 11px var(--body); font-variant-numeric: tabular-nums; }
+.chart .mon { fill: var(--muted); font: 500 11px var(--body); }
+
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; }
+.stats div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 2px; align-content: start; }
+.stats dt { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.stats dd { margin: 0; }
+.stats .big { font-family: var(--display); font-weight: 500; font-size: 1.45rem; font-variant-numeric: tabular-nums; }
+.stats .big small { font-family: var(--body); font-size: .85rem; color: var(--muted); font-weight: 500; }
+.stats .sub { font-size: .82rem; color: var(--muted); }
+
+/* Frentes */
+.fronts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.front { display: grid; gap: 10px; align-content: start; }
+.front-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.front h2 { font-family: var(--display); font-weight: 500; font-size: 1rem; margin: 0; }
+.front p { margin: 0; }
+.front ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.next { border-top: 1px solid var(--line); padding-top: 10px; font-size: .92rem; }
+.next strong { color: var(--accent); font-weight: 600; }
+
+.pill { display: inline-block; font-size: .72rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; white-space: nowrap; }
+.pill.ok { background: var(--ok-soft); color: var(--ok); }
+.pill.phase { background: var(--accent-soft); color: var(--accent); }
+.pill.wait { background: var(--warn-soft); color: var(--warn); }
+
+/* Fechas y pendientes */
+.lower { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.lower h2, .side h2 { font-family: var(--display); font-weight: 500; font-size: 1rem; margin: 0 0 8px; }
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li { display: grid; grid-template-columns: 7.2rem minmax(0, 1fr); gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); }
+.timeline li:first-child { border-top: 0; }
+.timeline .when { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 600; font-size: .88rem; }
+.timeline li.you .when { color: var(--warn); }
+.timeline li.you .what::after { content: " · te toca a vos"; color: var(--warn); font-weight: 600; font-size: .85rem; }
+
+.side { display: grid; gap: 16px; }
+.side ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.done li span { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+footer { color: var(--muted); font-size: .85rem; }
+
+@media (max-width: 760px) {
+  .numbers, .fronts, .lower { grid-template-columns: minmax(0, 1fr); }
+  .timeline li { grid-template-columns: 5.6rem minmax(0, 1fr); }
+}
+</style>
+
+<main class="wrap">
+  <header>
+    <p class="eyebrow">VR<b>.</b>AR · operación semanal</p>
+    <h1>Dónde estamos</h1>
+    <p class="meta">Actualizado el jueves 5 de noviembre de 2026. Se actualiza cada lunes, después de la rutina.</p>
+  </header>
+
+  <section class="numbers" aria-label="Números">
+    <div class="card">
+      <p class="label">Clics desde Google, por mes</p>
+      <svg class="chart" viewBox="0 0 300 140" role="img" aria-label="Clics por mes: junio 4, julio 6, agosto 3, septiembre 4, octubre 40">
+        <line class="base" x1="12" y1="110" x2="292" y2="110"></line>
+        <rect class="bar" x="22" y="101" width="34" height="9" rx="2"></rect>
+        <rect class="bar" x="78" y="96.5" width="34" height="13.5" rx="2"></rect>
+        <rect class="bar" x="134" y="103.25" width="34" height="6.75" rx="2"></rect>
+        <rect class="bar" x="190" y="101" width="34" height="9" rx="2"></rect>
+        <rect class="bar-now" x="246" y="20" width="34" height="90" rx="2"></rect>
+        <text class="val" x="39" y="95" text-anchor="middle">4</text>
+        <text class="val" x="95" y="90.5" text-anchor="middle">6</text>
+        <text class="val" x="151" y="97.25" text-anchor="middle">3</text>
+        <text class="val" x="207" y="95" text-anchor="middle">4</text>
+        <text class="val" x="263" y="14" text-anchor="middle">40</text>
+        <text class="mon" x="39" y="127" text-anchor="middle">Jun</text>
+        <text class="mon" x="95" y="127" text-anchor="middle">Jul</text>
+        <text class="mon" x="151" y="127" text-anchor="middle">Ago</text>
+        <text class="mon" x="207" y="127" text-anchor="middle">Sep</text>
+        <text class="mon" x="263" y="127" text-anchor="middle">Oct</text>
+      </svg>
+      <p class="note">Search Console, mes calendario. Junio cuenta desde el 17. El salto llegó el 22 de septiembre, sin cambios nuestros.</p>
+    </div>
+
+    <dl class="stats">
+      <div>
+        <dt>Clics, última semana</dt>
+        <dd class="big">16</dd>
+        <dd class="sub">27/10 al 2/11 · la anterior, 7</dd>
+      </div>
+      <div>
+        <dt>Impresiones, última semana</dt>
+        <dd class="big">2.015</dd>
+        <dd class="sub">la anterior, 943</dd>
+      </div>
+      <div>
+        <dt>Posición media</dt>
+        <dd class="big">11,2</dd>
+        <dd class="sub">en agosto rondaba 40</dd>
+      </div>
+      <div>
+        <dt>Extensión</dt>
+        <dd class="big">20 <small>usuarios</small></dd>
+        <dd class="sub">versión 2.2.1, ya publicada</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="fronts" aria-label="Los tres frentes">
+    <article class="card front">
+      <div class="front-head"><h2>Crecer en Google</h2><span class="pill ok">En marcha</span></div>
+      <p>Cada lunes se mejoran una o dos páginas que Google ya muestra y casi nadie cliquea. Cada cambio se mide a las cuatro semanas.</p>
+      <ul>
+        <li>Limpieza de lentes, corregida el 26/10</li>
+        <li>Quest 3 vs 3S, con tabla, el 3/11</li>
+      </ul>
+      <p class="next"><strong>Sigue:</strong> la guía de PS5 y una guía nueva sobre qué pasa con la Quest 2.</p>
+    </article>
+
+    <article class="card front">
+      <div class="front-head"><h2>Directorio de estudios XR</h2><span class="pill phase">Fase 0</span></div>
+      <p>El camino de ingresos: estudios de VR y AR de Latinoamérica y España, verificados uno por uno. La meta es unos cientos de dólares por mes desde mediados de 2027.</p>
+      <ul>
+        <li>30 candidatos en cinco países</li>
+        <li>Verificación desde el lunes 9/11</li>
+      </ul>
+      <p class="next"><strong>Hito:</strong> el 1/3/2027 se decide si sigue, según las búsquedas que reciba.</p>
+    </article>
+
+    <article class="card front">
+      <div class="front-head"><h2>Venta del dominio</h2><span class="pill wait">En espera</span></div>
+      <p>Piso de venta: US$ 20.000. El crecimiento del sitio y el directorio mejoran los argumentos de venta.</p>
+      <ul>
+        <li>El dominio vence el 13/01/2027</li>
+        <li>Durante el período de gracia no se puede transferir</li>
+      </ul>
+      <p class="next"><strong>Sigue:</strong> renovarlo en diciembre. Después, si querés, publicarlo en Sedo.</p>
+    </article>
+  </section>
+
+  <section class="lower">
+    <div class="card">
+      <h2>Próximas fechas</h2>
+      <ol class="timeline">
+        <li><span class="when">Lun 9/11</span><span class="what">Rutina: verificar los primeros estudios y mejorar la guía de PS5</span></li>
+        <li><span class="when">Noviembre</span><span class="what">Guía nueva: qué pasa con la Quest 2 y si conviene comprarla usada</span></li>
+        <li><span class="when">23/11</span><span class="what">Medir el cambio en la guía de limpieza de lentes</span></li>
+        <li><span class="when">Antes del 27/11</span><span class="what">Guía de regalos, para Black Friday y Navidad</span></li>
+        <li><span class="when">30/11</span><span class="what">Medir el cambio en Quest 3 vs 3S</span></li>
+        <li><span class="when">Diciembre</span><span class="what">Guía de anteojos inteligentes en español</span></li>
+        <li class="you"><span class="when">Antes del 13/01</span><span class="what">Renovar el dominio en NIC Argentina</span></li>
+        <li><span class="when">Enero</span><span class="what">Actualizar las guías que dicen "2026"</span></li>
+        <li><span class="when">Feb y mar</span><span class="what">Guía de los Meta VR Glasses, antes de que salgan</span></li>
+        <li><span class="when">1/3/2027</span><span class="what">Decisión sobre el directorio</span></li>
+      </ol>
+    </div>
+
+    <div class="side">
+      <div class="card">
+        <h2>Lo que te toca a vos</h2>
+        <ul>
+          <li>Leer el informe de los lunes.</li>
+          <li>En diciembre, renovar el dominio.</li>
+        </ul>
+        <p class="note">Nada más por ahora.</p>
+      </div>
+      <div class="card">
+        <h2>Lo último que se hizo</h2>
+        <ul class="done">
+          <li><span>5/11</span> www.vr.ar redirige bien. Quedó definida la cola de guías nuevas.</li>
+          <li><span>3/11</span> Octubre cargado en las métricas. 30 candidatos para el directorio.</li>
+          <li><span>3/11</span> Quest 3 vs 3S: tabla nueva y la novedad de los Meta VR Glasses.</li>
+          <li><span>26/10</span> Limpieza de lentes: decía que Meta permite usar agua, y no lo permite.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>El detalle de cada semana está en la bitácora del proyecto (<a href="https://github.com/DanoTom/vr.ar/blob/main/docs/PILOTO.md">docs/PILOTO.md</a>).</footer>
+</main>
