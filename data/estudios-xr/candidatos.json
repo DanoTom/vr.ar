@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-03",
+  "actualizado": "2026-11-09",
   "para_que": "Lista de trabajo de la fase 0 del directorio (docs/DIRECTORIO.md). Nada de esto se publica: data/ no se despliega.",
   "estados": {
     "candidato": "Apareció en una fuente secundaria. Falta revisar su web.",
     "verificado": "Web activa y al menos un proyecto XR público de los últimos 24 meses, comprobado en su web.",
     "descartado": "No cumple el criterio. Se anota por qué, para no volver a revisarlo."
   },
-  "aviso": "Al 3/11/2026 el entorno no puede abrir webs de estudios (la red lo bloquea), así que ningún candidato está verificado. Lo que dice cada uno sale de notas y listados de terceros, muchos de años anteriores.",
+  "aviso": "Desde el 3/11/2026 la red permite revisar las webs. Primera tanda (Argentina) el 9/11: 1 verificado, 5 descartados, 3 pendientes. Lección: los candidatos sacados de notas viejas casi nunca pasan; conviene buscar en fuentes con actividad reciente (expositores de ferias 2025-2026, festivales, premios).",
   "estudios": [
     {
       "nombre": "Malak XR",
@@ -165,7 +165,9 @@
       "fuentes": [
         "https://infonegocios.info/amp/enfoque/metavr-la-empresa-cordobesa-de-realidad-virtual-que-busca-posicionarse-en-el-mercado-tech-de-argentina-y-el-mundo"
       ],
-      "estado": "candidato"
+      "estado": "descartado",
+      "verificado_el": "2026-11-09",
+      "nota": "No se encontró web: metavr.com.ar no responde y las búsquedas solo devuelven una nota vieja de Infonegocios. Los otros \"MetaVR\" son empresas distintas (Chile, EE.UU.)."
     },
     {
       "nombre": "VRE",
@@ -175,7 +177,9 @@
       "fuentes": [
         "https://infonegocios.info/default/vre-te-lleva-la-experiencia-de-jugar-con-la-realidad-virtual-a-tu-evento-empresarial-diversion-para-tus-invitados-desde-80-000"
       ],
-      "estado": "candidato"
+      "estado": "descartado",
+      "verificado_el": "2026-11-09",
+      "nota": "vre.com.ar no existe en el DNS; solo hay notas viejas. Además era alquiler de VR para eventos, no desarrollo."
     },
     {
       "nombre": "Realidad 360° Argentina",
@@ -185,7 +189,9 @@
       "fuentes": [
         "https://stereopsia.com/?p=7825"
       ],
-      "estado": "candidato"
+      "estado": "candidato",
+      "web": "https://realidad360.com.ar",
+      "nota": "Web activa (reel, marcas, premios), sin proyectos fechados. Su fundador, Damián Turkieh, dirigió más de 50 experiencias VR desde 2014. Falta un proyecto de los últimos 24 meses: buscar en redes o festivales."
     },
     {
       "nombre": "Studio Soup",
@@ -195,7 +201,15 @@
       "fuentes": [
         "https://studio-soup.itch.io"
       ],
-      "estado": "candidato"
+      "estado": "verificado",
+      "web": "https://studiosoup.tv",
+      "verificado_el": "2026-11-09",
+      "proyecto_reciente": {
+        "nombre": "ABAC VR, entrenamiento industrial para oil & gas",
+        "url": "https://studiosoup.tv/projects/Abac",
+        "evidencia": "mostrado en AOG Patagonia 2026, Neuquén"
+      },
+      "nota": "Estudio XR de Buenos Aires: VR de capacitación, experiencias en locaciones, AR y Horizon Worlds. Unity y Unreal."
     },
     {
       "nombre": "Virtual360",
@@ -205,17 +219,21 @@
       "fuentes": [
         "https://www.cbinsights.com/company/utopic-estudios/"
       ],
-      "estado": "candidato"
+      "estado": "candidato",
+      "web": "https://www.virtual360.com.ar",
+      "nota": "Web activa con un portfolio largo de video 360 (Peugeot, Jeep, Boca, Netflix), todo sin fechas. Falta un proyecto de los últimos 24 meses."
     },
     {
       "nombre": "Utopic Estudios",
-      "pais": "Argentina",
-      "ciudad": "",
+      "pais": "España",
+      "ciudad": "Castellón",
       "que_dicen_las_fuentes": "Mencionada por CB Insights junto a Virtual360. Sin más datos.",
       "fuentes": [
         "https://www.cbinsights.com/company/utopic-estudios/"
       ],
-      "estado": "candidato"
+      "estado": "candidato",
+      "web": "https://www.utopicestudios.com",
+      "nota": "Es de Castellón, España, no de Argentina (estaba mal en la lista). Web activa con proyectos de VR y AR (industria, turismo, salud), pero el pie dice © 2020 y nada tiene fecha. Falta un proyecto reciente."
     },
     {
       "nombre": "Siltium",
@@ -225,7 +243,10 @@
       "fuentes": [
         "https://clutch.co/ar/developers/virtual-reality.md"
       ],
-      "estado": "candidato"
+      "estado": "descartado",
+      "web": "https://siltium.com",
+      "verificado_el": "2026-11-09",
+      "nota": "Fábrica de software general (equipos dedicados, white-label, gamificación). Lista \"Gaming & XR\" como servicio, pero no muestra ningún proyecto XR."
     },
     {
       "nombre": "Kinetic Software",
@@ -235,7 +256,9 @@
       "fuentes": [
         "https://clutch.co/ar/developers/virtual-reality.md"
       ],
-      "estado": "candidato"
+      "estado": "descartado",
+      "verificado_el": "2026-11-09",
+      "nota": "Software general de Córdoba; según Clutch, AR/VR es cerca del 10% de su trabajo. Sin web encontrada ni proyectos XR públicos."
     },
     {
       "nombre": "TOTS",
@@ -245,7 +268,9 @@
       "fuentes": [
         "https://clutch.co/ar/developers/virtual-reality.md"
       ],
-      "estado": "candidato"
+      "estado": "descartado",
+      "verificado_el": "2026-11-09",
+      "nota": "tots.agency redirige a axishuman.ai: hoy es una empresa de integración de IA."
     },
     {
       "nombre": "Mobink",
@@ -309,6 +334,10 @@
     }
   ],
   "fuentes_para_seguir_buscando": [
+    {
+      "nombre": "Expositores de AOG Patagonia 2026 y ferias similares (ahí apareció el proyecto de Studio Soup)",
+      "url": ""
+    },
     {
       "nombre": "ACHEX, Asociación Chilena de Experiencias Inmersivas",
       "url": "https://linkedin.com/company/achex-org"

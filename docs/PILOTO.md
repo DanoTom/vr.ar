@@ -109,6 +109,43 @@ chat.
 
 Lo más nuevo arriba. Una entrada por semana.
 
+### 2026-11-09 — rutina
+
+- **Números.** 28 días al 6/11: 44 clics, 5.096 impresiones, posición 11,5 (antes 11,
+  1.605 y 14,3). Última semana (31/10 al 6/11): 16 clics y 2.198 impresiones, contra 9 y
+  1.577. Quest 3 vs 3S (EN) ya suma 1.430 impresiones en 28 días; se mide el 30/11.
+- **Extensión:** 16 usuarios en la ficha (eran 20 el 3/11), versión 2.2.1. Es la
+  primera baja; con números tan chicos, una semana no dice nada todavía.
+- **Sitio vivo:** todo responde; `www` redirige.
+- **Acción de la semana: la guía de PS5, EN + ES.**
+  - Por qué: 415 impresiones en inglés, posición 13,5, 2 clics. Las consultas son "best
+    vr for ps5" y "what vr headsets work with ps5".
+  - **Datos corregidos.** Decía que funciona "un solo visor". El PS VR original también
+    anda en la PS5 con juegos de PS4, pero solo si ya tenés el adaptador de cámara, que
+    Sony dejó de dar en noviembre de 2024. Los precios de la PS5 subieron en abril de
+    2026 (digital US$599,99, disco US$649,99): entrar de cero cuesta unos US$1.000, no
+    900.
+  - **Contexto de 2026 que faltaba.** En septiembre la PSVR2 figuraba agotada en la
+    tienda de Sony de EE.UU. Beat Saber dejó de actualizarse en PlayStation y apagó ahí
+    el multijugador en enero. Firewall Ultra, uno de los dos exclusivos de Sony, salió
+    de la tienda y quedó fuera de línea en septiembre.
+  - Estructura nueva: la respuesta primero; una tabla de qué visores funcionan con la
+    PS5 (PSVR2, PS VR original, Quest, PC VR); costos; qué hace mejor; el punto flojo;
+    el adaptador para PC; y cuál comprar. Usa `.compare-table`; en 390 px entra entera.
+  - **Medir el 7/12:** `node tools/gsc.mjs 28 --page /guides/best-vr-for-ps5`.
+- **Directorio: primera tanda (Argentina).** 1 verificado, 5 descartados, 3 pendientes.
+  - Verificado: **Studio Soup** (studiosoup.tv). Su proyecto de VR de capacitación para
+    ABAC se mostró en AOG Patagonia 2026.
+  - Descartados: Metavr y VRE (no tienen web), Siltium y Kinetic (software general, sin
+    proyectos XR) y TOTS (hoy es una empresa de IA).
+  - Pendientes: Realidad 360° Argentina, Virtual360 y Utopic Estudios. Tienen web
+    activa, pero ningún proyecto con fecha. Utopic resultó ser de Castellón, España.
+  - **Lección:** los candidatos sacados de notas viejas casi nunca pasan. Los
+    verificados salen de fuentes con actividad reciente (ferias, festivales y premios de
+    2025-2026). La próxima tanda se busca ahí.
+- **Orden de las guías nuevas:** la de regalos va el 16/11, porque tiene que estar
+  indexada antes de Black Friday (27/11). La de la Quest 2 pasa al 23/11.
+
 ### 2026-11-05 — www arreglado y cola de contenidos
 
 - Daniel creó el registro `www` y la redirección en Cloudflare. Comprobado:
