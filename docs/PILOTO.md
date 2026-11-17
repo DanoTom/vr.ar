@@ -74,6 +74,7 @@ saber qué funcionó.
 | Primer lunes de cada mes | Completar la fila del mes en `docs/METRICAS.md`. Los usuarios de la extensión se leen de la ficha pública de la tienda; no hace falta pedirle el CSV a Daniel. |
 | Noviembre 2026 | Revisión de noviembre (criterios en `docs/METRICAS.md`) y contenido de regalos (`docs/BRIEFS.md`). |
 | Desde el 1/12/2026 | Recordarle a Daniel que renueve el dominio antes del 13/01/2027. Mientras corre el período de gracia, NIC no permite transferirlo: si hay una venta en curso, es crítico. |
+| Lunes 30/11/2026 | Actualizar los precios de la guía de regalos con las ofertas reales de Black Friday (27/11). |
 | Enero 2027 | Renovar las guías "(2026)" (OPERACIONES §7). |
 
 ## Novedades y contenido nuevo
@@ -108,6 +109,46 @@ chat.
 ## Bitácora
 
 Lo más nuevo arriba. Una entrada por semana.
+
+### 2026-11-16 y 17 — rutina, terminada el martes
+
+- **Se cortó el lunes:** la búsqueda web llegó al límite de gasto del mes a mitad de la
+  rutina. La guía de regalos ya estaba escrita y verificada, pero sin publicar. Daniel
+  pidió seguir el martes 17, y ahí se publicó y se hizo el resto. La búsqueda volvió;
+  conviene usarla con moderación e ir directo a las fuentes cuando la red lo permite.
+- **Números.** 28 días al 13/11: 51 clics, 8.449 impresiones, posición 11,2 (antes 21,
+  2.002 y 12,2). Última semana (7 al 13/11): 17 clics y 3.934 impresiones, contra 16 y
+  2.198. Extensión: 18 usuarios, versión 2.2.1.
+- **Guía nueva: qué visor regalar, EN + ES** (`guides/vr-headset-gift-guide`,
+  `guias/que-visor-vr-regalar`).
+  - Por persona: un visor, un accesorio y un primer juego; una tabla resumen; y cuándo
+    no regalar VR. Sigue el brief 6 de `docs/BRIEFS.md`.
+  - Edades verificadas en las fuentes. Meta: de 10 a 12 años con cuenta administrada
+    por un adulto; menores de 10, no. Sony: la PSVR2 no es para menores de 12. Para
+    Meta se cita su página de ayuda actual, que pone la regla a nivel de cuenta; la
+    página para padres solo nombra a la Quest 2 y la 3.
+  - Precios de lista en EE.UU. al 16/11. Se aclara que las ofertas anticipadas dejaron
+    la 3S en unos US$297 y que Meta todavía no anunció su precio. **Actualizar el
+    30/11**, con las ofertas reales de Black Friday.
+  - La portada reusa la imagen de la Quest 3 vs 3S. Si Daniel quiere una propia, el
+    brief tiene el prompt.
+  - Hubs: tarjeta nueva. Además, la tarjeta y el resumen de PS5 todavía decían "solo un
+    visor funciona con la PS5", que la guía corrigió la semana pasada. Los títulos de
+    las tarjetas ahora coinciden con las guías.
+  - Sitemap: el par nuevo y las fechas reales de las guías cambiadas desde octubre.
+- **Directorio: segunda tanda (España). Son 7 verificados**, todos finalistas de los
+  Premios INMERSIVA XR 2025, con la web propia revisada: DeuSens (empresa XR del año),
+  KarteX (proyecto del año), Futura Space, Iralta, Imascono, Ludus y Virtual Zone.
+  Quedan pendientes Isostopy, LaviniaNext y BWOW Studio, de los que falta la web.
+  Fuera por no ser estudios de VR para empresas: Acciona, Nokia, The Game Kitchen y una
+  experiencia de Roblox. Total: **8 verificados**, 5 descartados, 27 por revisar.
+  - **La página de premios fue la mejor fuente hasta ahora.** Tiene proyectos fechados y
+    enlaza a cada estudio. Los Premios INMERSIVA XR 2026 se entregan el 26/11 en
+    Valencia: es la fuente de la próxima tanda española.
+  - **Ajuste de plan:** con esta velocidad, las 40 fichas de la fase 0 llegan hacia
+    mediados de diciembre, no a fin de noviembre. Para México, Colombia y Chile hace
+    falta una fuente equivalente (asociaciones, festivales, premios); es lo próximo.
+- México quedó sin revisar esta semana.
 
 ### 2026-11-09 — rutina
 

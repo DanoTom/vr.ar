@@ -1,12 +1,12 @@
 {
-  "actualizado": "2026-11-09",
+  "actualizado": "2026-11-17",
   "para_que": "Lista de trabajo de la fase 0 del directorio (docs/DIRECTORIO.md). Nada de esto se publica: data/ no se despliega.",
   "estados": {
     "candidato": "Apareció en una fuente secundaria. Falta revisar su web.",
     "verificado": "Web activa y al menos un proyecto XR público de los últimos 24 meses, comprobado en su web.",
     "descartado": "No cumple el criterio. Se anota por qué, para no volver a revisarlo."
   },
-  "aviso": "Desde el 3/11/2026 la red permite revisar las webs. Primera tanda (Argentina) el 9/11: 1 verificado, 5 descartados, 3 pendientes. Lección: los candidatos sacados de notas viejas casi nunca pasan; conviene buscar en fuentes con actividad reciente (expositores de ferias 2025-2026, festivales, premios).",
+  "aviso": "Desde el 3/11/2026 la red permite revisar las webs. Primera tanda (Argentina) el 9/11: 1 verificado, 5 descartados, 3 pendientes. Lección: los candidatos sacados de notas viejas casi nunca pasan; conviene buscar en fuentes con actividad reciente (expositores de ferias 2025-2026, festivales, premios). Segunda tanda (España) el 17/11: 7 verificados, todos finalistas de los Premios INMERSIVA XR 2025, con la web propia revisada. Esa página de premios es la mejor fuente encontrada hasta ahora: proyectos fechados, con enlace a cada estudio.",
   "estudios": [
     {
       "nombre": "Malak XR",
@@ -331,9 +331,206 @@
         "https://clutch.co/developers/virtual-reality/latin-america.md"
       ],
       "estado": "candidato"
+    },
+    {
+      "nombre": "DeuSens",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "verificado",
+      "web": "https://deusens.com",
+      "verificado_el": "2026-11-17",
+      "proyecto_reciente": {
+        "nombre": "El Circo Wines AI, FunMirror IA y Paso Adelante",
+        "url": "https://deusens.com/es/portfolio/ia-generativa-grandes-vinos-el-circo",
+        "evidencia": "Empresa XR del año en los Premios INMERSIVA XR 2025; tres proyectos finalistas"
+      },
+      "sectores": [
+        "marcas",
+        "instalaciones",
+        "social"
+      ],
+      "que_dicen_las_fuentes": "Estudio de VR, AR e IA para empresas: XR, instalaciones digitales, gaming.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://deusens.com/es/portfolio/ia-generativa-grandes-vinos-el-circo"
+      ]
+    },
+    {
+      "nombre": "KarteX",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "verificado",
+      "web": "https://www.gokartex.com",
+      "verificado_el": "2026-11-17",
+      "proyecto_reciente": {
+        "nombre": "El ciclo del tiempo",
+        "url": "https://www.gokartex.com",
+        "evidencia": "Proyecto XR del año en los Premios INMERSIVA XR 2025"
+      },
+      "sectores": [
+        "marcas",
+        "educación",
+        "experiencias en locaciones"
+      ],
+      "que_dicen_las_fuentes": "VR que se pedalea: experiencias en movimiento para marcas y educación.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://www.gokartex.com"
+      ]
+    },
+    {
+      "nombre": "Futura Space",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "verificado",
+      "web": "https://www.futura.space",
+      "verificado_el": "2026-11-17",
+      "proyecto_reciente": {
+        "nombre": "El viaje mágico del cacao",
+        "url": "https://www.futura.space",
+        "evidencia": "Finalista de los Premios INMERSIVA XR 2025 (concepto y experiencia phygital)"
+      },
+      "sectores": [
+        "experiencias en locaciones",
+        "marcas"
+      ],
+      "que_dicen_las_fuentes": "Estudio de tecnologías inmersivas: experiencias XR multiusuario.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://www.futura.space"
+      ]
+    },
+    {
+      "nombre": "Iralta",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "verificado",
+      "web": "https://iralta.com",
+      "verificado_el": "2026-11-17",
+      "proyecto_reciente": {
+        "nombre": "Videoclip inmersivo para Salvatore Ganacci y Tommy Cash (con Retina)",
+        "url": "https://iralta.com/ass-titties-by-salvatore-ganacci-tommy-cash-2/",
+        "evidencia": "Finalista de los Premios INMERSIVA XR 2025 (dirección de arte)"
+      },
+      "sectores": [
+        "entretenimiento",
+        "producción virtual"
+      ],
+      "que_dicen_las_fuentes": "Estudio de experiencias inmersivas y producción virtual.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://iralta.com/ass-titties-by-salvatore-ganacci-tommy-cash-2/"
+      ]
+    },
+    {
+      "nombre": "Imascono",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "verificado",
+      "web": "https://imascono.com",
+      "verificado_el": "2026-11-17",
+      "proyecto_reciente": {
+        "nombre": "Lacuniacha virtual y Fabiola Saphir",
+        "url": "https://imascono.com/proyecto-lacuniacha/",
+        "evidencia": "Dos proyectos finalistas en los Premios INMERSIVA XR 2025"
+      },
+      "sectores": [
+        "turismo",
+        "marcas"
+      ],
+      "que_dicen_las_fuentes": "Estudio de tecnología inmersiva con casos por sector.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://imascono.com/proyecto-lacuniacha/"
+      ]
+    },
+    {
+      "nombre": "Ludus",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "verificado",
+      "web": "https://www.ludusglobal.com",
+      "verificado_el": "2026-11-17",
+      "proyecto_reciente": {
+        "nombre": "Ludus 2.0",
+        "url": "https://www.ludusglobal.com",
+        "evidencia": "Finalista de los Premios INMERSIVA XR 2025 (desarrollo tecnológico y eficacia de negocio)"
+      },
+      "sectores": [
+        "capacitación",
+        "industria"
+      ],
+      "que_dicen_las_fuentes": "Plataforma de formación en prevención de riesgos laborales con VR.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://www.ludusglobal.com"
+      ]
+    },
+    {
+      "nombre": "Virtual Zone",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "verificado",
+      "web": "https://virtualzonevr.com",
+      "verificado_el": "2026-11-17",
+      "proyecto_reciente": {
+        "nombre": "Luna: The Immersive Experience",
+        "url": "https://virtualzonevr.com/es/luna",
+        "evidencia": "Finalista de los Premios INMERSIVA XR 2025 (diseño de interacción)"
+      },
+      "sectores": [
+        "experiencias en locaciones",
+        "eventos"
+      ],
+      "que_dicen_las_fuentes": "Centros de VR con experiencias culturales y de juego; también hace eventos.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://virtualzonevr.com/es/luna"
+      ]
+    },
+    {
+      "nombre": "Isostopy",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "candidato",
+      "que_dicen_las_fuentes": "Finalista 2025 con Project Legado (patrimonio español en el Pacífico). Falta la web de la empresa.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://projectlegado.com"
+      ]
+    },
+    {
+      "nombre": "LaviniaNext",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "candidato",
+      "que_dicen_las_fuentes": "Finalista 2025 con \"Realidades a solas\". La página de premios no enlaza nada: falta su web.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://inmersivaxr.com/premios-inmersiva-xr-25"
+      ]
+    },
+    {
+      "nombre": "BWOW Studio",
+      "pais": "España",
+      "ciudad": "",
+      "estado": "candidato",
+      "que_dicen_las_fuentes": "Finalista 2025 con Vissor (visualización inmersiva de viviendas), junto a Kinerama. Falta la web del estudio.",
+      "fuentes": [
+        "https://inmersivaxr.com/premios-inmersiva-xr-25",
+        "https://www.vissor.io"
+      ]
     }
   ],
   "fuentes_para_seguir_buscando": [
+    {
+      "nombre": "Premios INMERSIVA XR 2026: ceremonia el 26/11/2026 en Valencia; los finalistas son proyectos lanzados en 2025-2026",
+      "url": "https://inmersivaxr.com/premios-inmersiva-xr-26"
+    },
+    {
+      "nombre": "Miembros de INMERSIVA XR",
+      "url": "https://inmersivaxr.com/miembros"
+    },
     {
       "nombre": "Expositores de AOG Patagonia 2026 y ferias similares (ahí apareció el proyecto de Studio Soup)",
       "url": ""
