@@ -23,7 +23,7 @@
     <loc>https://vr.ar/guides/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -31,7 +31,7 @@
     <loc>https://vr.ar/guias/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -40,7 +40,7 @@
     <loc>https://vr.ar/guides/quest-3-vs-quest-3s</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/quest-3-vs-quest-3s"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/quest-3-vs-quest-3s"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -48,7 +48,7 @@
     <loc>https://vr.ar/guias/quest-3-vs-quest-3s</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/quest-3-vs-quest-3s"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/quest-3-vs-quest-3s"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -57,7 +57,7 @@
     <loc>https://vr.ar/guides/best-vr-for-ps5</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-vr-for-ps5"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejor-vr-para-ps5"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -65,7 +65,7 @@
     <loc>https://vr.ar/guias/mejor-vr-para-ps5</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-vr-for-ps5"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejor-vr-para-ps5"/>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -125,7 +125,7 @@
     <loc>https://vr.ar/guides/how-to-clean-quest-3-lenses</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/how-to-clean-quest-3-lenses"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/como-limpiar-quest-3-lentes"/>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -133,7 +133,7 @@
     <loc>https://vr.ar/guias/como-limpiar-quest-3-lentes</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/how-to-clean-quest-3-lenses"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/como-limpiar-quest-3-lentes"/>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -338,5 +338,21 @@
     <lastmod>2026-06-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guides/vr-headset-gift-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/vr-headset-gift-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/que-visor-vr-regalar"/>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/que-visor-vr-regalar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/vr-headset-gift-guide"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/que-visor-vr-regalar"/>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
