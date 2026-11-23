@@ -23,7 +23,7 @@
     <loc>https://vr.ar/guides/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -31,7 +31,7 @@
     <loc>https://vr.ar/guias/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -108,7 +108,7 @@
     <loc>https://vr.ar/guides/best-vr-games-2026</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-vr-games-2026"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejores-juegos-vr-2026"/>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -116,7 +116,7 @@
     <loc>https://vr.ar/guias/mejores-juegos-vr-2026</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-vr-games-2026"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejores-juegos-vr-2026"/>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -210,7 +210,7 @@
     <loc>https://vr.ar/guides/best-quest-3-accessories</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-quest-3-accessories"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejores-accesorios-quest-3"/>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -218,7 +218,7 @@
     <loc>https://vr.ar/guias/mejores-accesorios-quest-3</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/best-quest-3-accessories"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/mejores-accesorios-quest-3"/>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -353,6 +353,22 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/que-visor-vr-regalar"/>
     <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guides/quest-2-end-of-support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/quest-2-end-of-support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/quest-2-fin-del-soporte"/>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vr.ar/guias/quest-2-fin-del-soporte</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr.ar/guides/quest-2-end-of-support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vr.ar/guias/quest-2-fin-del-soporte"/>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
