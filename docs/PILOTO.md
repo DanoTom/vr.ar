@@ -74,7 +74,8 @@ saber qué funcionó.
 | Primer lunes de cada mes | Completar la fila del mes en `docs/METRICAS.md`. Los usuarios de la extensión se leen de la ficha pública de la tienda; no hace falta pedirle el CSV a Daniel. |
 | Noviembre 2026 | Revisión de noviembre (criterios en `docs/METRICAS.md`) y contenido de regalos (`docs/BRIEFS.md`). |
 | Desde el 1/12/2026 | Recordarle a Daniel que renueve el dominio antes del 13/01/2027. Mientras corre el período de gracia, NIC no permite transferirlo: si hay una venta en curso, es crítico. |
-| Lunes 30/11/2026 | Actualizar los precios de la guía de regalos con las ofertas reales de Black Friday (27/11). |
+| Lunes 30/11/2026 | Actualizar los precios de la guía de regalos con las ofertas reales de Black Friday (27/11). Revisar con `node tools/gsc-inspect.mjs --sitemaps <url>` si Google ya indexó la guía de regalos y la de la Quest 2. |
+| Cuando haya una semana libre | **Catálogo:** distinguir los juegos que no corren en la Quest 2. Hoy el catálogo marca todo como "Quest", y la extensión le puede decir a un dueño de Quest 2 que le anda un juego que es solo para Quest 3 y 3S (Batman: Arkham Shadow, por ejemplo). Hay que revisar los 90 juegos uno por uno. |
 | Enero 2027 | Renovar las guías "(2026)" (OPERACIONES §7). |
 
 ## Novedades y contenido nuevo
@@ -88,8 +89,8 @@ Cola, en orden (máximo dos pares nuevos por mes):
 
 | Cuándo | Guía | Por qué ahora |
 |---|---|---|
-| Noviembre 2026 | **Qué pasa con la Quest 2** (y si conviene comprarla usada) | Meta cerró las funciones nuevas: la última actualización con funciones, v2.13, sale entre enero y marzo de 2027, y las de seguridad siguen hasta diciembre de 2027. Los juegos instalados siguen andando; desde diciembre de 2027 no se publican apps nuevas para ella. Mucha gente en Latinoamérica tiene una o la compra usada, y la confusión ("ya no tiene soporte") es grande. Fuentes: páginas de ayuda y de seguridad de Meta y su blog de desarrolladores. |
-| Noviembre 2026, antes del 27 | **Qué visor regalar** (brief 6 de `docs/BRIEFS.md`) | Black Friday y Navidad. Es la única guía del año con temporada. |
+| Hecha el 23/11/2026 | **Qué pasa con la Quest 2** (y si conviene comprarla usada) | Meta cerró las funciones nuevas: la última actualización con funciones, v2.13, sale entre enero y marzo de 2027, y las de seguridad siguen hasta diciembre de 2027. Los juegos instalados siguen andando; desde diciembre de 2027 no se publican apps nuevas para ella. Mucha gente en Latinoamérica tiene una o la compra usada, y la confusión ("ya no tiene soporte") es grande. Fuentes: páginas de ayuda y de seguridad de Meta y su blog de desarrolladores. |
+| Hecha el 17/11/2026 | **Qué visor regalar** (brief 6 de `docs/BRIEFS.md`) | Black Friday y Navidad. Es la única guía del año con temporada. |
 | Diciembre 2026 | **Anteojos inteligentes en español:** cuáles hay, qué hacen y cuáles llegan a Latinoamérica | Es donde crece el mercado (los visores caen y los anteojos suben), y el dominio dice "AR". |
 | Febrero o marzo 2027 | **Meta VR Glasses** | Salen en la primavera boreal de 2027. Primero la guía, después el quiz. |
 
@@ -109,6 +110,41 @@ chat.
 ## Bitácora
 
 Lo más nuevo arriba. Una entrada por semana.
+
+### 2026-11-23 — rutina
+
+- **Números.** 28 días al 20/11: 71 clics, 14.552 impresiones, posición 10,1 (antes 28,
+  2.432 y 12,0). Última semana (14 al 20/11): 29 clics y 6.843 impresiones, contra 17
+  y 3.934; posición 9,1. Extensión: 19 usuarios.
+- **Medición de la guía de limpieza de lentes (cambiada el 26/10).** Las impresiones
+  pasaron de 564 a 2.037, la posición de 10,8 a 9,0 y los clics de 4 a 5. Las consultas
+  principales siguen en la segunda página (15 a 18), salvo "how to clean quest 3
+  lenses", que pasó de 12,8 a 8,4. Con todo el sitio creciendo así, la mejora no se le
+  puede atribuir al cambio. El CTR sigue muy bajo. No se vuelve a tocar por ahora.
+- **Problema: Google no conocía la guía de regalos.** La API de inspección de URLs la
+  daba como "unknown to Google" a seis días de publicada. Google había bajado el sitemap
+  por última vez el 14/11, tres días antes. La cuenta de servicio es de solo lectura y
+  no puede pedir indexación ni reenviar el sitemap: se le pide a Daniel. Mientras
+  tanto, se enlazó la guía desde las de juegos y accesorios (EN + ES), que Google
+  visita seguido.
+  - Herramienta nueva: `tools/gsc-inspect.mjs` dice si Google conoce, rastreó e indexó
+    una URL, y cuándo bajó el sitemap (`--sitemaps`).
+- **Guía nueva: qué pasa con la Quest 2, EN + ES** (`guides/quest-2-end-of-support`,
+  `guias/quest-2-fin-del-soporte`).
+  - Las fechas se leyeron directo en las páginas de Meta: la v2.13 es la última
+    actualización con funciones (enero a marzo de 2027). Las de seguridad siguen hasta
+    diciembre de 2027. Lo comprado, la tienda, el juego cruzado con Quest 3/3S y la PC
+    VR por Link siguen andando. Desde diciembre de 2027 no salen apps nuevas.
+  - Comparación Quest 2 usada (US$100 a 150, según Flipify) contra Quest 3S nueva,
+    con las fechas de seguridad de Meta para cada una: diciembre de 2027 contra al
+    menos el 15/10/2029.
+  - La portada usa la imagen genérica de "qué es la realidad virtual", para no mostrar
+    un visor equivocado.
+- **Problema encontrado en el catálogo:** no distingue la Quest 2 de la Quest 3. Quedó
+  como tarea en "Fechas que vigila la rutina".
+- **El directorio no avanzó esta semana.** La guía de la Quest 2 y el problema de
+  indexación ocuparon la rutina. La próxima tanda española sale de los Premios
+  INMERSIVA XR 2026 (26/11); para México falta una fuente.
 
 ### 2026-11-16 y 17 — rutina, terminada el martes
 
