@@ -63,7 +63,8 @@ saber qué funcionó.
 - Sumar cualquier forma de monetización: afiliados nuevos, publicidad, patrocinios.
 - Mandarle mensajes a terceros. El asistente deja borradores; los envía Daniel.
 - Gastar plata o contratar servicios.
-- Tocar DNS, Cloudflare, NIC Argentina o cualquier cuenta a nombre de Daniel.
+- Tocar DNS, Cloudflare, NIC Argentina o cualquier cuenta a nombre de Daniel. Excepción
+  autorizada el 28/11/2026: generar imágenes de portada con el Canva de Daniel.
 - Todo lo que tenga que ver con la venta del dominio, más allá de investigar y preparar
   material.
 
@@ -74,6 +75,7 @@ saber qué funcionó.
 | Primer lunes de cada mes | Completar la fila del mes en `docs/METRICAS.md`. Los usuarios de la extensión se leen de la ficha pública de la tienda; no hace falta pedirle el CSV a Daniel. |
 | Noviembre 2026 | Revisión de noviembre (criterios en `docs/METRICAS.md`) y contenido de regalos (`docs/BRIEFS.md`). |
 | Desde el 1/12/2026 | Recordarle a Daniel que renueve el dominio antes del 13/01/2027. Mientras corre el período de gracia, NIC no permite transferirlo: si hay una venta en curso, es crítico. |
+| Lunes 30/11/2026 | **Imágenes con Canva** (pedido de Daniel del 28/11): probar el flujo con la portada de la guía de regalos, usando el prompt del brief 6 de `docs/BRIEFS.md`, y después con la de la Quest 2. Si funciona, toda guía nueva sale con portada propia. Flujo: generar en 3:2 con `generate-image` (Daniel pidió que el prompt lo escriba el asistente) → bajar el archivo → JPG de 1536×1024 y menos de 200 KB (OPERACIONES §3) → usarla como portada, `og:image` y en el JSON-LD. Sin logos ni texto en la imagen. Si la imagen no se puede bajar directo, probar armar un diseño con ella y exportarlo; si tampoco, avisarle a Daniel. |
 | Lunes 30/11/2026 | Actualizar los precios de la guía de regalos con las ofertas reales de Black Friday (27/11). Revisar con `node tools/gsc-inspect.mjs --sitemaps <url>` si Google ya indexó la guía de regalos y la de la Quest 2. |
 | Cuando haya una semana libre | **Catálogo:** distinguir los juegos que no corren en la Quest 2. Hoy el catálogo marca todo como "Quest", y la extensión le puede decir a un dueño de Quest 2 que le anda un juego que es solo para Quest 3 y 3S (Batman: Arkham Shadow, por ejemplo). Hay que revisar los 90 juegos uno por uno. |
 | Enero 2027 | Renovar las guías "(2026)" (OPERACIONES §7). |
